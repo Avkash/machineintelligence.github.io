@@ -1,0 +1,87 @@
+   <!-- Page content-->
+   <div class="row">
+         <div class="content-wrapper">
+            <div class="content-heading">
+               <!-- START Language list-->
+               <div class="pull-right">
+                  <ul class="nav navbar-nav">
+                     <li>
+                        <a href="http://www.h2o.ai/docs" target="h2o-doc-link-content">
+                           <em class="fa fa-info-circle"></em>
+                        </a>
+                     </li>  
+                     <li>
+                        <a href="http://docs.h2o.ai" target="h2o-doc-link-content">
+                           <em class="fa fa-book"></em>
+                        </a>
+                     </li> 
+                  </ul>                                   
+                  <!--
+                  <div class="btn-group">
+                     <button type="button" data-toggle="dropdown" class="btn btn-default">English</button>
+                     <ul role="menu" class="dropdown-menu dropdown-menu-right animated fadeInUpShort">
+                        <li><a href="#" data-set-lang="en">English</a>
+                        </li>
+                        <li><a href="#" data-set-lang="es">Spanish</a>
+                        </li>
+                     </ul>
+                  </div>
+                  -->
+               </div>
+               <!-- END Language list    -->
+               <div>Home ><small>  <span data-bind="text: pageHeader"></span></small></div>
+               <small data-localize="dashboard.WELCOME"></small>
+            </div>
+            <div class="row no-margin no-padding">
+               <!--
+                  <div class="cluster-links-container" data-bind="fixPageFrameHeight: $.AppViewModel">
+                      <iframe class="cluster-link-frame" name="cluster-link-content" data-bind="setDefaultLink: $.AppViewModel.clusterLinks()"></iframe>
+                  </div>
+               -->
+               <div class="col-sm-9 text-center">
+                      <iframe  src="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/hadoop.html" 
+                      class="master-link-frame" name="h2o-doc-link-content" 
+                      onload="this.width=screen.width-700;this.height=screen.height-320;"></iframe>
+               </div>
+               <div class="col-sm-3">
+               <div class="documentation">
+              <h2>Documentation</h2>
+              <h4>User documentation</h4>
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/index.html" target="h2o-doc-link-content">H2O Documentation</a></p>
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/index.html" target="h2o-doc-link-content">H2O User Guide</a></p>
+               <p><a href="https://github.com/h2oai/h2o-3/blob/adf72338cd2003cb0cf7a7c49003b1ac79c90825/Changes.md" target="h2o-doc-link-content">Recent Changes</a></p>
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-r/h2o_package.pdf" target="h2o-doc-link-content">R User Documentation</a></p>
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/index.html" target="h2o-doc-link-content">Python User Documentation</a></p>
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/index.html" target="h2o-doc-link-content">Sparkling Water Readme</a></p>
+               <p><a href="https://github.com/h2oai/sparkling-water/blob/master/README.md" target="h2o-doc-link-content">Migrating to H2O 3</a></p>
+               <br>
+
+               
+              <h4>Developer documentation</h4>
+               <p><a href="https://github.com/h2oai/h2o-dev/blob/adf72338cd2003cb0cf7a7c49003b1ac79c90825/README.md" target="h2o-doc-link-content">Github README</a></p>
+
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/rest-api-reference.html" target="h2o-doc-link-content">REST API Documentation</a></p>
+
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-core/javadoc/index.html" target="h2o-doc-link-content">H2O Core Java Developer Documentation (Javadoc)</a></p>
+
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-algos/javadoc/index.html" target="h2o-doc-link-content">H2O Algos Java Developer Documentation (Javadoc)</a></p>
+
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-genmodel/javadoc/index.html" target="h2o-doc-link-content">H2O Generated POJO Model API Developer Documentation (Javadoc)</a></p>
+
+               <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-scala/scaladoc/index.html" target="h2o-doc-link-content">H2O Scala API Developer Documentation (Scaladoc)</a></p>
+               <br>
+               
+
+                 <h4>Booklets</h4>
+                  <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/GLMBooklet.pdf" target="h2o-doc-link-content">GLM</a></p>
+                  <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/DeepLearningBooklet.pdf" target="h2o-doc-link-content">DeepLearning</a></p>
+                  <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/GBMBooklet.pdf" target="h2o-doc-link-content">GBM</a></p>
+                  <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/RBooklet.pdf" target="h2o-doc-link-content">R</a></p>
+                  <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/PythonBooklet.pdf" target="h2o-doc-link-content">Python</a></p>
+                  <p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/SparklingWaterBooklet.pdf" target="h2o-doc-link-content">SparklingWater</a></p>
+            </div>
+
+               </div>
+            </div>
+         </div>
+   </div>

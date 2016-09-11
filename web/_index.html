@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Bootstrap Admin App + jQuery">
+   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+   <title>H2O Hub</title>
+   <!-- =============== VENDOR STYLES ===============-->
+   <!-- FONT AWESOME-->
+   <link rel="stylesheet" href="css/vendor/fontawesome/css/font-awesome.min.css">
+   <!-- SIMPLE LINE ICONS-->
+   <link rel="stylesheet" href="css/vendor/simple-line-icons/css/simple-line-icons.css">
+   <!-- ANIMATE.CSS-->
+   <link rel="stylesheet" href="css/vendor/animate.css/animate.min.css">
+   <!-- WHIRL (spinners)-->
+   <link rel="stylesheet" href="css/vendor/whirl/dist/whirl.css">
+   <!-- =============== PAGE VENDOR STYLES ===============-->
+   <link rel="stylesheet" href="js/vendor/fullcalendar/dist/fullcalendar.css">
+   <!-- =============== BOOTSTRAP STYLES ===============-->
+   <link rel="stylesheet" href="css/bootstrap.css" id="bscss">
+   <!-- =============== APP STYLES ===============-->
+   <link rel="stylesheet" href="css/hub.css" id="maincss">
+</head>
+
+<body class="h2o-hub">
+   <div class="wrapper">
+      <!-- top navbar-->
+      <!--(bake /includes/_header.html)-->
+      <header-bar></header-bar>
+      <!-- sidebar-->
+      <!--(bake /includes/_left_side_menu.html)-->
+      <!--
+      <left-side-menu params="links: links"></left-side-menu>
+      <div params="links: links"></div>
+      -->
+      <left-side-menu params="links: links"></left-side-menu>
+      <!-- Main section-->
+      <section id="content-holder">
+         <div class="main-content-holder"></div>
+      </section>
+      <!-- Page footer-->
+   <!--(bake /includes/_footer.html)-->      
+   </div>
+   <!-- =============== VENDOR SCRIPTS ===============-->
+   <!-- MODERNIZR-->
+   <script src="js/vendor/modernizr/modernizr.custom.js"></script>
+   <!-- JQUERY-->
+   <script src="js/vendor/jquery/dist/jquery.js"></script>
+   <!-- SAMMY-->
+   <script src="js/vendor/sammy/sammy.js"></script>
+   <!-- BOOTSTRAP-->
+   <script src="js/vendor/bootstrap/dist/js/bootstrap.js"></script>
+   <!-- STORAGE API-->
+   <script src="js/vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+   <!-- JQUERY EASING-->
+   <script src="js/vendor/jquery.easing/js/jquery.easing.js"></script>
+   <!-- ANIMO-->
+   <script src="js/vendor/animo.js/animo.js"></script>
+   <!-- LOCALIZE-->
+   <script src="js/vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+   <!-- KNOCKOUT-->
+   <script src="js/vendor/knockoutjs/knockout-3.4.0.js"></script>
+   <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+   <!-- FULLCALENDAR-->
+   <script src="js/vendor/moment/min/moment-with-locales.min.js"></script>
+   <script src="js/vendor/fullcalendar/dist/fullcalendar.min.js"></script>
+   <script src="js/vendor/fullcalendar/dist/gcal.js"></script>
+   <!-- =============== APP SCRIPTS ===============-->
+   <script src="js/app.models.js"></script>
+   <script src="js/app.domain.js"></script>
+   <script src="js/app.js"></script>
+   <script src="js/router.js"></script>
+</body>
+
+</html>

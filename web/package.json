@@ -1,0 +1,21 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "H2O Hub",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bake": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-watch": "latest",
+    "jshint-stylish": "latest"
+  },
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "avkash chauhan avkash@h2o.ai",
+  "license": "ISC"
+}
