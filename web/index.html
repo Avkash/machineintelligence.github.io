@@ -34,11 +34,11 @@
                   <!-- START navbar header-->
                   <div class="navbar-header">
                      <a href="#/" class="navbar-brand">
-                        <div class="brand-logo">
-                           <img src="img/h2o-50px-logo.jpg" alt="App Logo" class="img-responsive">
+                        <div class="brand-logo" style="margin-top:-7px;">
+                           <img src="img/avkash-circle.png" alt="App Logo" class="img-responsive">
                         </div>
                         <div class="brand-logo-collapsed">
-                           <img src="img/h2o-50px-logo.jpg" alt="App Logo" class="img-responsive">
+                           <img src="img/avkash-circle.png" alt="App Logo" class="img-responsive">
                         </div>
                      </a>
                   </div>
@@ -46,18 +46,21 @@
                   <!-- START Nav wrapper-->
                   <div class="nav-wrapper">
                      <!-- START Left navbar-->
+                     <!--
+                     ASC: THIS HIDES LEFT PANEL BIG/SMALL BUTTON
                      <ul class="nav navbar-nav">
                         <li>
-                           <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+                           <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops
                            <a href="#" data-toggle-state="aside-collapsed" class="hidden-xs">
                               <em class="fa fa-navicon"></em>
                            </a>
-                           <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->
+                           <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.
                            <a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
                               <em class="fa fa-navicon"></em>
                            </a>
                         </li>
                      </ul>
+                     -->
                      <!-- END Left navbar-->
                      <!-- START Right Navbar-->
                      <ul class="nav navbar-nav navbar-right">
@@ -265,240 +268,91 @@
       <template id="left-side-menu">
           <aside class="aside left-side-menu" style="display:block;">
               <!-- START Sidebar (left)-->
-              <div class="aside-inner">
+              <div class="aside-inner" style="margin-top:18px;width: 203px;">
                   <nav data-sidebar-anyclick-close="" class="sidebar">
-                      <!-- START sidebar nav-->
-                      <ul class="nav">
-                          <!-- Iterates over all sidebar items-->
-                          <li class="nav-heading ">
-                              <span data-localize="sidebar.heading.HEADER">Menu Navigation</span>
-                          </li>
-                          <li class=" active" class="list-link-item-text">
-                              <a href="#" data-bind="click: root.changeUrl('home')" title="Home">
-                                  <em class="fa fa-file-o"></em>
-                                  <span>Home</span>
-                              </a>
-                          </li>
-                          <li class="" class="list-link-item-text">
-                              <a href="#" data-bind="click: root.changeUrl('thisweek')" title="Home">
-                                  <em class="fa fa-file-o"></em>
-                                  <span>This Week @ H2o</span>
-                              </a>
-                          </li>
-                          <li class=" ">
-                              <a href="#menuid-h2o" title="Menu" data-toggle="collapse">
-                                  <em class="icon-folder"></em>
-                                  <span>H2O</span>
-                              </a>
-                              <ul id="menuid-h2o" class="nav sidebar-subnav collapse">
-                                  <li class="sidebar-subnav-header">H2O</li>
-                                  <li class="list-link-item-text">
-                                      <a href="#" data-bind="click: root.changeUrl('h2o_arch')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Architecture</span>
-                                      </a>
-                                  </li>
-                                  <li class="list-link-item-text">
-                                      <a href="#" data-bind="click: root.changeUrl('h2o_dl')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Download</span>
-                                      </a>
-                                  </li>
-                                  <li class="list-link-item-text">
-                                      <a href="#" data-bind="click: root.changeUrl('h2o_gs')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Getting Started</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('h2o_docs')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Docs</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('h2o_tut')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Tutorials</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('h2o_faq')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>FAQ</span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class=" ">
-                              <a href="#menuid-sw" title="Menu" data-toggle="collapse">
-                                  <em class="icon-folder"></em>
-                                  <span>Sparkling Water</span>
-                              </a>
-                              <ul id="menuid-sw" class="nav sidebar-subnav collapse">
-                                  <li class="sidebar-subnav-header">Sparkling Water</li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('sw_arch')" title="Sparkling Water Architecture">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Architecture</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('sw_docs')" title="Sparkling Water Documentation">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Documentation</span>
-                                      </a>
-                                  </li>
-                                  <!--
-                                  <li class=" ">
-                                      <a href="#" onclick="launchPageURL('pages/page2.html')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Page2</span>
-                                      </a>
-                                  </li>
-                                  -->
-                              </ul>
-                          </li>
-                          <!--
-                          <li class=" ">
-                              <a href="#menuid-steam" title="Menu" data-toggle="collapse">
-                                  <em class="icon-folder"></em>
-                                  <span>Steam</span>
-                              </a>
-                              <ul id="menuid-steam" class="nav sidebar-subnav collapse">
-                                  <li class="sidebar-subnav-header">Steam</li>
-                                  <li class=" ">
-                                      <a href="#" onclick="launchPageURL('pages/page1.html')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Page1</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" onclick="launchPageURL('pages/page2.html')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Page2</span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </li>
-                          -->
-                          <li class=" ">
-                              <a href="#menuid-algo" title="Menu" data-toggle="collapse">
-                                  <em class="icon-folder"></em>
-                                  <span>Algorithms</span>
-                              </a>
-                              <ul id="menuid-algo" class="nav sidebar-subnav collapse">
-                                  <li class="sidebar-subnav-header">Algorithms</li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>GLM</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_gbm')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>GBM</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_dl')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Deep Learning</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_drf')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>DRF</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_nb')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Naive Bayes</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_ensembles')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Ensembles</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_glrm')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>GLRM</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_kmeans')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>K-Means</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('algo_pca')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>PCA</span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class=" ">
-                              <a href="#menuid-ws" title="Menu" data-toggle="collapse">
-                                  <em class="icon-folder"></em>
-                                  <span>Hands-on Workshop</span>
-                              </a>
-                              <ul id="menuid-ws" class="nav sidebar-subnav collapse">
-                                  <li class="sidebar-subnav-header">Workshop</li>
-                                  <li class=" ">
-                                      <a href="#" onclick="launchPageURL('pages/workshop-dev.html')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>For Developers</span>
-                                      </a>
-                                  </li>
-                                  <li class=" ">
-                                      <a href="#" onclick="launchPageURL('pages/workshop-ds.html')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>For Data Scientists</span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <li class=" ">
-                              <a href="#menuid-glo" title="Menu" data-toggle="collapse">
-                                  <em class="icon-folder"></em>
-                                  <span>Glossary</span>
-                              </a>
-                              <ul id="menuid-glo" class="nav sidebar-subnav collapse">
-                                  <li class="sidebar-subnav-header">Keywords</li>
-                                  <li class=" ">
-                                      <a href="#" data-bind="click: root.changeUrl('keywords')"  title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Keywords</span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </li>
-                          <!--
-                          <li class=" ">
-                              <a href="#menuid-pr" title="Menu" data-toggle="collapse">
-                                  <em class="icon-folder"></em>
-                                  <span>Public Relations</span>
-                              </a>
-                              <ul id="menuid-pr" class="nav sidebar-subnav collapse">
-                                  <li class="sidebar-subnav-header">PR</li>
-                                  <li class=" ">
-                                      <a href="#" onclick="launchPageURL('pages/pr.html')" title="Sub Menu">
-                                          <em class="fa fa-angle-right"></em>
-                                          <span>Links</span>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </li>
-                          -->
-                      </ul>
+                      <div role="tabpanel">
+                          <!-- Nav tabs-->
+                          <ul role="tablist" class="nav nav-tabs">
+                              <li role="presentation" class="active"><a href="#Key_ml" aria-controls="Key_ml" role="tab" data-toggle="tab" aria-expanded="true">&nbsp;ML&nbsp;</a>
+                              </li>
+                              <li role="presentation" class=""><a href="#Key_dl" aria-controls="Key_dl" role="tab" data-toggle="tab" aria-expanded="false">DL</a>
+                              </li>
+                              <li role="presentation" class=""><a href="#Key_bd" aria-controls="Key_bd" role="tab" data-toggle="tab" aria-expanded="false">Big Data</a>
+                              </li>
+                          </ul>
+                          <!-- Tab panes-->
+                          <div class="tab-content">
+                              <div id="Key_ml" role="tabpanel" class="tab-pane active">
+                                  <div class="row">
+                                      <!-- START sidebar nav-->
+                                      <ul class="nav">
+                                          <!-- Iterates over all sidebar items-->
+                                          <li class="nav-heading ">
+                                              <span data-localize="sidebar.heading.HEADER">Machine Learning Hub</span>
+                                          </li>
+                                          <li class=" active" class="list-link-item-text">
+                                              <a href="#" data-bind="click: root.changeUrl('home')" title="Home">
+                                                  <em class="fa fa-file-o"></em>
+                                                  <span>Home</span>
+                                              </a>
+                                          </li>
+                                          <li class="" class="list-link-item-text">
+                                              <a href="#" data-bind="click: root.changeUrl('thisweek')" title="Home">
+                                                  <em class="fa fa-file-o"></em>
+                                                  <span>This Week @ H2o</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div id="Key_dl" role="tabpanel" class="tab-pane">
+                                  <div class="row">
+                                      <!-- START sidebar nav-->
+                                      <ul class="nav">
+                                          <!-- Iterates over all sidebar items-->
+                                          <li class="nav-heading ">
+                                              <span data-localize="sidebar.heading.HEADER">Deep Learning Hub</span>
+                                          </li>
+                                          <li class=" active" class="list-link-item-text">
+                                              <a href="#" data-bind="click: root.changeUrl('home')" title="Home">
+                                                  <em class="fa fa-file-o"></em>
+                                                  <span>Home2</span>
+                                              </a>
+                                          </li>
+                                          <li class="" class="list-link-item-text">
+                                              <a href="#" data-bind="click: root.changeUrl('thisweek')" title="Home">
+                                                  <em class="fa fa-file-o"></em>
+                                                  <span>This Week @ H22o</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div id="Key_bd" role="tabpanel" class="tab-pane">
+                                  <div class="row">
+                                      <!-- START sidebar nav-->
+                                      <ul class="nav">
+                                          <!-- Iterates over all sidebar items-->
+                                          <li class="nav-heading ">
+                                              <span data-localize="sidebar.heading.HEADER">Big Data & Hadoop Hub</span>
+                                          </li>
+                                          <li class=" active" class="list-link-item-text">
+                                              <a href="#" data-bind="click: root.changeUrl('home')" title="Home">
+                                                  <em class="fa fa-file-o"></em>
+                                                  <span>Home23</span>
+                                              </a>
+                                          </li>
+                                          <li class="" class="list-link-item-text">
+                                              <a href="#" data-bind="click: root.changeUrl('thisweek')" title="Home">
+                                                  <em class="fa fa-file-o"></em>
+                                                  <span>This Week @ H3322o</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </nav>
               </div>
           </aside>
