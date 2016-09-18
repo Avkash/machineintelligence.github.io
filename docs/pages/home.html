@@ -1,3 +1,25 @@
+<style type="text/css">
+
+
+    .node circle {
+        cursor: pointer;
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+
+    .node text {
+        font-size: 11px;
+    }
+
+    path.link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+    }
+
+</style>
+
    <!-- Page content-->
    <div class="row  margin-left=20">
          <div class="content-wrapper">
@@ -31,244 +53,158 @@
                -->   
                </div>
                <!-- END Language list    -->
-               <div>Home ><small> home</small></div>
+               <div><i class="fa fa-home" data-bind="click: root.changeUrl('home')"></i> Home ><small> home</small></div>
                <small data-localize="dashboard.WELCOME"></small>
             </div>
             <div class="row no-padding no-margin">
-               <div class="col-xs-9 text-center padding-1 no-margin">
-                   <!-- ROW 1 -->
-                   <div class="row padding-10">
-                     <div class="col-lg-3 col-sm-6">
-                         <!-- START widget-->
-                         <div class="panel widget bg-primary">
-                             <div class="row row-table">
-                                 <div class="col-xs-4 text-center  pv-lg">
-                                     <em class="icon-cloud-download fa-3x" style="color:darkblue;"></em>
-                                 </div>
-                                 <div class="col-xs-8 pv-lg">
-                                     <div class="h2 mt0">600,000</div>
-                                     <div class="text-uppercase">Downloads</div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-lg-3 col-sm-6">
-                         <!-- START widget-->
-                         <div class="panel widget bg-purple">
-                             <div class="row row-table">
-                                 <div class="col-xs-4 text-center  pv-lg">
-                                     <em class="icon-globe fa-3x" style="color:darkmagenta;"></em>
-                                 </div>
-                                 <div class="col-xs-8 pv-lg">
-                                     <div class="h2 mt0">19000
-                                         <small>+</small>
-                                     </div>
-                                     <div class="text-uppercase">Commits</div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12">
-                         <!-- START widget-->
-                         <div class="panel widget bg-green">
-                             <div class="row row-table">
-                                 <div class="col-xs-4 text-center  pv-lg">
-                                     <em class="icon-user fa-3x"></em>
-                                 </div>
-                                 <div class="col-xs-8 pv-lg">
-                                     <div class="h2 mt0">62<small>+</small></div>
-                                     <div class="text-uppercase">Contributors</div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 col-sm-12">
-                         <!-- START widget-->
-                         <div class="panel widget bg-green">
-                             <div class="row row-table">
-                                 <div class="col-xs-4 text-center  pv-lg">
-                                     <em class="icon-star fa-3x"></em>
-                                 </div>
-                                 <div class="col-xs-8 pv-lg">
-                                     <div class="h2 mt0">1300<small>+</small></div>
+               <div class="col-xs-9 text-center padding-1 no-margin heightSet750">
+                   <div id="mlTree"> <!-- data-bind="text: showD3Tree(); -->
+                       <script type="text/javascript">
 
-                                     <div class="text-uppercase">Stars</div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                   </div>
-                   <!-- ROW 2 -->
-                   <div class="row">
-                       <div class="col-lg-12">
-                           <div class="panel panel-default panel-demo">
-                               <div class="panel-heading">
-                               </div>
-                               <div class="panel-body">
-                                   <span class="list-group-item">
-                                       <table class="wd-wide">
-                                           <tbody>
-                                           <tr>
-                                               <td class="wd-xs">
-                                                   <div class="ph">
-                                                       <img src="img/dummy.png" alt="" class="media-box-object img-responsive img-rounded thumb64">
-                                                   </div>
-                                               </td>
-                                               <td>
-                                                   <div class="ph text-left">
-                                                       <h4 class="media-box-heading">Project A</h4>
-                                                       <small class="text-muted">Vestibulum ante ipsum primis in faucibus orci</small>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-sm hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0">Last change</p>
-                                                       <small class="text-muted">4 weeks ago</small>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-xs hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0 text-muted">
-                                                           <em class="icon-users mr fa-lg"></em>26</p>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-xs hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0 text-muted">
-                                                           <em class="icon-doc mr fa-lg"></em>3500</p>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-sm">
-                                                   <div class="ph">
-                                                       <progressbar value="80" type="success" class="m0 progress-xs">80%</progressbar>
-                                                   </div>
-                                               </td>
-                                           </tr>
-                                           </tbody>
-                                       </table>
-                                   </span>
-                                   <br>
-                                   <span class="list-group-item">
-                                       <table class="wd-wide">
-                                           <tbody>
-                                           <tr>
-                                               <td class="wd-xs">
-                                                   <div class="ph">
-                                                       <img src="img/dummy.png" alt="" class="media-box-object img-responsive img-rounded thumb64">
-                                                   </div>
-                                               </td>
-                                               <td>
-                                                   <div class="ph text-left">
-                                                       <h4 class="media-box-heading">Project A</h4>
-                                                       <small class="text-muted">Vestibulum ante ipsum primis in faucibus orci</small>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-sm hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0">Last change</p>
-                                                       <small class="text-muted">4 weeks ago</small>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-xs hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0 text-muted">
-                                                           <em class="icon-users mr fa-lg"></em>26</p>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-xs hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0 text-muted">
-                                                           <em class="icon-doc mr fa-lg"></em>3500</p>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-sm">
-                                                   <div class="ph">
-                                                       <progressbar value="80" type="success" class="m0 progress-xs">80%</progressbar>
-                                                   </div>
-                                               </td>
-                                           </tr>
-                                           </tbody>
-                                       </table>
-                                   </span>
-                                   <br>
-                                   <span class="list-group-item">
-                                       <table class="wd-wide">
-                                           <tbody>
-                                           <tr>
-                                               <td class="wd-xs">
-                                                   <div class="ph">
-                                                       <img src="img/dummy.png" alt="" class="media-box-object img-responsive img-rounded thumb64">
-                                                   </div>
-                                               </td>
-                                               <td>
-                                                   <div class="ph text-left">
-                                                       <h4 class="media-box-heading">Project A</h4>
-                                                       <small class="text-muted">Vestibulum ante ipsum primis in faucibus orci</small>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-sm hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0">Last change</p>
-                                                       <small class="text-muted">4 weeks ago</small>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-xs hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0 text-muted">
-                                                           <em class="icon-users mr fa-lg"></em>26</p>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-xs hidden-xs hidden-sm">
-                                                   <div class="ph">
-                                                       <p class="m0 text-muted">
-                                                           <em class="icon-doc mr fa-lg"></em>3500</p>
-                                                   </div>
-                                               </td>
-                                               <td class="wd-sm">
-                                                   <div class="ph">
-                                                       <progressbar value="80" type="success" class="m0 progress-xs">80%</progressbar>
-                                                   </div>
-                                               </td>
-                                           </tr>
-                                           </tbody>
-                                       </table>
-                                   </span>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <!-- ROW 3 -->
-                   <div class="row">
-                       <!-- START dashboard main content-->
-                       <div class="col-lg-12">
-                           <!-- START widget-->
-                           <div class="panel panel-default panel-demo">
-                               <div class="panel-heading">
-                                   <a href="#" data-tool="panel-refresh" data-toggle="tooltip" title="Refresh Panel" class="pull-right">
-                                       <em class="fa fa-refresh"></em>
-                                   </a>
-                                   <a href="#" data-tool="panel-collapse" data-toggle="tooltip" title="Collapse Panel" class="pull-right">
-                                       <em class="fa fa-minus"></em>
-                                   </a>
-                                   <div class="panel-title">Inbound visitor statistics</div>
-                               </div>
-                               <div class="panel-body" style="height:300px">
-                                   <div class="row">
-                                       Line:
-                                       <div data-bind="text: homeField"></div>
-                                   </div>
-                                   <div class="row">
-                                       <div class='liveExample'>
-                                           <p>First name: <input data-bind='value: firstName' /></p>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                           <!-- END widget-->
-                       </div>
+                           var m = [20, 120, 20, 120],
+                                   w = 1280 - m[1] - m[3],
+                                   h = 800 - m[0] - m[2],
+                                   i = 0,
+                                   root;
+
+                           var tree = d3.layout.tree()
+                                   .size([h, w]);
+
+                           var diagonal = d3.svg.diagonal()
+                                   .projection(function(d) { return [d.y, d.x]; });
+
+                           var vis = d3.select("#mlTree").append("svg:svg")
+                                   .attr("width", w + m[1] + m[3])
+                                   .attr("height", h + m[0] + m[2])
+                                   .append("svg:g")
+                                   .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+                           d3.json("js/vendor/d3/flare.json", function(json) {
+                               root = json;
+                               root.x0 = h / 2;
+                               root.y0 = 0;
+
+                               function toggleAll(d) {
+                                   if (d.children) {
+                                       d.children.forEach(toggleAll);
+                                       toggle(d);
+                                   }
+                               }
+
+                               // Initialize the display to show a few nodes.
+                               root.children.forEach(toggleAll);
+                               toggle(root.children[1]);
+                               toggle(root.children[1].children[2]);
+                               toggle(root.children[9]);
+                               toggle(root.children[9].children[0]);
+
+                               update(root);
+                           });
+
+                           function update(source) {
+                               var duration = d3.event && d3.event.altKey ? 5000 : 500;
+
+                               // Compute the new tree layout.
+                               var nodes = tree.nodes(root).reverse();
+
+                               // Normalize for fixed-depth.
+                               nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+                               // Update the nodes…
+                               var node = vis.selectAll("g.node")
+                                       .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+                               // Enter any new nodes at the parent's previous position.
+                               var nodeEnter = node.enter().append("svg:g")
+                                       .attr("class", "node")
+                                       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+                                       .on("click", function(d) { toggle(d); update(d); });
+
+                               nodeEnter.append("svg:circle")
+                                       .attr("r", 1e-6)
+                                       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+                               nodeEnter.append("svg:text")
+                                       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+                                       .attr("dy", ".35em")
+                                       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+                                       .text(function(d) { return d.name; })
+                                       .style("fill-opacity", 1e-6);
+
+                               // Transition nodes to their new position.
+                               var nodeUpdate = node.transition()
+                                       .duration(duration)
+                                       .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+                               nodeUpdate.select("circle")
+                                       .attr("r", 4.5)
+                                       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+                               nodeUpdate.select("text")
+                                       .style("fill-opacity", 1);
+
+                               // Transition exiting nodes to the parent's new position.
+                               var nodeExit = node.exit().transition()
+                                       .duration(duration)
+                                       .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+                                       .remove();
+
+                               nodeExit.select("circle")
+                                       .attr("r", 1e-6);
+
+                               nodeExit.select("text")
+                                       .style("fill-opacity", 1e-6);
+
+                               // Update the links…
+                               var link = vis.selectAll("path.link")
+                                       .data(tree.links(nodes), function(d) { return d.target.id; });
+
+                               // Enter any new links at the parent's previous position.
+                               link.enter().insert("svg:path", "g")
+                                       .attr("class", "link")
+                                       .attr("d", function(d) {
+                                           var o = {x: source.x0, y: source.y0};
+                                           return diagonal({source: o, target: o});
+                                       })
+                                       .transition()
+                                       .duration(duration)
+                                       .attr("d", diagonal);
+
+                               // Transition links to their new position.
+                               link.transition()
+                                       .duration(duration)
+                                       .attr("d", diagonal);
+
+                               // Transition exiting nodes to the parent's new position.
+                               link.exit().transition()
+                                       .duration(duration)
+                                       .attr("d", function(d) {
+                                           var o = {x: source.x, y: source.y};
+                                           return diagonal({source: o, target: o});
+                                       })
+                                       .remove();
+
+                               // Stash the old positions for transition.
+                               nodes.forEach(function(d) {
+                                   d.x0 = d.x;
+                                   d.y0 = d.y;
+                               });
+                           }
+
+                           // Toggle children.
+                           function toggle(d) {
+                               if (d.children) {
+                                   d._children = d.children;
+                                   d.children = null;
+                               } else {
+                                   d.children = d._children;
+                                   d._children = null;
+                               }
+                           }
+
+                       </script>
                    </div>
                </div>
-
                <div class="col-xs-3">
                     <h2 class="text-thin">Quick Info</h2>
                     <ul>

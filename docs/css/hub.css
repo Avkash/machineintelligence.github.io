@@ -145,7 +145,7 @@ hr {
   margin: 0;
   border: 1px solid #dde6e9;
   border-radius: 0;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -372,11 +372,16 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #313131;
   height: 60px;
   border-top: 1px solid #e4eaec;
   padding: 20px;
   z-index: 109;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, #313131 0%, #1c96bc 100%);
+  background-image: -o-linear-gradient(left, #313131 0%, #1c96bc 100%);
+  background-image: linear-gradient(to right, #313131 0%, #1c96bc 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffFAE91F', endColorstr='#ff313131', GradientType=1);
 }
 .wrapper > footer > p {
   margin: 0;
@@ -989,7 +994,8 @@ _:-ms-lang(x),
     text-align: center;
   }
   .topnavbar .navbar-header .navbar-brand {
-    background-color: #FAE91F;
+    /* Avkash Top left logo area FAE91F*/
+    background-color: #4c4f53!important;
     border-right: 1px solid #d9d9d9;
     width: 100%;
   }
@@ -1056,7 +1062,7 @@ _:-ms-lang(x),
   right: 0;
   z-index: 20;
   font-size: 16px;
-  line-height: 55px;
+  line-height: 40px;
   color: #fff;
   padding-top: 0;
   padding-bottom: 0;
@@ -1154,10 +1160,10 @@ _:-ms-lang(x),
 @media only screen and (min-width: 768px) {
   .topnavbar {
     border: 0;
-    background-color: #FAE91F;
-    background-image: -webkit-linear-gradient(left, #FAE91F 0%, #313131 100%);
-    background-image: -o-linear-gradient(left, #FAE91F 0%, #313131 100%);
-    background-image: linear-gradient(to right, #FAE91F 0%, #313131 100%);
+    background-color: #19a5d1;
+    background-image: -webkit-linear-gradient(left, #19a5d1 0%, #313131 100%);
+    background-image: -o-linear-gradient(left, #19a5d1 0%, #313131 100%);
+    background-image: linear-gradient(to right, #19a5d1 0%, #313131 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffFAE91F', endColorstr='#ff313131', GradientType=1);
   }
@@ -1270,19 +1276,28 @@ _:-ms-lang(x),
   width: 1px;
   -webkit-transform: translateZ(0px);
 }
+/*
+  Avkash "Machine Learning Hub" Text settings
+*/
 .sidebar .nav-heading {
-  padding: 12px 15px;
+  padding: 1px 1px;
+  height: 60px;
   color: #919da8;
-  font-size: 13px;
+  font-size: 18px;
   letter-spacing: .035em;
   pointer-events: none;
   cursor: default;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: -8px;
+  margin-right: -8px;
+  background-color: #f6f6f6;
 }
 .sidebar > .nav {
   position: relative;
 }
 .sidebar > .nav > .nav-heading:first-child {
-  padding-top: 20px;
+  padding-top: 1px;
 }
 .sidebar > .nav > li {
   border-left: 3px solid transparent;
@@ -1295,7 +1310,7 @@ _:-ms-lang(x),
   padding: 12px 24px;
   color: #515253;
   letter-spacing: .025em;
-  font-weight: normal;
+  font-weight: bold;
   cursor: pointer;
 }
 .sidebar > .nav > li > a:focus,
@@ -1351,7 +1366,7 @@ _:-ms-lang(x),
 .sidebar-subnav > .sidebar-subnav-header {
   color: #515253;
   display: none;
-  padding: 10px 20px;
+  padding: 1px 1px;
   font-weight: bold;
 }
 .sidebar-subnav > li {
@@ -1361,7 +1376,8 @@ _:-ms-lang(x),
 .sidebar-subnav > li > .nav-item {
   display: block;
   position: relative;
-  padding: 10px 20px;
+  /* avkash - height of menu items when click happens and sub menu opens*/
+  padding: 8px 10px;
   padding-left: 53px;
   font-weight: normal;
   background-color: transparent !important;
@@ -1406,7 +1422,7 @@ _:-ms-lang(x),
 }
 .sidebar-subnav.nav-floating li > a,
 .sidebar-subnav.nav-floating li > .nav-item {
-  padding-left: 20px;
+  padding-left: 1px;
 }
 .sidebar-subnav.nav-floating li > a em,
 .sidebar-subnav.nav-floating li > .nav-item em {
