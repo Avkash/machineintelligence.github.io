@@ -48,35 +48,3 @@
         });
     }
 })();
-
-/*
-(function () {
-    Sammy(function() {
-        this.get('#/:link', function() {
-            getView(this.params["link"]);
-        });
-        this.notFound = function(){
-            console.log("not found");
-        }
-    }).run();
-
-    function getView(view) {
-        console.log("view: " + view);
-        AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
-        var urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
-        console.log("urlStr: " + urlStr);
-        $.ajax({
-            url: urlStr, //url: "pages/".concat(view, ".html"),
-            type: "GET",
-            dataType: "html",
-            success: function (data) {
-                var element = $("#content-holder").find(".main-content-holder");
-                element.html(data);
-                ko.cleanNode(element[0]);
-                ko.applyBindings(AppViewModel.contentViewModel(), element[0]);
-            }
-        });
-    }
-})();
-
-    */
