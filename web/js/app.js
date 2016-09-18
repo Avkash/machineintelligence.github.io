@@ -714,7 +714,6 @@ ko.applyBindings(AppViewModel);
 (function(window, document, $, undefined){
     $(function(){
         location.hash = "/".concat("home");
-        //$("#main-content-holder").load("pages/home.html");
       });
 })(window, document, window.jQuery);
 

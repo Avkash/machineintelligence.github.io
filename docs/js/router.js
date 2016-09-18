@@ -1,8 +1,25 @@
 (function () {
     Sammy(function() {
+        this.get('#/deeplearning/python/:link', function() {
+            AppViewModel.masterTab("Deep Learning");
+            AppViewModel.masterDir("Python");
+            AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
+            //getView(this.params["link"]);
+            getView("master");
+        });
+
+        this.get('#/deeplearning/java/:link', function() {
+            AppViewModel.masterTab("Deep Learning");
+            AppViewModel.masterDir("Java");
+            AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
+            //getView(this.params["link"]);
+            getView("master");
+        });
+
         this.get('#/:link', function() {
             getView(this.params["link"]);
         });
+
         this.notFound = function(){
             console.log("not found");
         }
@@ -14,10 +31,6 @@
         console.log("view: " + view);
         if (view.startsWith("algo_")) {
             urlStr = "pages/algos/".concat(AppViewModel.linksHtml()[view]);
-        } else if (view.startsWith("h2o_")) {
-            urlStr = "pages/h2o/".concat(AppViewModel.linksHtml()[view]);
-        } else if (view.startsWith("sw_")) {
-            urlStr = "pages/sw/".concat(AppViewModel.linksHtml()[view]);
         } else {
             urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
         }
@@ -27,10 +40,6 @@
             type: "GET",
             dataType: "html",
             success: function (data) {
-                //AppViewModel.contentView(data);
-                //AppViewModel.pageLoaderSensor(!AppViewModel.pageLoaderSensor());
-
-                //var element = $("#content-holder").find(".content");
                 var element = $("#content-holder").find(".main-content-holder");
                 element.html(data);
                 ko.cleanNode(element[0]);

@@ -12,31 +12,18 @@ function AppViewModel() {
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social",
         "tensorflow", "mxnet", "paddle", "caffe",
-        "h2o_arch","h2o_dl", "h2o_gs", "h2o_docs", "h2o_faq", "h2o_tut",
-        "sw_docs", "sw_arch",
+        "dl4j", "ndimaj", "encog",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca"]);
+
     this.linksHtml = ko.observable({
         "home" : "home.html",
-        "tensorflow" : "master.html",
-        "mxnet" : "master.html",
-        "paddle" : "master.html",
-        "caffe" : "master.html",
+        "master" : "master.html",
         "thisweek" : "thisweek.html",
         "links": "h2o_links.html",
         "github" : "h2o_github.html",
         "videos": "h2o_videos.html",
         "keywords" : "glossary-keywords.html",
         "social" :  "h2o_social.html",
-        /* H2O */
-        "h2o_arch" : "h2o_arch.html",
-        "h2o_dl" : "h2o_download.html",
-        "h2o_gs" : "h2o_started.html",
-        "h2o_docs": "h2o_docs.html",
-        "h2o_faq": "h2o_faq.html",
-        "h2o_tut": "h2o_tut.html",
-        /* Sparkling Water*/
-        "sw_docs" : "sw_docs.html",
-        "sw_arch" : "sw_arch.html",
         /* Algorithms*/
         "algo_glm" : "algo_glm.html",
         "algo_gbm" : "algo_gbm.html",
@@ -51,26 +38,13 @@ function AppViewModel() {
 
     this.viewModelPool = ko.observable({
         "home": HomeViewModel,
-        "tensorflow" : MasterPageViewModel,
-        "mxnet" : MasterPageViewModel,
-        "paddle" : MasterPageViewModel,
-        "caffe" : MasterPageViewModel,
+        "master" : MasterPageViewModel,
         "thisweek": ThisWeekViewModel,
         "links": LinksViewModel,
         "github": GitHubViewModel,
         "videos" : VideosViewModel,
         "keywords" : KeywordsViewModel,
         "social" : SocialViewModel,
-        /* H2O */
-        "h2o_arch" : H2OArchViewModel,
-        "h2o_dl" : H2ODownloadViewModel,
-        "h2o_gs" : H2OStartedViewModel,
-        "h2o_faq": H2OFaqViewModel,
-        "h2o_docs": H2ODocsViewModel,
-        "h2o_tut" : H2OTutorialViewModel,
-        /* Sparkling Water */
-        "sw_docs" : SwDocsViewModel,
-        "sw_arch" : SwArchViewModel,
         /* Algorithms*/
         "algo_glm" : AlgoGlmViewModel,
         "algo_gbm" : AlgoGbmViewModel,
@@ -83,72 +57,21 @@ function AppViewModel() {
         "algo_pca" : AlgoPcaViewModel
     });
 
+    this.masterCollection = ko.observable({
+         "tensorflow" : "TenserFlow from Google",
+         "mxnet" : "MxNet",
+         "paddle" : "Paddle from Baidu",
+         "caffe" : "Caffe from Berkley",
+         "dl4j" : "Deeplearning 4 Java",
+         "ndimaj" : "N-Dimensional Array for Java",
+         "encog" : "EnCog"
+    });
+
     this.contentView = ko.observable();
     this.changeUrl = function (linkKey) {
-        switch(linkKey) {
-            case "tensorflow":
-                this.masterTab("DL");
-                this.masterDir("Python");
-                this.masterLink("TensorFlow");
-                break;
-            case "mxnet":
-                this.masterTab("DL");
-                this.masterDir("Python");
-                this.masterLink("MxNet");
-                break;
-            case "paddle":
-                this.masterTab("DL");
-                this.masterDir("Python");
-                this.masterLink("Paddle");
-                break;
-            case "caffe":
-                this.masterTab("DL");
-                this.masterDir("Python");
-                this.masterLink("Caffe");
-                break;
-        }
         location.hash = "/".concat(linkKey);
     };
 
-
-    /*
-    this.links = ko.observableArray([   "home", "master", "ml_lib_tensorflow", "ml_lib_mxnet" ]);
-
-    this.linksHtml = ko.observable({
-        "home": "home.html",
-        "master": "master.html",
-        "ml_lib_tensorflow" : "master.html",
-        "ml_lib_mxnet" : "master.html"
-    });
-
-    this.viewModelPool = ko.observable({
-        "home": HomeViewModel,
-        "master": MasterPageViewModel,
-        "ml_lib_tensorflow": MasterPageViewModel,
-        "ml_lib_mxnet" : MasterPageViewModel
-    });
-
-
-
-    this.changeUrl = function (linkKey) {
-        switch(linkKey) {
-            case "ml_lib_tensorflow":
-                this.masterTab("ml");
-                this.masterDir("lib");
-                this.masterLink("tensorflow");
-                break;
-            case "ml_lib_mxnet":
-                this.masterTab("ml");
-                this.masterDir("lib");
-                this.masterLink("mxnet");
-                break;
-        }
-        location.hash = "/".concat(linkKey);
-    };
-
-    this.contentView = ko.observable();
-
-    */
 
     this.visibleHeight = ko.computed(function() {
         return screen.height;
