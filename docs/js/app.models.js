@@ -11,14 +11,17 @@ function AppViewModel() {
     this.masterDir= ko.observable("Home");
     this.masterLink= ko.observable("home");
 
-    this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social", "ml_lib_tensorflow", "ml_lib_mxnet",
+    this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social",
+        "tensorflow", "mxnet", "paddle", "caffe",
         "h2o_arch","h2o_dl", "h2o_gs", "h2o_docs", "h2o_faq", "h2o_tut",
         "sw_docs", "sw_arch",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca"]);
     this.linksHtml = ko.observable({
         "home" : "home.html",
-        "ml_lib_tensorflow" : "master.html",
-        "ml_lib_mxnet" : "master.html",
+        "tensorflow" : "master.html",
+        "mxnet" : "master.html",
+        "paddle" : "master.html",
+        "caffe" : "master.html",
         "thisweek" : "thisweek.html",
         "links": "h2o_links.html",
         "github" : "h2o_github.html",
@@ -49,8 +52,10 @@ function AppViewModel() {
 
     this.viewModelPool = ko.observable({
         "home": HomeViewModel,
-        "ml_lib_tensorflow" : MasterPageViewModel,
-        "ml_lib_mxnet" : MasterPageViewModel,
+        "tensorflow" : MasterPageViewModel,
+        "mxnet" : MasterPageViewModel,
+        "paddle" : MasterPageViewModel,
+        "caffe" : MasterPageViewModel,
         "thisweek": ThisWeekViewModel,
         "links": LinksViewModel,
         "github": GitHubViewModel,
@@ -82,15 +87,25 @@ function AppViewModel() {
     this.contentView = ko.observable();
     this.changeUrl = function (linkKey) {
         switch(linkKey) {
-            case "ml_lib_tensorflow":
-                this.masterTab("ml");
-                this.masterDir("lib");
-                this.masterLink("tensorflow");
+            case "tensorflow":
+                this.masterTab("DL");
+                this.masterDir("Python");
+                this.masterLink("TensorFlow");
                 break;
-            case "ml_lib_mxnet":
-                this.masterTab("ml");
-                this.masterDir("lib");
-                this.masterLink("mxnet");
+            case "mxnet":
+                this.masterTab("DL");
+                this.masterDir("Python");
+                this.masterLink("MxNet");
+                break;
+            case "paddle":
+                this.masterTab("DL");
+                this.masterDir("Python");
+                this.masterLink("Paddle");
+                break;
+            case "caffe":
+                this.masterTab("DL");
+                this.masterDir("Python");
+                this.masterLink("Caffe");
                 break;
         }
         location.hash = "/".concat(linkKey);

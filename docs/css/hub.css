@@ -6,8 +6,16 @@
 .heightSet900 {
   height: 900px;
 }
+.heightSet850 {
+  height: 850px;
+  overflow: scroll;
+}
 .heightSet800 {
   height: 800px;
+  overflow: scroll;
+}
+.heightSet750 {
+  height: 750px;
   overflow: scroll;
 }
 .heightSet700 {

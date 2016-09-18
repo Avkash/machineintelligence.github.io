@@ -259,9 +259,9 @@
                       <div role="tabpanel">
                           <!-- Nav tabs-->
                           <ul role="tablist" class="nav nav-tabs">
-                              <li role="presentation" class="active"><a href="#Key_ml" aria-controls="Key_ml" role="tab" data-toggle="tab" aria-expanded="true">ML</a>
+                              <li role="presentation" class="active"><a href="#Key_dl" aria-controls="Key_dl" role="tab" data-toggle="tab" aria-expanded="false">DL</a>
                               </li>
-                              <li role="presentation" class=""><a href="#Key_dl" aria-controls="Key_dl" role="tab" data-toggle="tab" aria-expanded="false">DL</a>
+                              <li role="presentation" class=""><a href="#Key_ml" aria-controls="Key_ml" role="tab" data-toggle="tab" aria-expanded="true">ML</a>
                               </li>
                               <li role="presentation" class=""><a href="#Key_bd" aria-controls="Key_bd" role="tab" data-toggle="tab" aria-expanded="false">Big Data</a>
                               </li>
@@ -270,7 +270,79 @@
                           </ul>
                           <!-- Tab panes-->
                           <div class="tab-content">
-                              <div id="Key_ml" role="tabpanel" class="tab-pane active">
+                              <div id="Key_dl" role="tabpanel" class="tab-pane active">
+                                  <div class="row">
+                                      <!-- START sidebar nav-->
+                                      <ul class="nav">
+                                          <!-- Iterates over all sidebar items-->
+                                          <li class="nav-heading ">
+                                              <span data-localize="sidebar.heading.HEADER">Deep Learning Hub</span><br>
+                                              <span><small>(Open Source Libraries)</small></span>
+                                          </li>
+                                          <li class=" " style="margin-left:-10px">
+                                              <a href="#menuid-dl-python" title="Menu" data-toggle="collapse">
+                                                  <em class="icon-folder"></em>
+                                                  <span class="text-bold">Python</span>
+                                              </a>
+                                              <ul id="menuid-dl-python" class="nav sidebar-subnav collapse">
+                                                  <li class="sidebar-subnav-header">Python</li>
+                                                  <li class=" ">
+                                                      <a href="#" data-bind="click: root.changeUrl('tensorflow');"  title="TensorFlow">
+                                                          <em class="fa fa-angle-right"></em>
+                                                          <span>TensorFlow</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class=" ">
+                                                      <a href="#" data-bind="click: root.changeUrl('mxnet');"  title="MxNet">
+                                                          <em class="fa fa-angle-right"></em>
+                                                          <span>MxNet</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class=" ">
+                                                      <a href="#" data-bind="click: root.changeUrl('paddle');"  title="Paddle">
+                                                          <em class="fa fa-angle-right"></em>
+                                                          <span>Paddle</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class=" ">
+                                                      <a href="#" data-bind="click: root.changeUrl('caffe')"  title="Caffe">
+                                                          <em class="fa fa-angle-right"></em>
+                                                          <span>Caffe</span>
+                                                      </a>
+                                                  </li>
+                                              </ul>
+                                          </li>
+                                          <li class=" " style="margin-left:-10px">
+                                              <a href="#menuid-dl-java" title="Menu" data-toggle="collapse">
+                                                  <em class="icon-folder"></em>
+                                                  <span class="text-bold">Java</span>
+                                              </a>
+                                              <ul id="menuid-dl-java" class="nav sidebar-subnav collapse">
+                                                  <li class="sidebar-subnav-header">Java</li>
+                                                  <li class=" ">
+                                                      <a href="#" data-bind="click: root.changeUrl('dl_python_dl4j');"  title="DL4J">
+                                                          <em class="fa fa-angle-right"></em>
+                                                          <span>DeepLearning4Java</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class=" ">
+                                                      <a href="#" data-bind="click: root.changeUrl('dl_python_nd4j');"  title="N-Dimensional Arrays">
+                                                          <em class="fa fa-angle-right"></em>
+                                                          <span>N-Dimensional Arrays for Java</span>
+                                                      </a>
+                                                  </li>
+                                                  <li class=" ">
+                                                      <a href="#" data-bind="click: root.changeUrl('dl_python_encog');"  title="Encog">
+                                                          <em class="fa fa-angle-right"></em>
+                                                          <span>EnCog</span>
+                                                      </a>
+                                                  </li>
+                                              </ul>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div id="Key_ml" role="tabpanel" class="tab-pane">
                                   <div class="row">
                                       <!-- START sidebar nav-->
                                       <ul class="nav">
@@ -281,32 +353,20 @@
                                           <li class=" " style="margin-left:-10px">
                                               <a href="#menuid-prod" title="Menu" data-toggle="collapse">
                                                   <em class="icon-folder"></em>
-                                                  <span class="text-bold">Libraries</span>
+                                                  <span class="text-bold">Open Source Libraries</span>
                                               </a>
                                               <ul id="menuid-prod" class="nav sidebar-subnav collapse">
-                                                  <li class="sidebar-subnav-header">Libraries</li>
+                                                  <li class="sidebar-subnav-header">Open Source Libraries</li>
                                                   <li class=" ">
-                                                      <a href="#" data-bind="click: root.changeUrl('ml_lib_tensorflow');"  title="Sub Menu">
+                                                      <a href="#" data-bind="click: root.changeUrl('ml_lib_tensorflow');"  title="TensorFlow">
                                                           <em class="fa fa-angle-right"></em>
                                                           <span>TensorFlow</span>
                                                       </a>
                                                   </li>
                                                   <li class=" ">
-                                                      <a href="#" data-bind="click: root.changeUrl('ml_lib_mxnet');"  title="Sub Menu">
+                                                      <a href="#" data-bind="click: root.changeUrl('ml_lib_mxnet');"  title="MxNet">
                                                           <em class="fa fa-angle-right"></em>
                                                           <span>MxNet</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class=" ">
-                                                      <a href="#" data-bind="click: root.changeUrl('algo_dl');"  title="Sub Menu">
-                                                          <em class="fa fa-angle-right"></em>
-                                                          <span>Deep Learning</span>
-                                                      </a>
-                                                  </li>
-                                                  <li class=" ">
-                                                      <a href="#" data-bind="click: root.changeUrl('algo_drf')"  title="Sub Menu">
-                                                          <em class="fa fa-angle-right"></em>
-                                                          <span>DRF</span>
                                                       </a>
                                                   </li>
                                                   <li class=" ">
@@ -407,40 +467,23 @@
                                           <li class=" " style="margin-left:-10px">
                                               <a href="#menuid-comp" title="Menu" data-toggle="collapse">
                                                   <em class="icon-folder"></em>
-                                                  <span class="text-bold">Companies</span>
+                                                  <span class="text-bold">Projects</span>
                                               </a>
                                               <ul id="menuid-comp" class="nav sidebar-subnav collapse">
-                                                  <li class="sidebar-subnav-header">Companies</li>
+                                                  <li class="sidebar-subnav-header">Projects</li>
                                                   <li class=" ">
                                                       <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
                                                           <em class="fa fa-angle-right"></em>
                                                           <span>DataRPM</span>
                                                       </a>
                                                   </li>
+                                                  <li class=" ">
+                                                      <a href="#" data-bind="click: root.changeUrl('ml_proj_deepdream')"  title="DataRPM">
+                                                          <em class="fa fa-angle-right"></em>
+                                                          <span>Google DeepDream</span>
+                                                      </a>
+                                                  </li>
                                               </ul>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div id="Key_dl" role="tabpanel" class="tab-pane">
-                                  <div class="row">
-                                      <!-- START sidebar nav-->
-                                      <ul class="nav">
-                                          <!-- Iterates over all sidebar items-->
-                                          <li class="nav-heading ">
-                                              <span data-localize="sidebar.heading.HEADER">Deep Learning Hub</span>
-                                          </li>
-                                          <li class=" active" class="list-link-item-text">
-                                              <a href="#" data-bind="click: root.changeUrl('home')" title="Home">
-                                                  <em class="fa fa-file-o"></em>
-                                                  <span>Home2</span>
-                                              </a>
-                                          </li>
-                                          <li class="" class="list-link-item-text">
-                                              <a href="#" data-bind="click: root.changeUrl('thisweek')" title="Home">
-                                                  <em class="fa fa-file-o"></em>
-                                                  <span>This Week @ H22o</span>
-                                              </a>
                                           </li>
                                       </ul>
                                   </div>
