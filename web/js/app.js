@@ -14,6 +14,12 @@ var AppViewModel = new AppViewModel();
 ko.applyBindings(AppViewModel);
 
 
+//$.AppViewModel = null;
+//var shared = {};
+//shared.rootVM = new AppViewModel();
+//ko.applyBindings(shared.rootVM);
+
+
 (function(window, document, $, undefined){
 
   if (typeof $ === 'undefined') { throw new Error('This application\'s JavaScript requires jQuery'); }
@@ -710,12 +716,35 @@ ko.applyBindings(AppViewModel);
 // Custom jQuery
 // ----------------------------------- 
 
+/*
+function getMasterJson(pageId){
+    $.get("pages/libs.json", function (data, status) {
+        var resultObject = {};
+        for(var i=0;i<data.length;i++) {
+            var listId = data[i].id;
+            if (listId == pageId) {
+                console.log("Found: " + listId + " - " + pageId);
+                console.log("data[i]: " + data[i].title);
+                resultObject = data[i];
+                console.log("resultObjectX: " + resultObject + " - " + data[i]);
+                break;
+            }
+        }
+        console.log("resultObjectBC: " + resultObject.title);
+        return resultObject;
+    });
+}
+*/
 
 (function(window, document, $, undefined){
     $(function(){
         location.hash = "/".concat("home");
       });
 })(window, document, window.jQuery);
+
+
+
+
 
 /*
 function launchPageURL(pageLink){

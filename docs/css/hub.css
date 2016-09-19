@@ -1007,7 +1007,7 @@ _:-ms-lang(x),
   .topnavbar .navbar-header .navbar-brand {
     /* Avkash Top left logo area FAE91F*/
     background-color: #4c4f53!important;
-    border-right: 1px solid #d9d9d9;
+    /* Avkash disabling right border next to logo*/
     width: 100%;
   }
 }

@@ -7,12 +7,14 @@ function AppViewModel() {
     this.currentWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     this.currentHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
+    this.masterPageId = ko.observable("h2o");
+    this.masterPageJson = ko.observableArray([]);
     this.masterTab = ko.observable("Deeplearn");
     this.masterDir= ko.observable("Home");
     this.masterLink= ko.observable("home");
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social",
-        "tensorflow", "mxnet", "paddle", "caffe",
+        "h2o", "tensorflow", "mxnet", "paddle", "caffe",
         "dl4j", "ndimaj", "encog",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca"]);
 
@@ -59,7 +61,8 @@ function AppViewModel() {
     });
 
     this.masterCollection = ko.observable({
-         "tensorflow" : "TenserFlow from Google",
+         "h2o" : "H2O Machine Learning in Java, Python, Scala and R",
+         "tensorflow" : "TensorFlow from Google",
          "mxnet" : "MxNet",
          "paddle" : "Paddle from Baidu",
          "caffe" : "Caffe from Berkley",
@@ -81,6 +84,19 @@ function AppViewModel() {
     this.visibleWidth = ko.computed(function() {
         return screen.width;
     }, this);
+
+
+    self.getMasterJsonFunction = function (pageId){
+        $.get("pages/libs.json", function (data, status) {
+            for(var i=0;i<data.length;i++) {
+                var listId = data[i].id;
+                if (listId == pageId) {
+                    self.masterPageJson(data[i]);
+                    break;
+                }
+            }
+        });
+    }
 
 
 }
@@ -138,6 +154,8 @@ function GitHubViewModel(){
 function HomeViewModel() {
 
     var self = this;
+    var base = {};
+
     this.root = AppViewModel;
 
     this.firstName = ko.observable("asc");
@@ -172,12 +190,38 @@ function MainViewModel() {
 function MasterPageViewModel() {
 
     var self = this;
+    var base = {};
     this.root = AppViewModel;
+
     this.firstName = ko.observable("asc");
-    this.pageHeader = ko.observable("Master");
     this.homeField = ko.observable("this is the test field for HomeViewModel");
 
+    self.pageMainHeader = ko.observable("Page Heading...");
+    self.pageSubHeader = ko.observable("Sub Heading..");
+    self.pageContent = ko.observable("Content");
+    self.pageContentLinks = ko.observable("ContentLinks");
 
+    self.load = function(){
+        root.getMasterJsonFunction(root.masterPageId());
+        getPageJsonData();
+    };
+
+    self.getPageJsonData = function () {
+        console.log("root.masterPageJson()" + root.masterPageJson().title);
+        if (root.masterPageJson().title != null) {
+            self.pageMainHeader(root.masterPageJson().title);
+        }
+        if (root.masterPageJson().subTitle != null) {
+            self.pageSubHeader(root.masterPageJson().subTitle);
+        }
+        if (root.masterPageJson().contents > 0) {
+
+        }
+        if (root.masterPageJson().links > 0) {
+
+        }
+    };
+    self.load();
 }
 function SocialViewModel(){
 

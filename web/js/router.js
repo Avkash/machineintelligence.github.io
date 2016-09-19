@@ -3,6 +3,7 @@
         this.get('#/deeplearning/python/:link', function() {
             AppViewModel.masterTab("Deep Learning");
             AppViewModel.masterDir("Python");
+            AppViewModel.masterPageId(this.params["link"]);
             AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
             //getView(this.params["link"]);
             getView("master");
@@ -11,6 +12,7 @@
         this.get('#/deeplearning/java/:link', function() {
             AppViewModel.masterTab("Deep Learning");
             AppViewModel.masterDir("Java");
+            AppViewModel.masterPageId(this.params["link"]);
             AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
             //getView(this.params["link"]);
             getView("master");
@@ -28,13 +30,11 @@
     function getView(view) {
         AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
         var urlStr;
-        console.log("view: " + view);
         if (view.startsWith("algo_")) {
             urlStr = "pages/algos/".concat(AppViewModel.linksHtml()[view]);
         } else {
             urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
         }
-        console.log("urlStr: " + urlStr);
         $.ajax({
             url: urlStr, //url: "pages/".concat(view, ".html"),
             type: "GET",

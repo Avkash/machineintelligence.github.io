@@ -6,12 +6,14 @@ function AppViewModel() {
     this.currentWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     this.currentHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
+    this.masterPageId = ko.observable("h2o");
+    this.masterPageJson = ko.observableArray([]);
     this.masterTab = ko.observable("Deeplearn");
     this.masterDir= ko.observable("Home");
     this.masterLink= ko.observable("home");
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social",
-        "tensorflow", "mxnet", "paddle", "caffe",
+        "h2o", "tensorflow", "mxnet", "paddle", "caffe",
         "dl4j", "ndimaj", "encog",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca"]);
 
@@ -58,7 +60,8 @@ function AppViewModel() {
     });
 
     this.masterCollection = ko.observable({
-         "tensorflow" : "TenserFlow from Google",
+         "h2o" : "H2O Machine Learning in Java, Python, Scala and R",
+         "tensorflow" : "TensorFlow from Google",
          "mxnet" : "MxNet",
          "paddle" : "Paddle from Baidu",
          "caffe" : "Caffe from Berkley",
@@ -80,6 +83,19 @@ function AppViewModel() {
     this.visibleWidth = ko.computed(function() {
         return screen.width;
     }, this);
+
+
+    self.getMasterJsonFunction = function (pageId){
+        $.get("pages/libs.json", function (data, status) {
+            for(var i=0;i<data.length;i++) {
+                var listId = data[i].id;
+                if (listId == pageId) {
+                    self.masterPageJson(data[i]);
+                    break;
+                }
+            }
+        });
+    }
 
 
 }

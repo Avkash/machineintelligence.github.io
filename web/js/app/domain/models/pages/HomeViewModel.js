@@ -2,6 +2,8 @@
 function HomeViewModel() {
 
     var self = this;
+    var base = {};
+
     this.root = AppViewModel;
 
     this.firstName = ko.observable("asc");
