@@ -4,11 +4,14 @@ function AppViewModel() {
     var self = this;
     this.contentViewModel = ko.observable();
 
+
     this.currentWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     this.currentHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
+    this.testWord = ko.observable("Avkash");
+
     this.masterPageId = ko.observable("h2o");
-    this.masterPageJson = ko.observableArray([]);
+    this.masterPageJson = ko.observable(""); //ko.observableArray([]);
     this.masterTab = ko.observable("Deeplearn");
     this.masterDir= ko.observable("Home");
     this.masterLink= ko.observable("home");
@@ -16,6 +19,7 @@ function AppViewModel() {
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social",
         "h2o", "tensorflow", "mxnet", "paddle", "caffe",
         "dl4j", "ndimaj", "encog",
+        "convnetjs",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca"]);
 
     this.linksHtml = ko.observable({
@@ -68,14 +72,15 @@ function AppViewModel() {
          "caffe" : "Caffe from Berkley",
          "dl4j" : "Deeplearning 4 Java",
          "ndimaj" : "N-Dimensional Array for Java",
-         "encog" : "EnCog"
+         "encog" : "EnCog",
+         "convnetjs": "ConvNetJS"
     });
 
     this.contentView = ko.observable();
+
     this.changeUrl = function (linkKey) {
         location.hash = "/".concat(linkKey);
     };
-
 
     this.visibleHeight = ko.computed(function() {
         return screen.height;
@@ -87,11 +92,11 @@ function AppViewModel() {
 
 
     self.getMasterJsonFunction = function (pageId){
+        //console.log("getMasterJsonFunction: " + root.masterPageId() + " / " + root.masterPageJson());
         $.get("pages/libs.json", function (data, status) {
             for(var i=0;i<data.length;i++) {
-                var listId = data[i].id;
-                if (listId == pageId) {
-                    self.masterPageJson(data[i]);
+                if (data[i].id == pageId) {
+                    self.masterPageJson(JSON.stringify(data[i]));
                     break;
                 }
             }
@@ -201,25 +206,28 @@ function MasterPageViewModel() {
     self.pageContent = ko.observable("Content");
     self.pageContentLinks = ko.observable("ContentLinks");
 
+    self.getPageJsonData = function (localObjStr) {
+        //console.log("root.masterPageJson() -> " + localObjStr);
+        if (localObjStr.trim().length > 0) {
+            var localObj = JSON.parse(localObjStr);
+            if (localObj.title != null) {
+                self.pageMainHeader(localObj.title);
+            }
+            if (root.masterPageJson().subTitle != null) {
+                self.pageSubHeader(localObj.subTitle);
+            }
+            if (localObj.contents > 0) {
+
+            }
+            if (localObj.links > 0) {
+
+            }
+        }
+    };
     self.load = function(){
         root.getMasterJsonFunction(root.masterPageId());
-        getPageJsonData();
-    };
-
-    self.getPageJsonData = function () {
-        console.log("root.masterPageJson()" + root.masterPageJson().title);
-        if (root.masterPageJson().title != null) {
-            self.pageMainHeader(root.masterPageJson().title);
-        }
-        if (root.masterPageJson().subTitle != null) {
-            self.pageSubHeader(root.masterPageJson().subTitle);
-        }
-        if (root.masterPageJson().contents > 0) {
-
-        }
-        if (root.masterPageJson().links > 0) {
-
-        }
+        //console.log("Log: " + root.masterPageId() + " / " + root.masterPageJson());
+        getPageJsonData(root.masterPageJson());
     };
     self.load();
 }

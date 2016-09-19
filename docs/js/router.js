@@ -1,11 +1,11 @@
 (function () {
     Sammy(function() {
+        console.log("window.location.hash: " + window.location.hash);
         this.get('#/deeplearning/python/:link', function() {
             AppViewModel.masterTab("Deep Learning");
             AppViewModel.masterDir("Python");
             AppViewModel.masterPageId(this.params["link"]);
             AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
-            //getView(this.params["link"]);
             getView("master");
         });
 
@@ -14,7 +14,13 @@
             AppViewModel.masterDir("Java");
             AppViewModel.masterPageId(this.params["link"]);
             AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
-            //getView(this.params["link"]);
+            getView("master");
+        });
+        this.get('#/deeplearning/js/:link', function() {
+            AppViewModel.masterTab("Deep Learning");
+            AppViewModel.masterDir("JavaScript");
+            AppViewModel.masterPageId(this.params["link"]);
+            AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
             getView("master");
         });
 
@@ -23,17 +29,15 @@
         });
 
         this.notFound = function(){
-            console.log("not found");
+            //console.log("not found");
         }
     }).run();
 
     function getView(view) {
         AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
-        var urlStr;
+        var urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
         if (view.startsWith("algo_")) {
             urlStr = "pages/algos/".concat(AppViewModel.linksHtml()[view]);
-        } else {
-            urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
         }
         $.ajax({
             url: urlStr, //url: "pages/".concat(view, ".html"),
