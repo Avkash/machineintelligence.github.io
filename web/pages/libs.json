@@ -136,5 +136,52 @@
         "linkInfo" : "hello Y world"
       }
     ]
+  },
+  {
+    "id" : "convnetjs",
+    "title": "ConvNetJS",
+    "subTitle" : "ConvNetJS is a Javascript library for training Deep Learning models (Neural Networks) entirely in your browser",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
   }
+
 ]

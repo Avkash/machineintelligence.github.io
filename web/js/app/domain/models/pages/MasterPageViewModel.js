@@ -12,25 +12,28 @@ function MasterPageViewModel() {
     self.pageContent = ko.observable("Content");
     self.pageContentLinks = ko.observable("ContentLinks");
 
+    self.getPageJsonData = function (localObjStr) {
+        //console.log("root.masterPageJson() -> " + localObjStr);
+        if (localObjStr.trim().length > 0) {
+            var localObj = JSON.parse(localObjStr);
+            if (localObj.title != null) {
+                self.pageMainHeader(localObj.title);
+            }
+            if (root.masterPageJson().subTitle != null) {
+                self.pageSubHeader(localObj.subTitle);
+            }
+            if (localObj.contents > 0) {
+
+            }
+            if (localObj.links > 0) {
+
+            }
+        }
+    };
     self.load = function(){
         root.getMasterJsonFunction(root.masterPageId());
-        getPageJsonData();
-    };
-
-    self.getPageJsonData = function () {
-        console.log("root.masterPageJson()" + root.masterPageJson().title);
-        if (root.masterPageJson().title != null) {
-            self.pageMainHeader(root.masterPageJson().title);
-        }
-        if (root.masterPageJson().subTitle != null) {
-            self.pageSubHeader(root.masterPageJson().subTitle);
-        }
-        if (root.masterPageJson().contents > 0) {
-
-        }
-        if (root.masterPageJson().links > 0) {
-
-        }
+        //console.log("Log: " + root.masterPageId() + " / " + root.masterPageJson());
+        getPageJsonData(root.masterPageJson());
     };
     self.load();
 }
