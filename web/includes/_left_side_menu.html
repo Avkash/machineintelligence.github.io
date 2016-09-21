@@ -10,10 +10,12 @@
                         </li>
                         <li role="presentation" class=""><a href="#Key_ml" aria-controls="Key_ml" role="tab" data-toggle="tab" aria-expanded="true">ML</a>
                         </li>
+                        <!--
                         <li role="presentation" class=""><a href="#Key_bd" aria-controls="Key_bd" role="tab" data-toggle="tab" aria-expanded="false">Big Data</a>
                         </li>
                         <li role="presentation" class=""><a href="#Key_ds" aria-controls="Key_ds" role="tab" data-toggle="tab" aria-expanded="false">DS</a>
                         </li>
+                        -->
                     </ul>
                     <!-- Tab panes-->
                     <div class="tab-content">
@@ -21,7 +23,7 @@
                             <div class="panel panel-primary heightSet1080P">
                                 <div class="panel-heading">
                                     <div class="row text-center">
-                                        <span data-localize="sidebar.heading.HEADER">Deep Learning Hub</span><br>
+                                        <span>Deep Learning Hub</span><br>
                                         <span><small>(Open Source Libraries)</small></span>
                                     </div>
                                 </div>
@@ -113,164 +115,166 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="Key_ml" role="tabpanel" class="tab-pane">
-                            <div class="row">
-                                <!-- START sidebar nav-->
-                                <ul class="nav">
-                                    <!-- Iterates over all sidebar items-->
-                                    <li class="nav-heading">
-                                        <span data-localize="sidebar.heading.HEADER">Machine Learning Hub</span>
-                                    </li>
-                                    <li class=" " style="margin-left:-10px">
-                                        <a href="#menuid-prod" title="Menu" data-toggle="collapse">
-                                            <em class="icon-folder"></em>
-                                            <span class="text-bold">Open Source Libraries</span>
-                                        </a>
-                                        <ul id="menuid-prod" class="nav sidebar-subnav collapse">
-                                            <li class="sidebar-subnav-header">Open Source Libraries</li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('ml_lib_tensorflow');"  title="TensorFlow">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>TensorFlow</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('ml_lib_mxnet');"  title="MxNet">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>MxNet</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_nb')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>Naive Bayes</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_ensembles')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>Ensembles</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_glrm')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>GLRM</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_kmeans')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>K-Means</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_pca')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>PCA</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class=" " style="margin-left:-10px">
-                                        <a href="#menuid-algo" title="Menu" data-toggle="collapse">
-                                            <em class="icon-folder"></em>
-                                            <span class="text-bold">Algorithms</span>
-                                        </a>
-                                        <ul id="menuid-algo" class="nav sidebar-subnav collapse">
-                                            <li class="sidebar-subnav-header">Algorithms</li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>GLM</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_gbm')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>GBM</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_dl')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>Deep Learning</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_drf')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>DRF</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_nb')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>Naive Bayes</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_ensembles')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>Ensembles</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_glrm')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>GLRM</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_kmeans')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>K-Means</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_pca')"  title="Sub Menu">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>PCA</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class=" " style="margin-left:-10px">
-                                        <a href="#menuid-comp" title="Menu" data-toggle="collapse">
-                                            <em class="icon-folder"></em>
-                                            <span class="text-bold">Projects</span>
-                                        </a>
-                                        <ul id="menuid-comp" class="nav sidebar-subnav collapse">
-                                            <li class="sidebar-subnav-header">Projects</li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>DataRPM</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <a href="#" data-bind="click: root.changeUrl('ml_proj_deepdream')"  title="DataRPM">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>Google DeepDream</span>
-                                                </a>
-                                            </li>
-                                            <li class=" ">
-                                                <!-- https://algorithmia.com/algorithms/deeplearning/ColorfulImageColorization --->
-                                                <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="Algorithmia">
-                                                    <em class="fa fa-angle-right"></em>
-                                                    <span>Algorithmia</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                        <div id="Key_ml" role="tabpanel" class="tab-pane"  style="margin-left: -19px;margin-right:-19px;margin-top:-9px;">
+                            <div class="panel panel-primary heightSet1080P">
+                                <div class="panel-heading">
+                                    <div class="row text-center">
+                                        <span>Machine Learning Hub</span><br>
+                                        <span><small>(Open Source Libraries)</small></span>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="nav">
+                                        <li class=" " style="margin-left:-10px">
+                                            <a href="#menuid-prod" title="Menu" data-toggle="collapse">
+                                                <em class="icon-folder"></em>
+                                                <span class="text-bold">Open Source Libraries</span>
+                                            </a>
+                                            <ul id="menuid-prod" class="nav sidebar-subnav collapse">
+                                                <li class="sidebar-subnav-header">Open Source Libraries</li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('ml_lib_tensorflow');"  title="TensorFlow">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>TensorFlow</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('ml_lib_mxnet');"  title="MxNet">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>MxNet</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_nb')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>Naive Bayes</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_ensembles')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>Ensembles</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_glrm')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>GLRM</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_kmeans')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>K-Means</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_pca')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>PCA</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" " style="margin-left:-10px">
+                                            <a href="#menuid-algo" title="Menu" data-toggle="collapse">
+                                                <em class="icon-folder"></em>
+                                                <span class="text-bold">Algorithms</span>
+                                            </a>
+                                            <ul id="menuid-algo" class="nav sidebar-subnav collapse">
+                                                <li class="sidebar-subnav-header">Algorithms</li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>GLM</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_gbm')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>GBM</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_dl')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>Deep Learning</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_drf')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>DRF</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_nb')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>Naive Bayes</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_ensembles')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>Ensembles</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_glrm')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>GLRM</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_kmeans')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>K-Means</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_pca')"  title="Sub Menu">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>PCA</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" " style="margin-left:-10px">
+                                            <a href="#menuid-comp" title="Menu" data-toggle="collapse">
+                                                <em class="icon-folder"></em>
+                                                <span class="text-bold">Projects</span>
+                                            </a>
+                                            <ul id="menuid-comp" class="nav sidebar-subnav collapse">
+                                                <li class="sidebar-subnav-header">Projects</li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>DataRPM</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="#" data-bind="click: root.changeUrl('ml_proj_deepdream')"  title="DataRPM">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>Google DeepDream</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <!-- https://algorithmia.com/algorithms/deeplearning/ColorfulImageColorization --->
+                                                    <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="Algorithmia">
+                                                        <em class="fa fa-angle-right"></em>
+                                                        <span>Algorithmia</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+                        <!--
                         <div id="Key_bd" role="tabpanel" class="tab-pane">
                             <div class="row">
-                                <!-- START sidebar nav-->
                                 <ul class="nav">
-                                    <!-- Iterates over all sidebar items-->
                                     <li class="nav-heading ">
                                         <span data-localize="sidebar.heading.HEADER">Big Data & Hadoop Hub</span>
                                     </li>
@@ -291,9 +295,7 @@
                         </div>
                         <div id="Key_ds" role="tabpanel" class="tab-pane">
                             <div class="row">
-                                <!-- START sidebar nav-->
                                 <ul class="nav">
-                                    <!-- Iterates over all sidebar items-->
                                     <li class="nav-heading ">
                                         <span data-localize="sidebar.heading.HEADER">Random Information Hub</span>
                                     </li>
@@ -312,6 +314,7 @@
                                 </ul>
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
             </nav>
