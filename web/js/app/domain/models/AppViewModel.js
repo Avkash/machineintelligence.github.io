@@ -19,7 +19,8 @@ function AppViewModel() {
         "h2o", "tensorflow", "mxnet", "paddle", "caffe",
         "dl4j", "ndimaj", "encog",
         "convnetjs",
-        "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca"]);
+        "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
+        "proj_deepdream"]);
 
     this.linksHtml = ko.observable({
         "home" : "home.html",
@@ -39,7 +40,9 @@ function AppViewModel() {
         "algo_ensembles" : "algo_ensembles.html",
         "algo_glrm" : "algo_glrm.html",
         "algo_kmeans" : "algo_kmeans.html",
-        "algo_pca" : "algo_pca.html"
+        "algo_pca" : "algo_pca.html",
+        /* Projects */
+        "proj_deepdream" : "proj_deepdream.html"
     });
 
     this.viewModelPool = ko.observable({
@@ -60,7 +63,9 @@ function AppViewModel() {
         "algo_ensembles" : AlgoEnsemblesViewModel,
         "algo_glrm" : AlgoGlrmViewModel,
         "algo_kmeans" : AlgoKmeansViewModel,
-        "algo_pca" : AlgoPcaViewModel
+        "algo_pca" : AlgoPcaViewModel,
+        /* Projects */
+        "proj_deepdream" : ProjDeepDreamViewModel
     });
 
     this.masterCollection = ko.observable({

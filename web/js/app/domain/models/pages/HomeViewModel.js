@@ -7,7 +7,7 @@ function HomeViewModel() {
     this.root = AppViewModel;
 
     this.firstName = ko.observable("asc");
-    this.pageHeader = ko.observable("Home99");
+    this.pageHeader = ko.observable("Home sweet home");
     this.homeField = ko.observable("this is the test field for HomeViewModel");
 
     this.divHeight = root.visibleWidth;

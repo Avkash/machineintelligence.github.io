@@ -20,7 +20,8 @@ function AppViewModel() {
         "h2o", "tensorflow", "mxnet", "paddle", "caffe",
         "dl4j", "ndimaj", "encog",
         "convnetjs",
-        "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca"]);
+        "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
+        "proj_deepdream"]);
 
     this.linksHtml = ko.observable({
         "home" : "home.html",
@@ -40,7 +41,9 @@ function AppViewModel() {
         "algo_ensembles" : "algo_ensembles.html",
         "algo_glrm" : "algo_glrm.html",
         "algo_kmeans" : "algo_kmeans.html",
-        "algo_pca" : "algo_pca.html"
+        "algo_pca" : "algo_pca.html",
+        /* Projects */
+        "proj_deepdream" : "proj_deepdream.html"
     });
 
     this.viewModelPool = ko.observable({
@@ -61,7 +64,9 @@ function AppViewModel() {
         "algo_ensembles" : AlgoEnsemblesViewModel,
         "algo_glrm" : AlgoGlrmViewModel,
         "algo_kmeans" : AlgoKmeansViewModel,
-        "algo_pca" : AlgoPcaViewModel
+        "algo_pca" : AlgoPcaViewModel,
+        /* Projects */
+        "proj_deepdream" : ProjDeepDreamViewModel
     });
 
     this.masterCollection = ko.observable({
@@ -142,12 +147,6 @@ ko.components.register("header-bar", {
 });
 
 
-
-
-function FirstLinkViewModel() {
-    this.testField = ko.observable("first link's viewModel");
-}
-
 function GitHubViewModel(){
 
     var self = this;
@@ -164,7 +163,7 @@ function HomeViewModel() {
     this.root = AppViewModel;
 
     this.firstName = ko.observable("asc");
-    this.pageHeader = ko.observable("Home99");
+    this.pageHeader = ko.observable("Home sweet home");
     this.homeField = ko.observable("this is the test field for HomeViewModel");
 
     this.divHeight = root.visibleWidth;
@@ -184,6 +183,12 @@ function KeywordsViewModel(){
 }
 function LinksViewModel(){
 
+    var self = this;
+    var base = {};
+
+    this.root = AppViewModel;
+
+    this.pageHeader = ko.observable("External Links");
 
 }
 
@@ -288,5 +293,11 @@ function AlgoNbViewModel(){
 function AlgoPcaViewModel(){
 
     this.pageHeader = ko.observable("Principal Components Analysis (PCA)");
+
+}
+
+function ProjDeepDreamViewModel(){
+
+    this.pageHeader = ko.observable("DeepDream (Neural Networks by Google)");
 
 }

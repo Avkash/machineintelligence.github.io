@@ -278,6 +278,8 @@
                               </li>
                               <li role="presentation" class=""><a href="#Key_ml" aria-controls="Key_ml" role="tab" data-toggle="tab" aria-expanded="true">ML</a>
                               </li>
+                              <li role="presentation" class=""><a href="#Key_art" aria-controls="Key_art" role="tab" data-toggle="tab" aria-expanded="true">Blog</a>
+                              </li>
                               <!--
                               <li role="presentation" class=""><a href="#Key_bd" aria-controls="Key_bd" role="tab" data-toggle="tab" aria-expanded="false">Big Data</a>
                               </li>
@@ -388,62 +390,11 @@
                                       <div class="panel-heading">
                                           <div class="row text-center">
                                               <span>Machine Learning Hub</span><br>
-                                              <span><small>(Open Source Libraries)</small></span>
+                                              <span><small>(Everything Machine Learning)</small></span>
                                           </div>
                                       </div>
                                       <div class="panel-body">
-                                          <ul class="nav">
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-prod" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Open Source Libraries</span>
-                                                  </a>
-                                                  <ul id="menuid-prod" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Open Source Libraries</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('ml_lib_tensorflow');"  title="TensorFlow">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>TensorFlow</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('ml_lib_mxnet');"  title="MxNet">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>MxNet</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_nb')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Naive Bayes</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_ensembles')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Ensembles</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_glrm')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>GLRM</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_kmeans')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>K-Means</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_pca')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>PCA</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
+                                          <ul class="nav" style="margin-left:-10px">
                                               <li class=" " style="margin-left:-10px">
                                                   <a href="#menuid-algo" title="Menu" data-toggle="collapse">
                                                       <em class="icon-folder"></em>
@@ -521,7 +472,7 @@
                                                           </a>
                                                       </li>
                                                       <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('ml_proj_deepdream')"  title="DataRPM">
+                                                          <a href="#" data-bind="click: root.changeUrl('proj_deepdream')"  title="Google Deep Dream">
                                                               <em class="fa fa-angle-right"></em>
                                                               <span>Google DeepDream</span>
                                                           </a>
@@ -531,6 +482,65 @@
                                                           <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="Algorithmia">
                                                               <em class="fa fa-angle-right"></em>
                                                               <span>Algorithmia</span>
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="Key_art" role="tabpanel" class="tab-pane"   style="margin-left: -19px;margin-right:-19px;margin-top:-9px;">
+                                  <div class="panel panel-primary heightSet1080P">
+                                      <div class="panel-heading">
+                                          <div class="row text-center">
+                                              <span>Blog and Articles</span><br>
+                                              <span><small>(thinking out loud)</small></span>
+                                          </div>
+                                      </div>
+                                      <div class="panel-body">
+                                          <ul class="nav" style="margin-left:-10px">
+                                              <li class=" " style="margin-left:-10px">
+                                                  <a href="#menuid-blog-h2o" title="Menu" data-toggle="collapse">
+                                                      <em class="icon-folder"></em>
+                                                      <span class="text-bold">H2O</span>
+                                                  </a>
+                                                  <ul id="menuid-blog-h2o" class="nav sidebar-subnav collapse">
+                                                      <li class="sidebar-subnav-header">H2O</li>
+                                                      <li class=" ">
+                                                          <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
+                                                              <em class="fa fa-angle-right"></em>
+                                                              <span>DataRPM</span>
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              </li>
+                                              <li class=" " style="margin-left:-10px">
+                                                  <a href="#menuid-blog-tf" title="Menu" data-toggle="collapse">
+                                                      <em class="icon-folder"></em>
+                                                      <span class="text-bold">TensorFlow</span>
+                                                  </a>
+                                                  <ul id="menuid-blog-tf" class="nav sidebar-subnav collapse">
+                                                      <li class="sidebar-subnav-header">TensorFlow</li>
+                                                      <li class=" ">
+                                                          <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
+                                                              <em class="fa fa-angle-right"></em>
+                                                              <span>DataRPM</span>
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                                              </li>
+                                              <li class=" " style="margin-left:-10px">
+                                                  <a href="#menuid-blog-tut" title="Menu" data-toggle="collapse">
+                                                      <em class="icon-folder"></em>
+                                                      <span class="text-bold">Tutorials</span>
+                                                  </a>
+                                                  <ul id="menuid-blog-tut" class="nav sidebar-subnav collapse">
+                                                      <li class="sidebar-subnav-header">Tutorials</li>
+                                                      <li class=" ">
+                                                          <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
+                                                              <em class="fa fa-angle-right"></em>
+                                                              <span>DataRPM</span>
                                                           </a>
                                                       </li>
                                                   </ul>

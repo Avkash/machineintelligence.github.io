@@ -38,6 +38,8 @@
         var urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
         if (view.startsWith("algo_")) {
             urlStr = "pages/algos/".concat(AppViewModel.linksHtml()[view]);
+        } else if (view.startsWith("proj_")) {
+            urlStr = "pages/projs/".concat(AppViewModel.linksHtml()[view]);
         }
         $.ajax({
             url: urlStr, //url: "pages/".concat(view, ".html"),
