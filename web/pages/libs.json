@@ -182,6 +182,144 @@
         "linkInfo" : "hello Y world"
       }
     ]
+  },
+  {
+    "id" : "torch",
+    "title": "Torch",
+    "subTitle" : "Torch is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, fast scripting language, LuaJIT, and an underlying C/CUDA implementation. Torch is based on Lua programming language.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "accordnet",
+    "title": "Accord.NET",
+    "subTitle" : "Accord.NET is a .NET machine learning framework combined with audio and image processing libraries completely written in C#. It is a complete framework for building production-grade computer vision, computer audition, signal processing and statistics applications",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "mocha",
+    "title": "Mocha",
+    "subTitle" : "Mocha is a Deep Learning framework for Julia, inspired by the C++ framework Caffe. Efficient implementations of general stochastic gradient solvers and common layers in Mocha could be used to train deep / shallow (convolutional) neural networks, with (optional) unsupervised pre-training via (stacked) auto-encoders. Its best feature include Modular architecture, High-level Interface, portability with speed, compatibility and many more.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
   }
 
 ]

@@ -18,7 +18,10 @@ function AppViewModel() {
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social",
         "h2o", "tensorflow", "mxnet", "paddle", "caffe",
         "dl4j", "ndimaj", "encog",
+        "torch",
         "convnetjs",
+        "accordnet",
+        "mocha",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
         "proj_deepdream"]);
 
@@ -77,7 +80,10 @@ function AppViewModel() {
          "dl4j" : "Deeplearning 4 Java",
          "ndimaj" : "N-Dimensional Array for Java",
          "encog" : "EnCog",
-         "convnetjs": "ConvNetJS"
+         "convnetjs": "ConvNetJS",
+         "torch" : "Torch",
+         "accordnet" : "Accord.NET",
+         "mocha" : "Mocha"
     });
 
     this.contentView = ko.observable();

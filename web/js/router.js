@@ -23,6 +23,27 @@
             AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
             getView("master");
         });
+        this.get('#/deeplearning/lua/:link', function() {
+            AppViewModel.masterTab("Deep Learning");
+            AppViewModel.masterDir("Lua");
+            AppViewModel.masterPageId(this.params["link"]);
+            AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
+            getView("master");
+        });
+        this.get('#/deeplearning/julia/:link', function() {
+            AppViewModel.masterTab("Deep Learning");
+            AppViewModel.masterDir("Julia");
+            AppViewModel.masterPageId(this.params["link"]);
+            AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
+            getView("master");
+        });
+        this.get('#/deeplearning/net/:link', function() {
+            AppViewModel.masterTab("Deep Learning");
+            AppViewModel.masterDir(".NET");
+            AppViewModel.masterPageId(this.params["link"]);
+            AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
+            getView("master");
+        });
 
         this.get('#/:link', function() {
             getView(this.params["link"]);
