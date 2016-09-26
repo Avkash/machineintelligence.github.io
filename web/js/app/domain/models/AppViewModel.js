@@ -22,6 +22,8 @@ function AppViewModel() {
         "convnetjs",
         "accordnet",
         "mocha",
+        "cntk", "mxnet",
+        "gobrain",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
         "proj_deepdream"]);
 
@@ -83,7 +85,9 @@ function AppViewModel() {
          "convnetjs": "ConvNetJS",
          "torch" : "Torch",
          "accordnet" : "Accord.NET",
-         "mocha" : "Mocha"
+         "mocha" : "Mocha",
+         "cntk" : "CNTK",
+         "gobrain": "GoBrain"
     });
 
     this.contentView = ko.observable();
