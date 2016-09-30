@@ -17,7 +17,7 @@ function AppViewModel() {
     this.masterLink= ko.observable("home");
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social",
-        "h2o", "tensorflow", "mxnet", "paddle", "caffe",
+        "h2o", "tensorflow", "mxnet", "paddle", "caffe", "keras","theano",
         "dl4j", "ndimaj", "encog",
         "torch",
         "convnetjs",
@@ -80,6 +80,8 @@ function AppViewModel() {
          "mxnet" : "MxNet",
          "paddle" : "Paddle from Baidu",
          "caffe" : "Caffe from Berkley",
+         "keras" : "Keras",
+         "theano" : "Theano",
          "dl4j" : "Deeplearning 4 Java",
          "ndimaj" : "N-Dimensional Array for Java",
          "encog" : "EnCog",
@@ -222,13 +224,13 @@ function MasterPageViewModel() {
     self.pageContentLinks = ko.observable("ContentLinks");
 
     self.getPageJsonData = function (localObjStr) {
-        //console.log("root.masterPageJson() -> " + localObjStr);
+        console.log("root.masterPageJson() -> " + localObjStr);
         if (localObjStr.trim().length > 0) {
             var localObj = JSON.parse(localObjStr);
             if (localObj.title != null) {
                 self.pageMainHeader(localObj.title);
             }
-            if (root.masterPageJson().subTitle != null) {
+            if (localObj.subTitle != null) {
                 self.pageSubHeader(localObj.subTitle);
             }
             if (localObj.contents > 0) {
