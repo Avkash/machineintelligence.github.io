@@ -13,13 +13,13 @@ function MasterPageViewModel() {
     self.pageContentLinks = ko.observable("ContentLinks");
 
     self.getPageJsonData = function (localObjStr) {
-        //console.log("root.masterPageJson() -> " + localObjStr);
+        console.log("root.masterPageJson() -> " + localObjStr);
         if (localObjStr.trim().length > 0) {
             var localObj = JSON.parse(localObjStr);
             if (localObj.title != null) {
                 self.pageMainHeader(localObj.title);
             }
-            if (root.masterPageJson().subTitle != null) {
+            if (localObj.subTitle != null) {
                 self.pageSubHeader(localObj.subTitle);
             }
             if (localObj.contents > 0) {
