@@ -69,12 +69,22 @@
     }).run();
 
     function getView(view) {
-        AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
         var urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
         if (view.startsWith("algo_")) {
+            AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
             urlStr = "pages/algos/".concat(AppViewModel.linksHtml()[view]);
         } else if (view.startsWith("proj_")) {
+            AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
             urlStr = "pages/projs/".concat(AppViewModel.linksHtml()[view]);
+        } else if (view.startsWith("keywords_")) {
+            var locVal = view.indexOf("_")+1;
+            var actualKey = view.substr(view.indexOf("_") + 1, 1);
+            console.log("actualKey : " + locVal + " / " + actualKey);
+            AppViewModel.masterKeywordId(actualKey);
+            view = "keywords";
+            urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
+            AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
+            console.log("url: " + urlStr);
         }
         $.ajax({
             url: urlStr, //url: "pages/".concat(view, ".html"),

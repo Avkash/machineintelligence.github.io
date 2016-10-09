@@ -14,10 +14,14 @@ function AppViewModel() {
     this.masterTab = ko.observable("Deeplearn");
     this.masterDir= ko.observable("Home");
     this.masterLink= ko.observable("home");
+    this.masterKeywordId= ko.observable("");
+    this.keywordJson = ko.observable(""); //ko.observableArray([]);
 
-    this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos", "keywords", "social",
+    this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos",
+        "keywords",
+        "social",
         "h2o", "tensorflow", "mxnet", "paddle", "caffe", "keras","theano",
-        "dl4j", "ndimaj", "encog",
+        "dl4j", "ndimaj", "encog", "hpcct",
         "torch",
         "convnetjs",
         "accordnet",
@@ -34,7 +38,7 @@ function AppViewModel() {
         "links": "h2o_links.html",
         "github" : "h2o_github.html",
         "videos": "h2o_videos.html",
-        "keywords" : "glossary-keywords.html",
+        /* "keywords" : "glossary-keywords.html", */
         "social" :  "h2o_social.html",
         /* Algorithms*/
         "algo_glm" : "algo_glm.html",
@@ -47,7 +51,9 @@ function AppViewModel() {
         "algo_kmeans" : "algo_kmeans.html",
         "algo_pca" : "algo_pca.html",
         /* Projects */
-        "proj_deepdream" : "proj_deepdream.html"
+        "proj_deepdream" : "proj_deepdream.html",
+        /* keywords */
+        "keywords" : "keywords.html"
     });
 
     this.viewModelPool = ko.observable({
@@ -57,7 +63,6 @@ function AppViewModel() {
         "links": LinksViewModel,
         "github": GitHubViewModel,
         "videos" : VideosViewModel,
-        "keywords" : KeywordsViewModel,
         "social" : SocialViewModel,
         /* Algorithms*/
         "algo_glm" : AlgoGlmViewModel,
@@ -70,7 +75,9 @@ function AppViewModel() {
         "algo_kmeans" : AlgoKmeansViewModel,
         "algo_pca" : AlgoPcaViewModel,
         /* Projects */
-        "proj_deepdream" : ProjDeepDreamViewModel
+        "proj_deepdream" : ProjDeepDreamViewModel,
+        /* */
+        "keywords" : KeywordsViewModel
     });
 
     this.masterCollection = ko.observable({
@@ -82,6 +89,7 @@ function AppViewModel() {
          "keras" : "Keras",
          "theano" : "Theano",
          "dl4j" : "Deeplearning 4 Java",
+         "hpcct" : "HPE Cognitive Computing Toolkit",
          "ndimaj" : "N-Dimensional Array for Java",
          "encog" : "EnCog",
          "convnetjs": "ConvNetJS",
@@ -119,6 +127,18 @@ function AppViewModel() {
         });
     }
 
+    self.getKeywordsJsonFunction = function (pageId){
+        console.log("getKeywordsJsonFunction: [" + root.masterKeywordId() + "]");
+        $.get("pages/keywords.json", function (data, status) {
+            for(var i=0;i<data.length;i++) {
+                if (data[i].id == pageId) {
+                    self.keywordJson(JSON.stringify(data[i]));
+                    break;
+                }
+            }
+        });
+        console.log("keywordJson: [" + self.keywordJson() + "]");
+    }
 
 
 

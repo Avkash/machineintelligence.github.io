@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e7144e-f260-462f-8c91-e2d3e198c7d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/new.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vendor/visualml/visualml.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/d3/flare.json" afterPath="$PROJECT_DIR$/js/flare.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/keywords.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/keywords.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_index.html" afterPath="$PROJECT_DIR$/_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/_left_side_menu.html" afterPath="$PROJECT_DIR$/includes/_left_side_menu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.models.js" afterPath="$PROJECT_DIR$/js/app.models.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/h2o_videos.html" afterPath="$PROJECT_DIR$/pages/h2o_videos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/home.html" afterPath="$PROJECT_DIR$/pages/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/h2o_links.html" afterPath="$PROJECT_DIR$/pages/h2o_links.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/libs.json" afterPath="$PROJECT_DIR$/pages/libs.json" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +35,78 @@
       <file leaf-file-name="AppViewModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app/domain/models/AppViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
-              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="855">
+              <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="keywords.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/keywords.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="keywords.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/keywords.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeywordsViewModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeViewModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/master.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="66" column="59" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MasterPageViewModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,85 +115,9 @@
       <file leaf-file-name="h2o_links.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/h2o_links.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="72" column="108" selection-start-line="72" selection-start-column="108" selection-end-line="72" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flare.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/flare.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/new.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="visualml.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/vendor/visualml/visualml.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="h2o_videos.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/h2o_videos.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/vendor/sparkline/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2550">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1473632577000" expanded="true" signature="14836:14852" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="14854:14861" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="15573:15589" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="15591:15598" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="15981:15997" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="15999:16006" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="17435:17451" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="17453:17460" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="116531:116628" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="117826:117950" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="118698:118810" ph="..." />
-                <marker date="1473632577000" expanded="true" signature="120808:120932" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -130,8 +125,8 @@
       <file leaf-file-name="_left_side_menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/_left_side_menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="99" column="122" selection-start-line="99" selection-start-column="116" selection-end-line="99" selection-end-column="122" />
+            <state relative-caret-position="255">
+              <caret line="429" column="45" selection-start-line="429" selection-start-column="45" selection-end-line="429" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
@@ -156,17 +151,35 @@
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#7;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#8;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#9;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#10;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#11;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#12;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#13;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#14;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#15;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#16;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#17;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#18;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#19;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#20;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#21;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#22;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#23;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#24;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#25;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="libs.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/libs.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="404" column="14" selection-start-line="404" selection-start-column="14" selection-end-line="404" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -198,18 +211,21 @@
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js" />
         <option value="$PROJECT_DIR$/pages/proj/proj_deepdream.html" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/projs/ProjDeepDreamViewModel.js" />
-        <option value="$PROJECT_DIR$/js/router.js" />
-        <option value="$PROJECT_DIR$/includes/_left_side_menu.html" />
         <option value="$PROJECT_DIR$/pages/master.html" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
-        <option value="$PROJECT_DIR$/pages/h2o_links.html" />
-        <option value="$PROJECT_DIR$/pages/libs.json" />
         <option value="$PROJECT_DIR$/_index.html" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
         <option value="$PROJECT_DIR$/js/new.json" />
         <option value="$PROJECT_DIR$/pages/home.html" />
         <option value="$PROJECT_DIR$/js/vendor/visualml/visualml.js" />
         <option value="$PROJECT_DIR$/pages/h2o_videos.html" />
+        <option value="$PROJECT_DIR$/pages/h2o_links.html" />
+        <option value="$PROJECT_DIR$/pages/libs.json" />
+        <option value="$PROJECT_DIR$/includes/_left_side_menu.html" />
+        <option value="$PROJECT_DIR$/js/router.js" />
+        <option value="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
+        <option value="$PROJECT_DIR$/pages/keywords.json" />
+        <option value="$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js" />
+        <option value="$PROJECT_DIR$/pages/keywords.html" />
       </list>
     </option>
   </component>
@@ -256,6 +272,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,10 +320,120 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,12 +519,14 @@
       <workItem from="1473632919440" duration="19409000" />
       <workItem from="1474178925087" duration="28507000" />
       <workItem from="1474475725658" duration="367000" />
-      <workItem from="1474668971668" duration="17536000" />
+      <workItem from="1474668971668" duration="18803000" />
+      <workItem from="1475717126633" duration="11000" />
+      <workItem from="1475717291711" duration="3440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65819000" />
+    <option name="totallyTimeSpent" value="70537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1895" height="1177" extended-state="6" />
@@ -441,38 +571,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/h2o_links.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/LinksViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="224" column="72" selection-start-line="224" selection-start-column="72" selection-end-line="224" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/libs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="165" column="7" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/_left_side_menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
@@ -501,6 +599,34 @@
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#7;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#8;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#9;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#10;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#11;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#12;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#13;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#14;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#15;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#16;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#17;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#18;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#19;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#20;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#21;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#22;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#23;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#24;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#25;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -509,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -525,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -540,9 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#nav#0;n#header#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,6 +711,34 @@
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#7;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#8;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#9;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#10;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#11;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#12;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#13;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#14;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#15;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#16;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#17;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#18;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#19;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#20;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#21;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#22;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#23;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#24;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#25;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -606,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,15 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,9 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#nav#0;n#header#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="44" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,15 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,38 +875,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vendor/sparkline/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1473632577000" expanded="true" signature="14836:14852" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="14854:14861" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="15573:15589" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="15591:15598" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="15981:15997" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="15999:16006" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="17435:17451" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="17453:17460" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="116531:116628" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="117826:117950" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="118698:118810" ph="..." />
+            <marker date="1473632577000" expanded="true" signature="120808:120932" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="736" column="2" selection-start-line="736" selection-start-column="2" selection-end-line="736" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/new.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
+    <entry file="file://$PROJECT_DIR$/pages/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="1080">
+          <caret line="72" column="108" selection-start-line="72" selection-start-column="108" selection-end-line="72" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/master.html">
+    <entry file="file://$PROJECT_DIR$/js/flare.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="89" column="78" selection-start-line="89" selection-start-column="78" selection-end-line="89" selection-end-column="78" />
+        <state relative-caret-position="30">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vendor/visualml/visualml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/h2o_videos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/architecture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/h2o_links.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/libs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/_left_side_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="99" column="122" selection-start-line="99" selection-start-column="116" selection-end-line="99" selection-end-column="122" />
+        <state relative-caret-position="255">
+          <caret line="429" column="45" selection-start-line="429" selection-start-column="45" selection-end-line="429" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
@@ -807,103 +1008,99 @@
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#7;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#8;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#9;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#10;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#11;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#12;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#13;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#14;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#15;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#16;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#17;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#18;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#19;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#20;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#21;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#22;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#23;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#24;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#25;n#ul#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/libs.json">
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="404" column="14" selection-start-line="404" selection-start-column="14" selection-end-line="404" selection-end-column="14" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/vendor/sparkline/index.js">
+    <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2550">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1473632577000" expanded="true" signature="14836:14852" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="14854:14861" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="15573:15589" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="15591:15598" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="15981:15997" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="15999:16006" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="17435:17451" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="17453:17460" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="116531:116628" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="117826:117950" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="118698:118810" ph="..." />
-            <marker date="1473632577000" expanded="true" signature="120808:120932" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="736" column="2" selection-start-line="736" selection-start-column="2" selection-end-line="736" selection-end-column="2" />
+        <state relative-caret-position="495">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app/domain/models/AppViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="855">
+          <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/new.json">
+    <entry file="file://$PROJECT_DIR$/pages/keywords.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="540">
+          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.html">
+    <entry file="file://$PROJECT_DIR$/pages/master.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="72" column="108" selection-start-line="72" selection-start-column="108" selection-end-line="72" selection-end-column="108" />
+        <state relative-caret-position="315">
+          <caret line="66" column="59" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/flare.json">
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/vendor/visualml/visualml.js">
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/h2o_videos.html">
+    <entry file="file://$PROJECT_DIR$/pages/keywords.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="705">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
