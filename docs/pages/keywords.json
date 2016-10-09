@@ -1,0 +1,72 @@
+[
+  {
+    "id" : "a",
+    "title": "Keywords - A",
+    "subTitle" : "Keywords A",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ]
+  },
+  {
+    "id" : "b",
+    "title": "Keywords - B",
+    "subTitle" : "Keywords B",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ]
+  }
+]

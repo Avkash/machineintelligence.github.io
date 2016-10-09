@@ -414,6 +414,52 @@
     ]
   },
   {
+    "id" : "hpcct",
+    "title": "HPE Cognitive Computing Toolkit",
+    "subTitle" : "GPU-accelerated cognitive computing and deep learning platform from Hewlett Packard Enterprise",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
     "id" : "encog",
     "title": "Encog",
     "subTitle" : "Encog is an advanced machine learning framework which supports Support Vector Machines,Artificial Neural Networks, Genetic Programming, Bayesian Networks, Hidden Markov Models, Genetic Programming and Genetic Algorithms are supported.",
