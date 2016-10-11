@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e7144e-f260-462f-8c91-e2d3e198c7d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/keywords.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/keywords.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/_left_side_menu.html" afterPath="$PROJECT_DIR$/includes/_left_side_menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.models.js" afterPath="$PROJECT_DIR$/js/app.models.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/h2o_links.html" afterPath="$PROJECT_DIR$/pages/h2o_links.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/libs.json" afterPath="$PROJECT_DIR$/pages/libs.json" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keywords.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="keywords.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/keywords.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
@@ -112,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="h2o_links.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="h2o_links.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/h2o_links.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="64" column="97" selection-start-line="64" selection-start-column="97" selection-end-line="64" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -218,7 +208,6 @@
         <option value="$PROJECT_DIR$/pages/home.html" />
         <option value="$PROJECT_DIR$/js/vendor/visualml/visualml.js" />
         <option value="$PROJECT_DIR$/pages/h2o_videos.html" />
-        <option value="$PROJECT_DIR$/pages/h2o_links.html" />
         <option value="$PROJECT_DIR$/pages/libs.json" />
         <option value="$PROJECT_DIR$/includes/_left_side_menu.html" />
         <option value="$PROJECT_DIR$/js/router.js" />
@@ -226,6 +215,7 @@
         <option value="$PROJECT_DIR$/pages/keywords.json" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js" />
         <option value="$PROJECT_DIR$/pages/keywords.html" />
+        <option value="$PROJECT_DIR$/pages/h2o_links.html" />
       </list>
     </option>
   </component>
@@ -521,12 +511,12 @@
       <workItem from="1474475725658" duration="367000" />
       <workItem from="1474668971668" duration="18803000" />
       <workItem from="1475717126633" duration="11000" />
-      <workItem from="1475717291711" duration="3440000" />
+      <workItem from="1475717291711" duration="4488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70537000" />
+    <option name="totallyTimeSpent" value="71585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1895" height="1177" extended-state="6" />
@@ -964,14 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/h2o_links.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/libs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -1100,6 +1082,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/h2o_links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="64" column="97" selection-start-line="64" selection-start-column="97" selection-end-line="64" selection-end-column="97" />
           <folding />
         </state>
       </provider>
