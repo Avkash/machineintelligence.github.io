@@ -1,0 +1,831 @@
+[
+  {
+    "id" : "h2o",
+    "title": "H2O.ai",
+    "subTitle" : "Deep Learning library from H2o.ai",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "a",
+        "linkInfo" : "hello world"
+      },
+      {
+        "id": "b",
+        "linkInfo" : "hello worlda"
+      }
+    ]
+  },
+  {
+    "id" : "tensorflow",
+    "title": "TensorFlow",
+    "subTitle" : "Deep Learning library from Google",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "a",
+        "linkInfo" : "hello world"
+      },
+      {
+        "id": "b",
+        "linkInfo" : "hello worlda"
+      }
+    ]
+  },
+  {
+    "id" : "mxnet",
+    "title": "mxnet",
+    "subTitle" : "MXNet is developed by collaborators from multiple universities and companies",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "caffe",
+    "title": "Caffe",
+    "subTitle" : "Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "paddle",
+    "title": "Paddle (Baidu)",
+    "subTitle" : "PaddlePaddle (PArallel Distributed Deep LEarning) is an easy-to-use, efficient, flexible and scalable deep learning platform, which is originally developed by Baidu scientists and engineers for the purpose of applying deep learning to many products at Baidu.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "keras",
+    "title": "Keras",
+    "subTitle" : "Keras is a minimalist, highly modular neural networks library, written in Python and capable of running on top of either TensorFlow or Theano. It was developed with a focus on enabling fast experimentation.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "theano",
+    "title": "Theano",
+    "subTitle" : "Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "dl4j",
+    "title": "DeepLearning4Java",
+    "subTitle" : "Deeplearning4j is the first commercial-grade, open-source, distributed deep-learning library written for Java and Scala. Integrated with Hadoop and Spark, DL4J is designed to be used in business environments on distributed GPUs and CPUs. Skymind is its commercial support arm.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "ndimaj",
+    "title": "N Dimensional Arrays for Java",
+    "subTitle" : "ND4J is scientific computing libraries for the JVM. They are meant to be used in production environments, which means routines are designed to run fast with minimum RAM requirements.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "hpcct",
+    "title": "HPE Cognitive Computing Toolkit",
+    "subTitle" : "GPU-accelerated cognitive computing and deep learning platform from Hewlett Packard Enterprise",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "encog",
+    "title": "Encog",
+    "subTitle" : "Encog is an advanced machine learning framework which supports Support Vector Machines,Artificial Neural Networks, Genetic Programming, Bayesian Networks, Hidden Markov Models, Genetic Programming and Genetic Algorithms are supported.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "convnetjs",
+    "title": "ConvNetJS",
+    "subTitle" : "ConvNetJS is a Javascript library for training Deep Learning models (Neural Networks) entirely in your browser",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "torch",
+    "title": "Torch",
+    "subTitle" : "Torch is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, fast scripting language, LuaJIT, and an underlying C/CUDA implementation. Torch is based on Lua programming language.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "accordnet",
+    "title": "Accord.NET",
+    "subTitle" : "Accord.NET is a .NET machine learning framework combined with audio and image processing libraries completely written in C#. It is a complete framework for building production-grade computer vision, computer audition, signal processing and statistics applications",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "mocha",
+    "title": "Mocha",
+    "subTitle" : "Mocha is a Deep Learning framework for Julia, inspired by the C++ framework Caffe. Efficient implementations of general stochastic gradient solvers and common layers in Mocha could be used to train deep / shallow (convolutional) neural networks, with (optional) unsupervised pre-training via (stacked) auto-encoders. Its best feature include Modular architecture, High-level Interface, portability with speed, compatibility and many more.",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "cntk",
+    "title": "CNTK",
+    "subTitle" : "Computational Network Toolkit by Microsoft supporting Production-quality, Open Source, Multi-machine, Multi-GPU, Highly efficient RNN training, Speech, Image, Text",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "mxnet",
+    "title": "mxnet",
+    "subTitle" : "Flexible and Efficient Library for Deep Learning using language R, Julia, C++, Python, Scala",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  },
+  {
+    "id" : "gobrain",
+    "title": "GoBrain",
+    "subTitle" : "Neural Networks written in go",
+    "contents": [
+      {
+        "text": "MapReduce Jobs",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_ALL"
+      },
+      {
+        "text": "MapReduce Job Failures",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "MRJOBS_FAILED"
+      },
+      {
+        "text": "HDFS Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "HDFS"
+      },
+      {
+        "text": "Datanode Analysis",
+        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
+        "json": "Data",
+        "url": "perspective/dashboard.html",
+        "model-data": "DATANODE"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "x",
+        "linkInfo" : "hello X world"
+      },
+      {
+        "id": "y",
+        "linkInfo" : "hello Y world"
+      }
+    ]
+  }
+
+]

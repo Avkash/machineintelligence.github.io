@@ -118,8 +118,7 @@ function AppViewModel() {
 
 
     self.getMasterJsonFunction = function (pageId){
-        //console.log("getMasterJsonFunction: " + root.masterPageId() + " / " + root.masterPageJson());
-        $.get("pages/libs.json", function (data, status) {
+        $.get("pages/json/libs.json", function (data, status) {
             for(var i=0;i<data.length;i++) {
                 if (data[i].id == pageId) {
                     self.masterPageJson(JSON.stringify(data[i]));
@@ -130,7 +129,7 @@ function AppViewModel() {
     }
 
     self.getKeywordsJsonFunction = function (pageId){
-        $.get("pages/keywords.json", function (data, status) {
+        $.get("pages/json/keywords.json", function (data, status) {
             for(var i=0;i<data.length;i++) {
                 if (data[i].id == pageId) {
                     self.keywordJson(JSON.stringify(data[i]));
@@ -138,14 +137,13 @@ function AppViewModel() {
                 }
             }
         });
-    }
+    };
 
     self.getKeywordsDataFunction = function (fileName){
         $.get(fileName, function (data, status) {
             self.keywordDataJson(JSON.stringify(data));
         });
-    }
-
+    };
 }
 
 
