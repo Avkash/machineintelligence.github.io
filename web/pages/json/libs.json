@@ -3,6 +3,7 @@
     "id" : "h2o",
     "title": "H2O.ai",
     "subTitle" : "Deep Learning library from H2o.ai",
+    "htmlPage" : "pages/data/data_h2o.html",
     "contents": [
       {
         "text": "MapReduce Jobs",
@@ -10,27 +11,6 @@
         "json": "Data",
         "url": "perspective/dashboard.html",
         "model-data": "MRJOBS_ALL"
-      },
-      {
-        "text": "MapReduce Job Failures",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "MRJOBS_FAILED"
-      },
-      {
-        "text": "HDFS Analysis",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "HDFS"
-      },
-      {
-        "text": "Datanode Analysis",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "DATANODE"
       }
     ],
     "info": "More Information1",
@@ -49,6 +29,7 @@
     "id" : "tensorflow",
     "title": "TensorFlow",
     "subTitle" : "Deep Learning library from Google",
+    "htmlPage" : "pages/data/data_tensorflow.html",
     "contents": [
       {
         "text": "MapReduce Jobs",
@@ -56,27 +37,6 @@
         "json": "Data",
         "url": "perspective/dashboard.html",
         "model-data": "MRJOBS_ALL"
-      },
-      {
-        "text": "MapReduce Job Failures",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "MRJOBS_FAILED"
-      },
-      {
-        "text": "HDFS Analysis",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "HDFS"
-      },
-      {
-        "text": "Datanode Analysis",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "DATANODE"
       }
     ],
     "info": "More Information1",

@@ -100,7 +100,12 @@
                         </div>
                     </div>
                     <div class="panel-body heightSet700">
-                        <small class="text-sm"><span data-bind="text: pageContent"></span></small>
+                        <!--<small class="text-sm"><span data-bind="text: pageContent"></span></small>-->
+                        <iframe
+                                 data-bind="attr: { src: masterHtmlPage}"
+                                 class="master-link-frame" name="master-link-content"  style="border:0px"
+                                 onload="this.width=screen.width-670;this.height=screen.height-320;">
+                        </iframe>
                     </div>
                 </div>
             </div>

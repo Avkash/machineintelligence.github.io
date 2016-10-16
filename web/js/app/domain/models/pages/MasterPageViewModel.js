@@ -11,6 +11,7 @@ function MasterPageViewModel() {
     self.pageSubHeader = ko.observable("Sub Heading..");
     self.pageContent = ko.observable("Content");
     self.pageContentLinks = ko.observable("ContentLinks");
+    self.masterHtmlPage = ko.observable("pages/data/data_h2o.html");
 
     self.getPageJsonData = function (localObjStr) {
         console.log("root.masterPageJson() -> " + localObjStr);
@@ -22,14 +23,17 @@ function MasterPageViewModel() {
             if (localObj.subTitle != null) {
                 self.pageSubHeader(localObj.subTitle);
             }
-            if (localObj.contents > 0) {
-
+            if (localObj.htmlPage != null) {
+                self.masterHtmlPage(localObj.htmlPage);
             }
             if (localObj.links > 0) {
 
             }
         }
+        console.log("htmlpage: " + self.masterHtmlPage());
     };
+
+
     self.load = function(){
         root.getMasterJsonFunction(root.masterPageId());
         //console.log("Log: " + root.masterPageId() + " / " + root.masterPageJson());
