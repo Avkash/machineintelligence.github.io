@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e7144e-f260-462f-8c91-e2d3e198c7d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/learn.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/ml.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/visualml/visualml.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_index.html" afterPath="$PROJECT_DIR$/_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.models.js" afterPath="$PROJECT_DIR$/js/app.models.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/vendor/visualml/visualml.js" afterPath="$PROJECT_DIR$/js/vendor/visualml/visualml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/h2o_links.html" afterPath="$PROJECT_DIR$/pages/h2o_links.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/home.html" afterPath="$PROJECT_DIR$/pages/home.html" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +40,8 @@
       <file leaf-file-name="HomeViewModel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+            <state relative-caret-position="285">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -136,7 +132,6 @@
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/projs/ProjDeepDreamViewModel.js" />
         <option value="$PROJECT_DIR$/pages/master.html" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
-        <option value="$PROJECT_DIR$/_index.html" />
         <option value="$PROJECT_DIR$/js/new.json" />
         <option value="$PROJECT_DIR$/pages/h2o_videos.html" />
         <option value="$PROJECT_DIR$/pages/libs.json" />
@@ -151,6 +146,7 @@
         <option value="$PROJECT_DIR$/pages/home.html" />
         <option value="$PROJECT_DIR$/js/learn.json" />
         <option value="$PROJECT_DIR$/js/vendor/visualml/visualml.js" />
+        <option value="$PROJECT_DIR$/_index.html" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js" />
       </list>
     </option>
@@ -261,28 +257,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="visualml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,12 +403,12 @@
       <workItem from="1474475725658" duration="367000" />
       <workItem from="1474668971668" duration="18803000" />
       <workItem from="1475717126633" duration="11000" />
-      <workItem from="1475717291711" duration="10254000" />
+      <workItem from="1475717291711" duration="10628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77351000" />
+    <option name="totallyTimeSpent" value="77725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1895" height="1177" extended-state="6" />
@@ -726,13 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/flare.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -962,10 +929,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        <state relative-caret-position="285">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding />
         </state>
       </provider>
