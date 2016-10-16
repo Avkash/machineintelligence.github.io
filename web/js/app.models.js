@@ -391,6 +391,11 @@ function HomeViewModel() {
 
 function KeywordsViewModel(){
 
+    /*
+    Look for later
+     http://projects.delimited.io/experiments/force-bubbles/gates.html
+     http://neuralengr.com/asifr/journals/
+     */
     var self = this;
     var base = {};
     this.root = AppViewModel;
@@ -398,8 +403,10 @@ function KeywordsViewModel(){
     this.pageHeader = ko.observable("Machine Learning Keywords");
     self.pageMainHeader = ko.observable("Page Heading...");
     self.pageSubHeader = ko.observable("Sub Heading..");
-    self.pageContent = ko.observable("Content");
-
+    self.sideHeader = ko.observable("Keywords List");
+    self.pageContent = ko.observable("Content is here");
+    self.keywordsFile = ko.observable();
+    self.keywordsList = ko.observable();
 
     self.getKeywordsJsonData = function (localObjStr) {
         console.log("root.keywordJson() -> " + localObjStr);
@@ -411,16 +418,20 @@ function KeywordsViewModel(){
             if (localObj.subTitle != null) {
                 self.pageSubHeader(localObj.subTitle);
             }
-            if (localObj.contents > 0) {
-
+            if (localObj.sideTitle != null) {
+                self.sideHeader(localObj.sideTitle);
             }
-            if (localObj.links > 0) {
-
+            if (localObj.keywordsFile != null) {
+                self.keywordsFile(localObj.keywordsFile);
+                loadKeywordsFile(self.keywordsFile());
             }
         }
     };
 
+    self.loadKeywordsFile = function(fileName){
 
+        self.pageContent(fileName);
+    };
 
     self.load = function(){
         root.getKeywordsJsonFunction(root.masterKeywordId());

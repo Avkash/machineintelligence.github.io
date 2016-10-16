@@ -3,34 +3,11 @@
     "id" : "a",
     "title": "Keywords - A",
     "subTitle" : "Keywords A",
+    "keywordsFile" : "keys/keys_a.json",
+    "sideTitle" : "Keywords starts with A",
     "contents": [
       {
-        "text": "MapReduce Jobs",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "MRJOBS_ALL"
-      },
-      {
-        "text": "MapReduce Job Failures",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "MRJOBS_FAILED"
-      },
-      {
-        "text": "HDFS Analysis",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "HDFS"
-      },
-      {
-        "text": "Datanode Analysis",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "DATANODE"
+        "text": "Keys"
       }
     ]
   },
@@ -38,34 +15,11 @@
     "id" : "b",
     "title": "Keywords - B",
     "subTitle" : "Keywords B",
+    "keywordsFile" : "keys/keys_b.json",
+    "sideTitle" : "Keywords starts with B",
     "contents": [
       {
-        "text": "MapReduce Jobs",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "MRJOBS_ALL"
-      },
-      {
-        "text": "MapReduce Job Failures",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "MRJOBS_FAILED"
-      },
-      {
-        "text": "HDFS Analysis",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "HDFS"
-      },
-      {
-        "text": "Datanode Analysis",
-        "icon-url": "/img/icons/BDP-icon-tasktracker.png",
-        "json": "Data",
-        "url": "perspective/dashboard.html",
-        "model-data": "DATANODE"
+        "text": "Keys"
       }
     ]
   }
