@@ -31,6 +31,10 @@ function HomeViewModel() {
         console.log("link: " + link);
     };
 
+    this.homePageChanger = function(data, event){
+        //root.changeUrl(data);
+        return false;
+    };
 
     this.jsonLoader = function(jsonId){
         var jsonFileName= "ml.json";
