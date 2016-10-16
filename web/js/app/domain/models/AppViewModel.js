@@ -17,6 +17,7 @@ function AppViewModel() {
     this.masterKeywordId= ko.observable("");
     this.keywordJson = ko.observable(""); //ko.observableArray([]);
     this.keywordDataJson = ko.observable(""); //ko.observableArray([]);
+    this.quickLinksDataJson = ko.observable("");
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos",
         "keywords",
@@ -125,7 +126,7 @@ function AppViewModel() {
                 }
             }
         });
-    }
+    };
 
     self.getKeywordsJsonFunction = function (pageId){
         $.get("pages/json/keywords.json", function (data, status) {
@@ -143,5 +144,12 @@ function AppViewModel() {
             self.keywordDataJson(JSON.stringify(data));
         });
     };
+
+    self.getQuickLinksFunction = function (fileName){
+        $.get(fileName, function (data, status) {
+            self.quickLinksDataJson(JSON.stringify(data));
+        });
+    };
+
 }
 

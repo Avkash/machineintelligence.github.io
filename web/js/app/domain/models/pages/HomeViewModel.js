@@ -15,7 +15,10 @@ function HomeViewModel() {
     this.tree = ko.observable();
     this.selectedJsonFile = ko.observable();
 
+    this.pageMainHeader = ko.observable("Your home for machine intelligence");
     this.pageHeader = ko.observable("Your home for machine intelligence");
+    this.pageSubHeader = ko.observable("Subpage");
+    this.sideHeader = ko.observable("Sideheader ");
 
     this.showD3Tree = function() {
         var resultHTML = "";
@@ -40,6 +43,15 @@ function HomeViewModel() {
                 break;
             case 'learn':
                 jsonFileName = 'flare.json';
+                break;
+            case 'package':
+                jsonFileName = 'ml.json';
+                break;
+            case 'language':
+                jsonFileName = 'ml.json';
+                break;
+            case 'usability':
+                jsonFileName = 'ml.json';
                 break;
             case 'complexity':
                 jsonFileName = 'ml.json';

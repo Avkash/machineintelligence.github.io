@@ -94,9 +94,7 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <hr>
+                            <hr style="height:1px;">
                         </div>
                     </div>
                     <div class="panel-body heightSet700">
@@ -110,9 +108,10 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Page Content:<hr></div>
+                <div class="panel panel-info">
+                    <div class="panel-heading" style="border-bottom: 1px;">Quick Info: <span data-bind="text: pageMainHeader"></span> </div>
                     <div class="panel-body">
+                        <span data-bind="html: quickDetails"></span>
                     </div>
                 </div>
             </div>
