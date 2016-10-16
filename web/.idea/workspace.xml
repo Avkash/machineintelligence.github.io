@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e7144e-f260-462f-8c91-e2d3e198c7d7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/data/data_h2o.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/h2o-events.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/h2o_github.html" afterPath="$PROJECT_DIR$/pages/my_github.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/h2o_links.html" afterPath="$PROJECT_DIR$/pages/alllinks.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/h2o_social.html" afterPath="$PROJECT_DIR$/pages/my_social.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/h2o_videos.html" afterPath="$PROJECT_DIR$/pages/all_videos.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.models.js" afterPath="$PROJECT_DIR$/js/app.models.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/home.html" afterPath="$PROJECT_DIR$/pages/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/master.html" afterPath="$PROJECT_DIR$/pages/master.html" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,17 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppViewModel.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AppViewModel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app/domain/models/AppViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="106" column="40" selection-start-line="105" selection-start-column="0" selection-end-line="106" selection-end-column="40" />
+            <state relative-caret-position="538">
+              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.models.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.models.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alllinks.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/alllinks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
@@ -114,8 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/keys/keys_d.json" />
-        <option value="$PROJECT_DIR$/pages/keys/keys_e.json" />
         <option value="$PROJECT_DIR$/pages/keys/keys_f.json" />
         <option value="$PROJECT_DIR$/pages/keys/keys_g.json" />
         <option value="$PROJECT_DIR$/pages/keys/keys_h.json" />
@@ -160,11 +180,13 @@
         <option value="$PROJECT_DIR$/pages/data/details_tensorflow.json" />
         <option value="$PROJECT_DIR$/pages/data/details_h2o.json" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
         <option value="$PROJECT_DIR$/pages/master.html" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
         <option value="$PROJECT_DIR$/pages/home.html" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js" />
+        <option value="$PROJECT_DIR$/pages/h2o_links.html" />
+        <option value="$PROJECT_DIR$/js/app.models.js" />
+        <option value="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
       </list>
     </option>
   </component>
@@ -242,42 +264,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="json" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -503,12 +489,12 @@
       <workItem from="1474475725658" duration="367000" />
       <workItem from="1474668971668" duration="18803000" />
       <workItem from="1475717126633" duration="11000" />
-      <workItem from="1475717291711" duration="29488000" />
+      <workItem from="1475717291711" duration="30183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96585000" />
+    <option name="totallyTimeSpent" value="97280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1895" height="1177" extended-state="6" />
@@ -553,30 +539,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/keys/keys_o.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/keys/keys_p.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/keys/keys_y.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/keys/keys_z.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -705,7 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/h2o_videos.html">
+    <entry file="file://$PROJECT_DIR$/pages/all_videos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
@@ -713,7 +675,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/h2o_github.html">
+    <entry file="file://$PROJECT_DIR$/pages/my_github.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -721,7 +683,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/h2o_social.html">
+    <entry file="file://$PROJECT_DIR$/pages/my_social.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
@@ -925,14 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/AppViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="106" column="40" selection-start-line="105" selection-start-column="0" selection-end-line="106" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/data/details_tensorflow.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -969,6 +923,38 @@
             <element signature="n#style#0;n#span#0;n#li#4;n#ul#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#5;n#ul#1;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/alllinks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/h2o-events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/AppViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

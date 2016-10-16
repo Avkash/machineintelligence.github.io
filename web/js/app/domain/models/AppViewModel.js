@@ -37,11 +37,11 @@ function AppViewModel() {
         "home" : "home.html",
         "master" : "master.html",
         "thisweek" : "thisweek.html",
-        "links": "h2o_links.html",
-        "github" : "h2o_github.html",
-        "videos": "h2o_videos.html",
+        "links": "alllinks.html",
+        "github" : "my_github.html",
+        "videos": "all_videos.html",
         /* "keywords" : "glossary-keywords.html", */
-        "social" :  "h2o_social.html",
+        "social" :  "my_social.html",
         /* Algorithms*/
         "algo_glm" : "algo_glm.html",
         "algo_gbm" : "algo_gbm.html",
