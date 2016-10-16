@@ -505,14 +505,17 @@ function MasterPageViewModel() {
         console.log("root.masterPageJson() -> " + localObjStr);
         if (localObjStr.trim().length > 0) {
             var localObj = JSON.parse(localObjStr);
+            if (localObj.id != null){
+                var hPage = "pages/data/data_";
+                hPage = hPage.concat(localObj.id);
+                hPage = hPage.concat(".html");
+                self.masterHtmlPage(hPage);
+            }
             if (localObj.title != null) {
                 self.pageMainHeader(localObj.title);
             }
             if (localObj.subTitle != null) {
                 self.pageSubHeader(localObj.subTitle);
-            }
-            if (localObj.htmlPage != null) {
-                self.masterHtmlPage(localObj.htmlPage);
             }
             if (localObj.links > 0) {
 
