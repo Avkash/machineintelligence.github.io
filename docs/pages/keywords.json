@@ -3,7 +3,7 @@
     "id" : "a",
     "title": "Keywords - A",
     "subTitle" : "Keywords A",
-    "keywordsFile" : "keys/keys_a.json",
+    "keywordsFile" : "pages/keys/keys_a.json",
     "sideTitle" : "Keywords starts with A",
     "contents": [
       {
@@ -15,7 +15,7 @@
     "id" : "b",
     "title": "Keywords - B",
     "subTitle" : "Keywords B",
-    "keywordsFile" : "keys/keys_b.json",
+    "keywordsFile" : "pages/keys/keys_b.json",
     "sideTitle" : "Keywords starts with B",
     "contents": [
       {
