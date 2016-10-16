@@ -57,7 +57,6 @@ function AppViewModel() {
     });
 
     this.viewModelPool = ko.observable({
-        "home": HomeViewModel,
         "master" : MasterPageViewModel,
         "thisweek": ThisWeekViewModel,
         "links": LinksViewModel,
@@ -77,7 +76,8 @@ function AppViewModel() {
         /* Projects */
         "proj_deepdream" : ProjDeepDreamViewModel,
         /* */
-        "keywords" : KeywordsViewModel
+        "keywords" : KeywordsViewModel,
+        "home": HomeViewModel
     });
 
     this.masterCollection = ko.observable({

@@ -1,27 +1,5 @@
 
 
-            function selectJsonTree(jsonTree) {
-
-                /*
-                var vis = d3.select("#mlTree").append("svg:svg")
-                    .attr("width", w + m[1] + m[3])
-                    .attr("height", h + m[0] + m[2])
-                    .append("svg:g")
-                    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
-                */
-
-                var treeDiv = document.getElementById("mlTree");
-                var svgDiv = treeDiv.getElementsByTagName("svg");
-                //
-                //treeDiv.load();
-                //d3.select("#mlTree").reload();
-                //treeDiv.contentWindow.location.reload(true);
-                console.log("selectJsonTree 1: " + treeDiv + " - " + svgDiv + " - " + jsonTree);
-                generateMlTree(jsonTree);
-            }
-
-
-
             function generateMlTree(mlJsonPath) {
 
                 var m = [20, 120, 20, 120],
@@ -35,7 +13,6 @@
 
                 var diagonal = d3.svg.diagonal()
                     .projection(function(d) { return [d.y, d.x]; });
-
 
                 var vis = d3.select("#mlTree").append("svg:svg")
                     .attr("width", w + m[1] + m[3])

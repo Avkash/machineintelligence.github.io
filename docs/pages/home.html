@@ -52,7 +52,7 @@
                -->   
                </div>
                <!-- END Language list    -->
-               <div><i class="fa fa-home" data-bind="click: root.changeUrl('home')"></i> Deeplearn.io <small>> home</small></div>
+               <div><i class="fa fa-home" data-bind="click: root.changeUrl('home')"></i> Deeplearn.io <small>> <span data-bind="text: pageHeader"></span></small></div>
                <small data-localize="dashboard.WELCOME"></small>
             </div>
             <div class="row no-padding no-margin">
@@ -65,13 +65,13 @@
                <div class="col-xs-3">
                     <h2 class="text-thin">Visual Machine Learning</h2>
                     <ul>
-                       <li> <span data-bind="click: selectJsonTree('js/new.json');">Concept Visualization</span> </li>
+                       <li> <span style="cursor:pointer" data-bind="click: jsonLoader('main');">Concept Visualization</span> </li>
                     </ul>
                     <h2 class="text-thin">Machine Learning Overview</h2>
                     <ul>
-                        <li> <a href="" target="h2o-home-link-content">Algorithms by Type</a> </li>
-                        <li> <a href="" target="h2o-home-link-content">Algorithms by Learning Type</a> </li>
-                        <li> <a href="" target="h2o-home-link-content">By Complexity </a> </li>
+                        <li> <span style="cursor:pointer" data-bind="click: jsonLoader('type');">Algorithms by Type</span> </li>
+                        <li> <span style="cursor:pointer" data-bind="click: jsonLoader('learn');">Algorithms by Learning Type</span> </li>
+                        <li> <span style="cursor:pointer" data-bind="click: jsonLoader('complexity');">By Complexity </span> </li>
                         <li> <a href="" target="h2o-home-link-content">By Language </a> </li>
                         <li> <a href="" target="h2o-home-link-content">By Package </a> </li>
                         <li> <a href="" target="h2o-home-link-content">By Application and Usability </a> </li>
@@ -86,6 +86,11 @@
                         <li> <a href="http://mxnet.io/" target="_blank">mxnet</a></li>
                         <li>  <a href="https://openai.com/blog/">OpenAI </a> </li>
                     </ul>
+                   <h2 class="text-thin">Great Research Papers</h2>
+                   <ul>
+                       <li> <span style="cursor:pointer" data-bind="click: updateDataBox('algos');">Algorithms </span> </li>
+                       <li> <span style="cursor:pointer" data-bind="click: updateDataBox('models');">Models</span> </li>
+                   </ul>
                </div>
             </div>
          </div>

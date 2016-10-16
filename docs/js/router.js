@@ -69,6 +69,7 @@
     }).run();
 
     function getView(view) {
+        console.log("what is view:" + view);
         var urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
         if (view.startsWith("algo_")) {
             AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
@@ -84,8 +85,11 @@
             view = "keywords";
             urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
             AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
-            console.log("url: " + urlStr);
+        } else {
+            urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
+            AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
         }
+        console.log("url: " + urlStr);
         $.ajax({
             url: urlStr, //url: "pages/".concat(view, ".html"),
             type: "GET",
