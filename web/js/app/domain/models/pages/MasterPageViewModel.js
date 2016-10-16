@@ -75,7 +75,6 @@ function MasterPageViewModel() {
 
     self.load = function(){
         root.getMasterJsonFunction(root.masterPageId());
-        //console.log("Log: " + root.masterPageId() + " / " + root.masterPageJson());
         getPageJsonData(root.masterPageJson());
     };
     self.load();

@@ -1,0 +1,33 @@
+{
+  "id" : "dl",
+  "papers": [
+    {
+      "id": "1",
+      "title": "Webpage",
+      "info": "Info",
+      "link" : "http://www.h2odl.ai/",
+      "tags" : "Model, GGM"
+    },
+    {
+      "id": "2",
+      "title": "Webpage",
+      "info": "Info",
+      "link" : "http://www.h2o.ai/",
+      "tags" : "Model, GGM"
+    },
+    {
+      "id": "3",
+      "title": "Webpage",
+      "info": "Info",
+      "link" : "http://www.h2o.ai/",
+      "tags" : "Model, GGM"
+    },
+    {
+      "id": "4",
+      "title": "Webpage",
+      "info": "Info",
+      "link" : "http://www.h2o.ai/",
+      "tags" : "Model, GGM"
+    }
+  ]
+}

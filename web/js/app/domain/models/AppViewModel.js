@@ -18,10 +18,15 @@ function AppViewModel() {
     this.keywordJson = ko.observable(""); //ko.observableArray([]);
     this.keywordDataJson = ko.observable(""); //ko.observableArray([]);
     this.quickLinksDataJson = ko.observable("");
+    this.dlDataJson = ko.observable();
+    this.mlDataJson = ko.observable();
+
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos",
         "keywords",
         "social",
+        "datasets",
+        "research",
         "h2o", "tensorflow", "mxnet", "paddle", "caffe", "keras","theano",
         "dl4j", "ndimaj", "encog", "hpcct",
         "torch",
@@ -40,6 +45,8 @@ function AppViewModel() {
         "links": "alllinks.html",
         "github" : "my_github.html",
         "videos": "all_videos.html",
+        "datasets" : "datasets.html",
+        "research" : "research.html",
         /* "keywords" : "glossary-keywords.html", */
         "social" :  "my_social.html",
         /* Algorithms*/
@@ -65,6 +72,8 @@ function AppViewModel() {
         "github": GitHubViewModel,
         "videos" : VideosViewModel,
         "social" : SocialViewModel,
+        "datasets": DatasetViewModel,
+        "research": ResearchViewModel,
         /* Algorithms*/
         "algo_glm" : AlgoGlmViewModel,
         "algo_gbm" : AlgoGbmViewModel,
@@ -151,5 +160,15 @@ function AppViewModel() {
         });
     };
 
+    self.getDlResearchData = function (fileName){
+        $.get(fileName, function (data, status) {
+            self.dlDataJson(JSON.stringify(data));
+        });
+    };
+    self.getMlResearchData = function (fileName){
+        $.get(fileName, function (data, status) {
+            self.mlDataJson(JSON.stringify(data));
+        });
+    };
 }
 
