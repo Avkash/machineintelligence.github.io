@@ -1,0 +1,25 @@
+{
+  "id" : "gbm",
+  "links": [
+    {
+      "id": "Website",
+      "linkInfo" : "https://www.gbm111.org/"
+    },
+    {
+      "id": "Download",
+      "linkInfo" : "https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#download-and-setup"
+    },
+    {
+      "id": "Source Code",
+      "linkInfo" : "https://github.com/tensorflow/tensorflow"
+    },
+    {
+      "id": "Documentation",
+      "linkInfo" : "https://www.tensorflow.org/versions/r0.11/get_started/index.html"
+    },
+    {
+      "id": "TensorHub",
+      "linkInfo" : "https://tensorhub.com/"
+    }
+  ]
+}

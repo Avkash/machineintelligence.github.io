@@ -21,7 +21,7 @@ function AppViewModel() {
     this.dlDataJson = ko.observable();
     this.mlDataJson = ko.observable();
     this.DatasetsListJson = ko.observable();
-
+    this.quickAlgoLinksDataJson = ko.observable();
 
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos",
@@ -77,15 +77,15 @@ function AppViewModel() {
         "datasets": DatasetViewModel,
         "research": ResearchViewModel,
         /* Algorithms*/
-        "algo_glm" : AlgoGlmViewModel,
-        "algo_gbm" : AlgoGbmViewModel,
-        "algo_dl" : AlgoDlViewModel,
-        "algo_drf" : AlgoDrfViewModel,
-        "algo_nb" : AlgoNbViewModel,
-        "algo_ensembles" : AlgoEnsemblesViewModel,
-        "algo_glrm" : AlgoGlrmViewModel,
-        "algo_kmeans" : AlgoKmeansViewModel,
-        "algo_pca" : AlgoPcaViewModel,
+        "algo_glm" : AlgoMasterViewModel,
+        "algo_gbm" : AlgoMasterViewModel,
+        "algo_dl" : AlgoMasterViewModel,
+        "algo_drf" : AlgoMasterViewModel,
+        "algo_nb" : AlgoMasterViewModel,
+        "algo_ensembles" : AlgoMasterViewModel,
+        "algo_glrm" : AlgoMasterViewModel,
+        "algo_kmeans" : AlgoMasterViewModel,
+        "algo_pca" : AlgoMasterViewModel,
         /* Projects */
         "proj_deepdream" : ProjDeepDreamViewModel,
         /* */
@@ -159,6 +159,12 @@ function AppViewModel() {
     self.getQuickLinksFunction = function (fileName){
         $.get(fileName, function (data, status) {
             self.quickLinksDataJson(JSON.stringify(data));
+        });
+    };
+
+    self.getQuickAlgoLinksFunction = function (fileName){
+        $.get(fileName, function (data, status) {
+            self.quickAlgoLinksDataJson(JSON.stringify(data));
         });
     };
 
