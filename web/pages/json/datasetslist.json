@@ -1,6 +1,6 @@
 {
-  "id" : "dl",
-  "papers": [
+  "id" : "datasets",
+  "dscollection": [
     {
       "id": "1",
       "title": "Webpage",
@@ -16,7 +16,7 @@
       "info": "Info",
       "link" : "http://www.h2o.ai/",
       "tags" : [
-        {"tag" : "Model"}, { "tag" : "AI" }
+        {"tag" : "Model"}, { "tag" : "Healthcare" }
       ]
     },
     {
@@ -25,7 +25,7 @@
       "info": "Info",
       "link" : "http://www.h2o.ai/",
       "tags" : [
-        {"tag" : "Model"}, { "tag" : "AI" }
+        {"tag" : "Model"}, { "tag" : "IoT" }
       ]
     },
     {
@@ -34,7 +34,7 @@
       "info": "Info",
       "link" : "http://www.h2o.ai/",
       "tags" : [
-        {"tag" : "Model"}, { "tag" : "AI" }
+        {"tag" : "Model"}, { "tag" : "Security" }
       ]
     }
   ]

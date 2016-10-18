@@ -20,6 +20,8 @@ function AppViewModel() {
     this.quickLinksDataJson = ko.observable("");
     this.dlDataJson = ko.observable();
     this.mlDataJson = ko.observable();
+    this.DatasetsListJson = ko.observable();
+
 
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos",
@@ -170,5 +172,12 @@ function AppViewModel() {
             self.mlDataJson(JSON.stringify(data));
         });
     };
+
+    self.getDatasetsListFunction = function (fileName){
+        $.get(fileName, function (data, status) {
+            self.DatasetsListJson(JSON.stringify(data));
+        });
+    };
+
 }
 

@@ -19,16 +19,25 @@ function ResearchViewModel() {
                 for(var i=0;i<data.papers.length;i++) {
                     var idCode = type.concat("_").concat(data.papers[i].id);
                     idCode = idCode.replace(/\s+/g, '');
-                    htmlString = htmlString.concat("<li class='list-group-item'><button type='button' class='btn btn-info btn-sm' data-toggle='collapse' data-target='");
+                    htmlString = htmlString.concat("<li class='list-group-item'>").concat(data.papers[i].title).concat("</span>");
+                    htmlString = htmlString.concat("<span class='pull-right'><button type='button' class='btn btn-info btn-xs' data-toggle='collapse' data-target='");
                     htmlString = htmlString.concat("#").concat(idCode).concat("'>");
-                    htmlString = htmlString.concat("[").concat(data.papers[i].title).concat("]");
-                    htmlString = htmlString.concat("</button>");
+                    htmlString = htmlString.concat("<i class='fa fa-download fa-1'></i>");
+                    htmlString = htmlString.concat("</button></span>");
                     htmlString = htmlString.concat("<div id='").concat(idCode).concat("' class='collapse'><br>");
                     htmlString = htmlString.concat("<span>").concat(data.papers[i].info).concat("</span>");
                     htmlString = htmlString.concat("<div>URL: <a href='").concat(data.papers[i].link).concat("' target='_blank'>");
                     htmlString = htmlString.concat(data.papers[i].link);
                     htmlString = htmlString.concat("</a></div>");
-                    htmlString = htmlString.concat("<span>Tags: ").concat(data.papers[i].tags).concat("</span>");
+                    htmlString = htmlString.concat("<span>Tags: ");
+                    if (data.papers[i].tags != null && data.papers[0].tags.length > 0) {
+                        for(j=0;j<data.papers[0].tags.length;j++){
+                            htmlString = htmlString.concat("<button class='btn btn-xs btn-primary'>");
+                            htmlString = htmlString.concat(data.papers[i].tags[j].tag);
+                            htmlString = htmlString.concat("</button>&nbsp");
+                        }
+                    }
+                    htmlString = htmlString.concat("</span>");
                     htmlString = htmlString.concat("</div></li>");
                 }
             }
