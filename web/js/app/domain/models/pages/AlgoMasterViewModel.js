@@ -28,6 +28,24 @@ function AlgoMasterViewModel(){
             case "drf":
                 self.pageHeader("Distributed Random Forest (DRF)");
                 break;
+            case "dl":
+                self.pageHeader("Deep Learning (DL)");
+                break;
+            case "nb":
+                self.pageHeader("Naive Bayes (NB)");
+                break;
+            case "ensembles":
+                self.pageHeader("Ensembles or Stacking");
+                break;
+            case "glrm":
+                self.pageHeader("Generalized Low Rank Models (GLRM)");
+                break;
+            case "kmeans":
+                self.pageHeader("K-Means");
+                break;
+            case "pca":
+                self.pageHeader("Principal Component Analysis");
+                break;
             default:
                 self.pageHeader("Algorithm");
         }
@@ -74,8 +92,13 @@ function AlgoMasterViewModel(){
             }
             // Initialize the display to show a few nodes.
             visRoot.children.forEach(toggleAll);
-            toggle(visRoot.children[1]);
-            toggle(visRoot.children[1].children[2]);
+            if (visRoot.children.length > 0) {
+                toggle(visRoot.children[0]);
+            }
+            if (visRoot.children.length > 1) {
+                toggle(visRoot.children[1]);
+                //toggle(visRoot.children[1].children[2]);
+            }
 
             //toggle(visRoot.children[9]);
             //toggle(visRoot.children[9].children[0]);
@@ -83,14 +106,14 @@ function AlgoMasterViewModel(){
         });
 
         function toggle(d) {
-            if (d.children) {
-                d._children = d.children;
-                d.children = null;
-            } else {
-                d.children = d._children;
-                d._children = null;
-            }
-        }
+                if (d.children) {
+                    d._children = d.children;
+                    d.children = null;
+                } else {
+                    d.children = d._children;
+                    d._children = null;
+                }
+        };
 
         function update(source) {
             var duration = d3.event && d3.event.altKey ? 5000 : 500;
