@@ -1,0 +1,86 @@
+{
+  "name": "links",
+  "alllinks": [
+    {
+      "section": "social",
+      "children": [
+        {"title": "Data School (dataschool.io)", "link": "http://dataschool.io", "tag": [ "a", "b" , "c"]},
+        {"title": "Sparkling Water", "link": "https://gitter.im/h2oai/sparkling-water", "tag": [ "a", "b" , "c"]},
+        {"link": "http://blog.h2o.ai/", "title": "H2O Blogs", "tag": [ "a", "b" , "c"]},
+        {"link": "http://www.slideshare.net/0xdata/presentations", "title": "H2O Presentations", "tag": [ "a", "b" , "c"]},
+        {"link": "https://github.com/h2oai/app-malicious-domains", "title": "Building ML app in AWS Lambda", "tag": [ "a", "b" , "c"]},
+        {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]}
+      ]
+    },
+    {
+      "section": "dlml",
+      "children": [
+        {"title": "List of DL Libraries", "link": "http://www.teglor.com/b/deep-learning-libraries-language-cm569/", "tag": [ "a", "b" , "c"]},
+        {"title": "Deep Learning Fundamentals", "link": "https://www.analyticsvidhya.com/blog/2016/03/introduction-deep-learning-fundamentals-neural-networks/", "tag": [ "a", "b" , "c"]},
+        {"title": "9 Deep Learning Papers", "link": "https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html", "tag": [ "a", "b" , "c"]},
+        {"title": "Neural Network Zoo", "link": "http://www.asimovinstitute.org/neural-network-zoo/", "tag": [ "a", "b" , "c"]},
+        {"title": "Infrastructure for Deep Learning", "link": "https://openai.com/blog/infrastructure-for-deep-learning/", "tag": [ "a", "b" , "c"]},
+        {"title": "Probability Dance: Neural Network", "link": "https://probablydance.com/2016/04/30/neural-networks-are-impressively-good-at-compression/", "tag": [ "a", "b" , "c"]},
+        {"title": "Deep Learning Book", "link": "http://www.deeplearningbook.org/", "tag": [ "a", "b" , "c"]},
+        {"title": "KDNuggets: Deep Learning Why, How & Why", "link": "http://www.kdnuggets.com/2015/01/deep-learning-explanation-what-how-why.html", "tag": [ "a", "b" , "c"]},
+        {"title": "Book: Neural Networks & Deep Learning", "link": "http://neuralnetworksanddeeplearning.com/chap1.html", "tag": [ "a", "b" , "c"]},
+        {"title": "Logistic Regression Guide", "link": "http://www.dataschool.io/guide-to-logistic-regression/", "tag": [ "a", "b" , "c"]},
+        {"title": "Fast Wavenet: An efficient Wavenet generation implementation", "link": "https://github.com/tomlepaine/fast-wavenet", "tag": [ "a", "b" , "c"]},
+        {"link": "Introduction to Deep Neural Networks", "title": "https://deeplearning4j.org/neuralnet-overview", "tag": [ "a", "b" , "c"]}
+      ]
+    },
+    {
+      "section": "external",
+      "children": [
+        {"title": "Empirical", "link": "https://empiricalci.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "Rapidminer", "link": "https://rapidminer.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "Deepsense.io | Neptune", "link": "http://deepsense.io/neptune-machine-learning-platform-post/", "tag": [ "a", "b" , "c"]},
+        {"title": "www.deepinstinct.com", "link": "http://www.deepinstinct.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "Domino Data Labs", "link": "https://www.dominodatalab.com", "tag": [ "a", "b" , "c"]},
+        {"title": "Bonsai AI for everyone", "link": "https://bons.ai/", "tag": [ "a", "b" , "c"]},
+        {"title": "Dataiku (Data Science Studio)", "link": "http://www.dataiku.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "Data Science ", "link": "https://www.datascience.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "MD.ai", "link": "https://www.md.ai/", "tag": [ "a", "b" , "c"]},
+        {"title": "AI.ON Artificial Intelligent Open Network", "link": "http://ai-on.org/", "tag": [ "a", "b" , "c"]}
+      ]
+    },
+    {
+      "section": "groups",
+      "children": [
+        {"title": "Silicon Valley Artificial Intelligence", "link": "http://sv.ai/", "tag": [ "a", "b" , "c"]},
+        {"title": "Data School", "link": "http://www.dataschool.io/", "tag": [ "a", "b" , "c"]},
+        {"title": "Tensor Hub", "link": "https://tensorhub.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "Google Brain", "link": "https://research.google.com/teams/brain/", "tag": [ "a", "b" , "c"]},
+        {"title": "Deep Learning Dream Machine", "link": "http://graphific.github.io/posts/building-a-deep-learning-dream-machine/", "tag": [ "a", "b" , "c"]},
+        {"title": "Deep Learning Research Paper & Notes", "link": "https://github.com/dennybritz/deeplearning-papernotes", "tag": [ "a", "b" , "c"]},
+        {"title": "Training Dataset for AI", "link": "https://spare5.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "t-SNE Implementation", "link": "http://distill.pub/2016/misread-tsne/", "tag": [ "a", "b" , "c"]},
+        {"title": "Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks", "link": "https://arxiv.org/pdf/1312.6082.pdf", "tag": [ "a", "b" , "c"]}
+      ]
+    },
+    {
+      "section": "ds",
+      "children": [
+        {"title": "Machine Learning first 15 Hours", "link": "http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/", "tag": [ "a", "b" , "c"]},
+        {"title": "Indepth Logistic Regression", "link": "http://www.dataschool.io/guide-to-logistic-regression/", "tag": [ "a", "b" , "c"]},
+        {"title": "Machine Learning with Scikit-learn", "link": "http://www.dataschool.io/machine-learning-with-scikit-learn/", "tag": [ "a", "b" , "c"]},
+        {"title": "Data analysis with Panda", "link": "http://www.dataschool.io/easier-data-analysis-with-pandas/", "tag": [ "a", "b" , "c"]},
+        {"title": "Comparing supervised learning algorithms", "link": "http://www.dataschool.io/comparing-supervised-learning-algorithms/", "tag": [ "a", "b" , "c"]},
+        {"title": "Choosing a Classifier", "link": "http://blog.echen.me/2011/04/27/choosing-a-machine-learning-classifier/", "tag": [ "a", "b" , "c"]},
+        {"title": "Understanding RoC Curve and area under the curve", "link": "http://www.dataschool.io/roc-curves-and-auc-explained/", "tag": [ "a", "b" , "c"]},
+        {"title": "Academic Torents (Academia Search)", "link": "http://academictorrents.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "Azure ML Tutorials", "link": "https://github.com/Azure/Azure-MachineLearning-DataScience/tree/master/Misc/KDDCup2016", "tag": [ "a", "b" , "c"]}
+      ]
+    },
+    {
+      "section": "other",
+      "children": [
+        {"title": "Deep Learning via Multilayer Perceptrons (MLPs)", "link": "https://github.com/ledell/sldm4-h2o/blob/master/sldm4-deeplearning-h2o.Rmd", "tag": [ "a", "b" , "c"]},
+        {"title": "Machine Learning in a year", "link": "https://medium.com/learning-new-stuff/machine-learning-in-a-year-cdb0b0ebd29c#.mzum7x7yj", "tag": [ "a", "b" , "c"]},
+        {"title": "R Cheatsheet", "link": "https://www.rstudio.com/resources/cheatsheets/", "tag": [ "a", "b" , "c"]},
+        {"title": "Machine Learning Torrents", "link": "http://academictorrents.com/browse.php?search=machine+learning", "tag": [ "a", "b" , "c"]}
+        {"title": "Explaning Machine Learning Classifiers or Models (LIME)" , "link": "https://github.com/marcotcr/lime", "tag": [ "a", "b" , "c"]}
+      ]
+    }
+  ]
+}

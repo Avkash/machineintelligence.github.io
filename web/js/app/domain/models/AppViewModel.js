@@ -21,6 +21,7 @@ function AppViewModel() {
     this.dlDataJson = ko.observable();
     this.mlDataJson = ko.observable();
     this.DatasetsListJson = ko.observable();
+    this.allLinkdDataJson = ko.observable();
     this.quickAlgoLinksDataJson = ko.observable();
 
 
@@ -156,6 +157,12 @@ function AppViewModel() {
     self.getKeywordsDataFunction = function (fileName){
         $.get(fileName, function (data, status) {
             self.keywordDataJson(JSON.stringify(data));
+        });
+    };
+
+    self.getAllLinksFunction = function (fileName){
+        $.get(fileName, function (data, status) {
+            self.allLinkdDataJson(JSON.stringify(data));
         });
     };
 
