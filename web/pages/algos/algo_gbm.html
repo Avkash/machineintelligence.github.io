@@ -42,7 +42,7 @@
                 <div class="panel heightSet900">
                     <h2>GBM Details</h2>
                     <div id="algoTree">
-                        <span data-bind="text: generateMlTree('pages/research/algo_gbm.json', 'gbm');"></span>
+                        <span data-bind="text: generateMlTree('pages/research/algo_gbm.json');"></span>
                     </div>
                 </div>
             </div>
@@ -52,6 +52,7 @@
                         GBM Quick Links
                     </div>
                     <div class="panel-body heightSet900">
+                        <span data-bind="text: quickDetailsFunc('gbm', 'pages/research/algo_gbm_links.json')"></span>
                         <span data-bind="html: quickDetails"></span>
                     </div>
                 </div>

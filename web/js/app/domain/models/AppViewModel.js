@@ -37,6 +37,7 @@ function AppViewModel() {
         "mocha",
         "cntk", "mxnet",
         "gobrain",
+        "algo",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
         "proj_deepdream"]);
 
@@ -76,7 +77,8 @@ function AppViewModel() {
         "social" : SocialViewModel,
         "datasets": DatasetViewModel,
         "research": ResearchViewModel,
-        /* Algorithms*/
+        "algo" : AlgoMasterViewModel,
+        /* Algorithms */
         "algo_glm" : AlgoMasterViewModel,
         "algo_gbm" : AlgoMasterViewModel,
         "algo_dl" : AlgoMasterViewModel,
@@ -111,6 +113,11 @@ function AppViewModel() {
          "mocha" : "Mocha",
          "cntk" : "CNTK",
          "gobrain": "GoBrain"
+    });
+
+    this.algoCollection = ko.observable({
+        "gbm" : "Gradient Boosting Machine (GBM)",
+        "glm" : "Genearlized Linear Machine (GLM)"
     });
 
     this.contentView = ko.observable();

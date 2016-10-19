@@ -38,6 +38,7 @@ function AppViewModel() {
         "mocha",
         "cntk", "mxnet",
         "gobrain",
+        "algo",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
         "proj_deepdream"]);
 
@@ -77,7 +78,8 @@ function AppViewModel() {
         "social" : SocialViewModel,
         "datasets": DatasetViewModel,
         "research": ResearchViewModel,
-        /* Algorithms*/
+        "algo" : AlgoMasterViewModel,
+        /* Algorithms */
         "algo_glm" : AlgoMasterViewModel,
         "algo_gbm" : AlgoMasterViewModel,
         "algo_dl" : AlgoMasterViewModel,
@@ -112,6 +114,11 @@ function AppViewModel() {
          "mocha" : "Mocha",
          "cntk" : "CNTK",
          "gobrain": "GoBrain"
+    });
+
+    this.algoCollection = ko.observable({
+        "gbm" : "Gradient Boosting Machine (GBM)",
+        "glm" : "Genearlized Linear Machine (GLM)"
     });
 
     this.contentView = ko.observable();
@@ -241,45 +248,35 @@ function AlgoMasterViewModel(){
 
     this.pageHeader = ko.observable();
     self.alogPageType = ko.observable();
-    self.quickAlgoLinksFile =  ko.observable();
-    self.quickAlgoDetailsJson = ko.observable();
-    self.quickDetails = ko.observable("Quick Details");
+    self.quickDetails = ko.observable("Quick Details1");
 
-
-    this.alogPageType.subscribe(function (){
-        var qlPage = "";
-        switch(self.alogPageType()){
+    self.quickDetailsFunc = function(algoType, algoLinks){
+        switch(algoType){
             case "glm":
                 self.pageHeader("Generalized Linear Modeling (GLM)");
-                qlPage = "pages/research/algo_glm_links.json";
                 break;
             case "gbm":
                 self.pageHeader("Gradient Boosting Machine (GBM)");
-                qlPage = "pages/research/algo_gbm_links.json";
+                break;
+            case "drf":
+                self.pageHeader("Distributed Random Forest (DRF)");
                 break;
             default:
                 self.pageHeader("Algorithm");
         }
-        if (qlPage.length > 0) {
-            self.quickAlgoDetailsJson("");
-            self.quickAlgoLinksFile("");
-            self.quickAlgoLinksFile(qlPage);
-            root.getQuickAlgoLinksFunction(self.quickAlgoLinksFile());
-            self.quickAlgoDetailsJson(root.quickAlgoLinksDataJson());
-            renderQuickAlgoLinksData();
-        }
-    });
+        root.getQuickAlgoLinksFunction(algoLinks);
+        renderQuickAlgoLinksData(root.quickAlgoLinksDataJson());
+    };
 
-    self.renderQuickAlgoLinksData = function(){
-        console.log(self.quickAlgoDetailsJson());
-        if (self.quickAlgoDetailsJson().length > 0) {
-            var data = JSON.parse(self.quickAlgoDetailsJson());
+    self.renderQuickAlgoLinksData = function(jsonData){
+        if (jsonData != null && jsonData.length > 0) {
+            var data = JSON.parse(jsonData);
             var htmlString = "<ul class='list-group'>";
             if (data.links.length > 0 ) {
                 for(var i=0;i<data.links.length;i++) {
                     var idCode = data.links[i].id;
                     idCode = idCode.replace(/\s+/g, '');
-                    htmlString = htmlString.concat("<li class='list-group-item'><button type='button' class='btn btn-info btn-sm' data-toggle='collapse' data-target='");
+                    htmlString = htmlString.concat("<li class='list-group-item'><button type='button' class='btn btn-info btn-xs' data-toggle='collapse' data-target='");
                     htmlString = htmlString.concat("#").concat(idCode).concat("'>");
                     htmlString = htmlString.concat(data.links[i].id);
                     htmlString = htmlString.concat("</button>");
@@ -295,10 +292,8 @@ function AlgoMasterViewModel(){
         }
     };
 
-    self.generateMlTree = function(mlJsonPath, algoType) {
+    self.generateMlTree = function(mlJsonPath) {
         var visRoot;
-        self.alogPageType(algoType);
-        //self.updateHeader(algoType);
         d3.json(mlJsonPath, function(json) {
             visRoot = json;
             visRoot.x0 = h / 2;
@@ -435,7 +430,6 @@ function AlgoMasterViewModel(){
             .attr("height", h + m[0] + m[2])
             .append("svg:g")
             .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
-
     };
 
     self.load();

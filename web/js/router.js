@@ -58,6 +58,13 @@
             AppViewModel.masterLink(AppViewModel.masterCollection()[this.params["link"]]);
             getView("master");
         });
+        this.get('#/algorithm/all/:link', function() {
+            AppViewModel.masterTab("Algorithm");
+            AppViewModel.masterDir("All");
+            AppViewModel.masterPageId(this.params["link"]);
+            AppViewModel.masterLink(AppViewModel.algoCollection()[this.params["link"]]);
+            getView(this.params["link"]);
+        });
 
         this.get('#/:link', function() {
             getView(this.params["link"]);
