@@ -26,7 +26,7 @@
         {"title": "Book: Neural Networks & Deep Learning", "link": "http://neuralnetworksanddeeplearning.com/chap1.html", "tag": [ "a", "b" , "c"]},
         {"title": "Logistic Regression Guide", "link": "http://www.dataschool.io/guide-to-logistic-regression/", "tag": [ "a", "b" , "c"]},
         {"title": "Fast Wavenet: An efficient Wavenet generation implementation", "link": "https://github.com/tomlepaine/fast-wavenet", "tag": [ "a", "b" , "c"]},
-        {"link": "Introduction to Deep Neural Networks", "title": "https://deeplearning4j.org/neuralnet-overview", "tag": [ "a", "b" , "c"]}
+        {"title": "Introduction to Deep Neural Networks", "link": "https://deeplearning4j.org/neuralnet-overview", "tag": [ "a", "b" , "c"]}
       ]
     },
     {
@@ -78,7 +78,7 @@
         {"title": "Deep Learning via Multilayer Perceptrons (MLPs)", "link": "https://github.com/ledell/sldm4-h2o/blob/master/sldm4-deeplearning-h2o.Rmd", "tag": [ "a", "b" , "c"]},
         {"title": "Machine Learning in a year", "link": "https://medium.com/learning-new-stuff/machine-learning-in-a-year-cdb0b0ebd29c#.mzum7x7yj", "tag": [ "a", "b" , "c"]},
         {"title": "R Cheatsheet", "link": "https://www.rstudio.com/resources/cheatsheets/", "tag": [ "a", "b" , "c"]},
-        {"title": "Machine Learning Torrents", "link": "http://academictorrents.com/browse.php?search=machine+learning", "tag": [ "a", "b" , "c"]}
+        {"title": "Machine Learning Torrents", "link": "http://academictorrents.com/browse.php?search=machine+learning", "tag": [ "a", "b" , "c"]},
         {"title": "Explaning Machine Learning Classifiers or Models (LIME)" , "link": "https://github.com/marcotcr/lime", "tag": [ "a", "b" , "c"]}
       ]
     }

@@ -162,7 +162,9 @@ function AppViewModel() {
     };
 
     self.getAllLinksFunction = function (fileName){
+        console.log("fileName: " + fileName);
         $.get(fileName, function (data, status) {
+            console.log("data: " + data);
             self.allLinkdDataJson(JSON.stringify(data));
         });
     };
@@ -605,7 +607,7 @@ function HomeViewModel() {
 
     self.generateMlTree = function(mlJsonPath) {
         var visRoot;
-        d3.json(mlJsonPath, function(json) {   /*  "js/vendor/d3/flare.json" */
+        d3.json(mlJsonPath, function(json) {
             visRoot = json;
             visRoot.x0 = h / 2;
             visRoot.y0 = 0;
@@ -833,7 +835,7 @@ function LinksViewModel(){
 
     this.root = AppViewModel;
 
-    this.pageHeader = ko.observable("External Links");
+    this.pageHeader = ko.observable("Helpful Links");
     this.externalLinks = ko.observable();
     this.socialLinks = ko.observable();
     this.dlmlLinks  = ko.observable();

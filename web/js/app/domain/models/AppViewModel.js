@@ -161,7 +161,9 @@ function AppViewModel() {
     };
 
     self.getAllLinksFunction = function (fileName){
+        console.log("fileName: " + fileName);
         $.get(fileName, function (data, status) {
+            console.log("data: " + data);
             self.allLinkdDataJson(JSON.stringify(data));
         });
     };

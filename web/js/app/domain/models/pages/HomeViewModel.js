@@ -74,7 +74,7 @@ function HomeViewModel() {
 
     self.generateMlTree = function(mlJsonPath) {
         var visRoot;
-        d3.json(mlJsonPath, function(json) {   /*  "js/vendor/d3/flare.json" */
+        d3.json(mlJsonPath, function(json) {
             visRoot = json;
             visRoot.x0 = h / 2;
             visRoot.y0 = 0;

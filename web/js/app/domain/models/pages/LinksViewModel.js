@@ -5,7 +5,7 @@ function LinksViewModel(){
 
     this.root = AppViewModel;
 
-    this.pageHeader = ko.observable("External Links");
+    this.pageHeader = ko.observable("Helpful Links");
     this.externalLinks = ko.observable();
     this.socialLinks = ko.observable();
     this.dlmlLinks  = ko.observable();
