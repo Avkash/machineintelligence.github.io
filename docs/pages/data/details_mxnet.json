@@ -1,0 +1,21 @@
+{
+  "id" : "mxnet",
+  "links": [
+    {
+      "id": "MXNET",
+      "linkInfo" : "http://www.h2o.ai/"
+    },
+    {
+      "id": "Download",
+      "linkInfo" : "http://www.h2o.ai/download/"
+    },
+    {
+      "id": "Source",
+      "linkInfo" : "https://github.com/h2oai"
+    },
+    {
+      "id": "Documentation",
+      "linkInfo" : "http://docs.h2o.ai/h2o/latest-stable/index.html"
+    }
+  ]
+}

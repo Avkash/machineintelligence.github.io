@@ -1,0 +1,21 @@
+{
+  "id" : "dl4j",
+  "links": [
+    {
+      "id": "Deep Learning 4 Java",
+      "linkInfo" : "http://www.h2o.ai/"
+    },
+    {
+      "id": "Download",
+      "linkInfo" : "http://www.h2o.ai/download/"
+    },
+    {
+      "id": "Source Code",
+      "linkInfo" : "https://github.com/h2oai"
+    },
+    {
+      "id": "Documentation",
+      "linkInfo" : "http://docs.h2o.ai/h2o/latest-stable/index.html"
+    }
+  ]
+}

@@ -3,11 +3,11 @@
   "dscollection": [
     {
       "id": "1",
-      "title": "Webpage",
-      "info": "Info",
-      "link" : "http://www.h2odl.ai/",
+      "title": "Credit Card Data Set",
+      "info": "This research aimed at the case of customersâ€™ default payments in Taiwan and compares the predictive accuracy of probability of default among six data mining methods.",
+      "link" : "http://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients",
       "tags" : [
-        {"tag" : "Model"}, { "tag" : "AI" }
+        {"tag" : "Consumer"}, { "tag" : "Credit Cards" }
       ]
     },
     {

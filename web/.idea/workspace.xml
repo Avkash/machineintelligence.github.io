@@ -2,29 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e7144e-f260-462f-8c91-e2d3e198c7d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_dl.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_dl_links.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_ensembles.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_ensembles_links.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_glrm.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_glrm_links.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_kmeans.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_kmeans_links.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_nb.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_nb_links.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_pca.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/research/algo_pca_links.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/data/data_xgboost.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/data/details_xgboost.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/_left_side_menu.html" afterPath="$PROJECT_DIR$/includes/_left_side_menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.models.js" afterPath="$PROJECT_DIR$/js/app.models.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/pages/AlgoMasterViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/AlgoMasterViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/algos/algo_dl.html" afterPath="$PROJECT_DIR$/pages/algos/algo_dl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/algos/algo_drf.html" afterPath="$PROJECT_DIR$/pages/algos/algo_drf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/algos/algo_ensembles.html" afterPath="$PROJECT_DIR$/pages/algos/algo_ensembles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/algos/algo_gbm.html" afterPath="$PROJECT_DIR$/pages/algos/algo_gbm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/algos/algo_glrm.html" afterPath="$PROJECT_DIR$/pages/algos/algo_glrm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/algos/algo_kmeans.html" afterPath="$PROJECT_DIR$/pages/algos/algo_kmeans.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/algos/algo_nb.html" afterPath="$PROJECT_DIR$/pages/algos/algo_nb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/algos/algo_pca.html" afterPath="$PROJECT_DIR$/pages/algos/algo_pca.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_accordnet.json" afterPath="$PROJECT_DIR$/pages/data/details_accordnet.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_caffe.json" afterPath="$PROJECT_DIR$/pages/data/details_caffe.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_cntk.json" afterPath="$PROJECT_DIR$/pages/data/details_cntk.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_convnetjs.json" afterPath="$PROJECT_DIR$/pages/data/details_convnetjs.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_dl4j.json" afterPath="$PROJECT_DIR$/pages/data/details_dl4j.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_encog.json" afterPath="$PROJECT_DIR$/pages/data/details_encog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_gobrain.json" afterPath="$PROJECT_DIR$/pages/data/details_gobrain.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_hpcct.json" afterPath="$PROJECT_DIR$/pages/data/details_hpcct.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_keras.json" afterPath="$PROJECT_DIR$/pages/data/details_keras.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_mocha.json" afterPath="$PROJECT_DIR$/pages/data/details_mocha.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_mxnet.json" afterPath="$PROJECT_DIR$/pages/data/details_mxnet.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_ndimaj.json" afterPath="$PROJECT_DIR$/pages/data/details_ndimaj.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_paddle.json" afterPath="$PROJECT_DIR$/pages/data/details_paddle.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_theano.json" afterPath="$PROJECT_DIR$/pages/data/details_theano.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/details_torch.json" afterPath="$PROJECT_DIR$/pages/data/details_torch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/json/datasetslist.json" afterPath="$PROJECT_DIR$/pages/json/datasetslist.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/json/libs.json" afterPath="$PROJECT_DIR$/pages/json/libs.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/research/algo_pca_links.json" afterPath="$PROJECT_DIR$/pages/research/algo_pca_links.json" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,81 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppViewModel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppViewModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app/domain/models/AppViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="algo_ensembles_links.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/research/algo_ensembles_links.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="algo_kmeans_links.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/research/algo_kmeans_links.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="algo_pca_links.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/research/algo_pca_links.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="algo_kmeans.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/algos/algo_kmeans.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="algo_pca.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/algos/algo_pca.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="algo_nb.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/research/algo_nb.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="algo_kmeans.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/research/algo_kmeans.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="225">
+              <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -134,11 +68,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="algo_glrm_links.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/research/algo_glrm_links.json">
+      <file leaf-file-name="algo_pca_links.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/research/algo_pca_links.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datasets.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/datasets.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datasetslist.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/json/datasetslist.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MasterPageViewModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlgoMasterViewModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/AlgoMasterViewModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,35 +143,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/data/details_tensorflow.json" />
-        <option value="$PROJECT_DIR$/pages/data/details_h2o.json" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/pages/KeywordsViewModel.js" />
-        <option value="$PROJECT_DIR$/pages/master.html" />
-        <option value="$PROJECT_DIR$/pages/h2o_links.html" />
-        <option value="$PROJECT_DIR$/js/app.models.js" />
-        <option value="$PROJECT_DIR$/pages/alllinks.html" />
-        <option value="$PROJECT_DIR$/includes/_header.html" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
-        <option value="$PROJECT_DIR$/pages/research.html" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js" />
-        <option value="$PROJECT_DIR$/pages/home.html" />
-        <option value="$PROJECT_DIR$/pages/datasets.html" />
-        <option value="$PROJECT_DIR$/pages/json/datasetslist.json" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/pages/DatasetViewModel.js" />
-        <option value="$PROJECT_DIR$/pages/research/dl_research.json" />
-        <option value="$PROJECT_DIR$/pages/research/ml_research.json" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/pages/ResearchViewModel.js" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/pages/algos/AlgoGlmViewModel.js" />
-        <option value="$PROJECT_DIR$/pages/research/algo_glm.json" />
-        <option value="$PROJECT_DIR$/pages/research/algo_gbm.json" />
         <option value="$PROJECT_DIR$/pages/research/algo_glm_links.json" />
         <option value="$PROJECT_DIR$/pages/research/algo_gbm_links.json" />
         <option value="$PROJECT_DIR$/less/hub.less" />
-        <option value="$PROJECT_DIR$/js/router.js" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
         <option value="$PROJECT_DIR$/pages/algos/algo_glm.html" />
         <option value="$PROJECT_DIR$/pages/research/algo_drf_links.json" />
-        <option value="$PROJECT_DIR$/includes/_left_side_menu.html" />
         <option value="$PROJECT_DIR$/pages/algos/algo_gbm.html" />
         <option value="$PROJECT_DIR$/pages/algos/algo_drf.html" />
         <option value="$PROJECT_DIR$/pages/research/algo_drf.json" />
@@ -210,6 +170,30 @@
         <option value="$PROJECT_DIR$/pages/algos/algo_kmeans.json" />
         <option value="$PROJECT_DIR$/pages/algos/algo_kmeans_links.json" />
         <option value="$PROJECT_DIR$/pages/algos/algo_pca_links.json" />
+        <option value="$PROJECT_DIR$/includes/_left_side_menu.html" />
+        <option value="$PROJECT_DIR$/pages/json/libs.json" />
+        <option value="$PROJECT_DIR$/pages/data/data_xgboost.html" />
+        <option value="$PROJECT_DIR$/pages/data/details_xgboost.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_torch.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_theano.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_paddle.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_ndimaj.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_mocha.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_keras.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_hpcct.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_gobrain.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_encog.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_dl4j.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_convnetjs.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_cntk.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_caffe.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_accordnet.json" />
+        <option value="$PROJECT_DIR$/pages/data/details_mxnet.json" />
+        <option value="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
+        <option value="$PROJECT_DIR$/js/router.js" />
+        <option value="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
+        <option value="$PROJECT_DIR$/pages/research/algo_pca_links.json" />
+        <option value="$PROJECT_DIR$/pages/json/datasetslist.json" />
       </list>
     </option>
   </component>
@@ -322,7 +306,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="algos" />
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -578,12 +580,12 @@
       <workItem from="1474668971668" duration="18803000" />
       <workItem from="1475717126633" duration="11000" />
       <workItem from="1475717291711" duration="33512000" />
-      <workItem from="1476659125593" duration="19258000" />
+      <workItem from="1476659125593" duration="20393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119867000" />
+    <option name="totallyTimeSpent" value="121002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1895" height="1177" extended-state="6" />
@@ -628,268 +630,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/data/details_cntk.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/DatasetViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/ResearchViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/ml_research.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/dl_research.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/datasets.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/json/datasetslist.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/flare.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="379" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/algos/AlgoGbmViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/algos/AlgoDlViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#li#3;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#li#4;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#li#5;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/algos/AlgoGlmViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/algo_glm.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1770">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/data/details_tensorflow.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/data/details_accordnet.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/algo_glm_links.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/hub.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="2572" column="11" selection-start-line="2572" selection-start-column="11" selection-end-line="2572" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/master.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="115" column="22" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/HomeViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/algo_gbm_links.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/algos/algo_glm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/algo_gbm.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="e#451#734#0" expanded="false" />
-            <element signature="e#812#881#0" expanded="false" />
-            <element signature="e#956#2070#0" expanded="false" />
-            <element signature="e#2124#2761#0" expanded="false" />
-            <element signature="e#2818#3012#0" expanded="false" />
-            <element signature="e#3069#3437#0" expanded="false" />
-            <element signature="e#3492#6170#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/algos/algo_drf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/algos/algo_gbm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/algos/algo_dl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/algo_drf.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/AlgoMasterViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/research/algo_dl.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -938,19 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/_left_side_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="259" column="56" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/research/algo_glrm.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -991,14 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/algo_pca.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/research/algo_kmeans.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1023,14 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/research/algo_pca_links.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/algos/algo_kmeans.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1047,10 +758,287 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/AppViewModel.js">
+    <entry file="file://$PROJECT_DIR$/includes/_left_side_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/data_accordnet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/json/keywords.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/json/libs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="55" column="91" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_xgboost.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_torch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_theano.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_tensorflow.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_ndimaj.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_mocha.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_keras.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_hpcct.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_h2o.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_gobrain.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_encog.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_dl4j.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_convnetjs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_cntk.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_caffe.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_accordnet.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/data_xgboost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/data_torch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/data_theano.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/data_paddle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_paddle.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/details_mxnet.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/data_mxnet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/AlgoMasterViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/AppViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/research/algo_pca.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/research/algo_pca_links.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/datasets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/json/datasetslist.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding />
         </state>
       </provider>

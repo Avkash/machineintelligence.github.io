@@ -62,7 +62,6 @@
             AppViewModel.masterTab("Algorithm");
             AppViewModel.masterDir("All");
             AppViewModel.masterPageId(this.params["link"]);
-            AppViewModel.masterLink(AppViewModel.algoCollection()[this.params["link"]]);
             getView(this.params["link"]);
         });
 

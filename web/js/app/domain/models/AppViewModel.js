@@ -29,13 +29,13 @@ function AppViewModel() {
         "social",
         "datasets",
         "research",
-        "h2o", "tensorflow", "mxnet", "paddle", "caffe", "keras","theano",
+        "h2o", "tensorflow", "xgboost", "mxnet", "paddle", "caffe", "keras","theano",
         "dl4j", "ndimaj", "encog", "hpcct",
         "torch",
         "convnetjs",
         "accordnet",
         "mocha",
-        "cntk", "mxnet",
+        "cntk",
         "gobrain",
         "algo",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
@@ -99,6 +99,7 @@ function AppViewModel() {
          "h2o" : "H2O Machine Learning in Java, Python, Scala and R",
          "tensorflow" : "TensorFlow from Google",
          "mxnet" : "MxNet",
+         "xgboost" : "XGBoost",
          "paddle" : "Paddle from Baidu",
          "caffe" : "Caffe from Berkley",
          "keras" : "Keras",
@@ -113,11 +114,6 @@ function AppViewModel() {
          "mocha" : "Mocha",
          "cntk" : "CNTK",
          "gobrain": "GoBrain"
-    });
-
-    this.algoCollection = ko.observable({
-        "gbm" : "Gradient Boosting Machine (GBM)",
-        "glm" : "Genearlized Linear Machine (GLM)"
     });
 
     this.contentView = ko.observable();

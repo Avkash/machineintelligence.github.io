@@ -1,8 +1,8 @@
 {
-  "id" : "torch",
+  "id" : "xgboost",
   "links": [
     {
-      "id": "Torch",
+      "id": "XGBoost",
       "linkInfo" : "http://www.h2o.ai/"
     },
     {

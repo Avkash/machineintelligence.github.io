@@ -12,13 +12,11 @@ function MasterPageViewModel() {
     self.pageContent = ko.observable("Content");
     self.pageContentLinks = ko.observable("ContentLinks");
     self.masterHtmlPage = ko.observable("pages/data/data_h2o.html");
-    //self.quickDetailsPage = ko.observable("");
     self.quickLinksFile =  ko.observable("pages/data/details_h2o.json");
     self.quickDetailsJson = ko.observable("");
     self.quickDetails = ko.observable("Quick Details");
 
     self.getPageJsonData = function (localObjStr) {
-        //console.log("root.masterPageJson() -> " + localObjStr);
         if (localObjStr.trim().length > 0) {
             var localObj = JSON.parse(localObjStr);
             if (localObj.id != null){
