@@ -11,7 +11,6 @@ function HomeViewModel() {
     this.h = ko.observable();
     this.i = ko.observable();
     this.diagonal = ko.observable();
-    this.vis = ko.observable();
     this.tree = ko.observable();
     this.selectedJsonFile = ko.observable();
 
@@ -19,13 +18,6 @@ function HomeViewModel() {
     this.pageHeader = ko.observable("Your home for machine intelligence");
     this.pageSubHeader = ko.observable("Subpage");
     this.sideHeader = ko.observable("Sideheader ");
-
-    this.showD3Tree = function() {
-        var resultHTML = "";
-        var divId = "mlTreeZ";
-        resultHTML = resultHTML.concat("<h1>AAAAAAABBBBB</h1>");
-        $(divId).html(resultHTML);
-    };
 
     this.updateDataBox = function(link){
         console.log("link: " + link);
@@ -104,6 +96,12 @@ function HomeViewModel() {
             }
         }
 
+        function showCircleToolTip(d, n, nu, nt){
+            // d is circle here, n is the node,
+            // nu.id will give the id of clicked node
+            console.log("clicked - " + nu.id);
+        }
+
         function update(source) {
             var duration = d3.event && d3.event.altKey ? 5000 : 500;
 
@@ -142,10 +140,18 @@ function HomeViewModel() {
 
             nodeUpdate.select("circle")
                 .attr("r", 4.5)
+                .style("stroke","blue")
                 .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
             nodeUpdate.select("text")
                 .style("fill-opacity", 1);
+
+            vis.selectAll("circle").on("click", function(){
+                d3.select(this).attr('r', 10)
+                    .style("fill","pink")
+                    .style("stroke","#d6d6d6");
+                showCircleToolTip(this, node,nodeUpdate, nodeEnter);
+            });
 
             // Transition exiting nodes to the parent's new position.
             var nodeExit = node.exit().transition()

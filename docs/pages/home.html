@@ -63,21 +63,23 @@
                    </div>
                </div>
                <div class="col-xs-3">
-                   <div class="panel">
-                       <div class="panel-body heightSet800">
+                   <div class="panel panel-default">
+                       <div class="panel-heading">
                            <h2 class="text-thin">Visual Machine Learning</h2>
+                       </div>
+                       <div class="panel-body heightSet800">
                             <ul>
-                               <li> <span style="cursor:pointer" data-bind="click: jsonLoader('main');">Concept Visualization</span> </li>
+                                <li> <span class="btn btn-xs btn-default" data-bind="click: jsonLoader('main');">Visual Machine Learning</span> </li>
+                                <li> <span class="btn btn-xs btn-default" data-bind="click: jsonLoader('main');">Algorithms Visualization</span> </li>
+                                <li> <span class="btn btn-xs btn-default" data-bind="click: jsonLoader('type');">Algorithms by Type</span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('learn');">Algorithms by Learning Type</span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('complexity');">By Complexity </span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('language');">By Language </span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('package');">By Package </span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('usability');">By Application and Usability </span> </li>
                             </ul>
-                            <h2 class="text-thin">Machine Learning Overview</h2>
-                            <ul>
-                                <li> <span style="cursor:pointer" data-bind="click: jsonLoader('type');">Algorithms by Type</span> </li>
-                                <li> <span style="cursor:pointer" data-bind="click: jsonLoader('learn');">Algorithms by Learning Type</span> </li>
-                                <li> <span style="cursor:pointer" data-bind="click: jsonLoader('complexity');">By Complexity </span> </li>
-                                <li> <span style="cursor:pointer" data-bind="click: jsonLoader('language');">By Language </span> </li>
-                                <li> <span style="cursor:pointer" data-bind="click: jsonLoader('package');">By Package </span> </li>
-                                <li> <span style="cursor:pointer" data-bind="click: jsonLoader('usability');">By Application and Usability </span> </li>
-                            </ul>
+                            <span class="text-sm text-thin">Note: Please select any of the above option to learn</span>
+                           <hr>
                             <h2 class="text-thin">Top AI Projects</h2>
                             <ul>
                                 <li> <a href="https://www.tensorflow.org" target="_blank">TenserFlow </a> </li>
