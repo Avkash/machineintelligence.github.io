@@ -41,6 +41,7 @@
         {"title": "Dataiku (Data Science Studio)", "link": "http://www.dataiku.com/", "tag": [ "a", "b" , "c"]},
         {"title": "Data Science ", "link": "https://www.datascience.com/", "tag": [ "a", "b" , "c"]},
         {"title": "MD.ai", "link": "https://www.md.ai/", "tag": [ "a", "b" , "c"]},
+        {"title": "DataRobot", "link": "https://www.datarobot.com/", "tag": [ "a", "b" , "c"]},
         {"title": "AI.ON Artificial Intelligent Open Network", "link": "http://ai-on.org/", "tag": [ "a", "b" , "c"]}
       ]
     },
