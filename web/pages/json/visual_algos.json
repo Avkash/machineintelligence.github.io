@@ -1,0 +1,312 @@
+{
+  "name": "M L Algorithms",
+  "children": [
+    {
+      "name": "Deep Learning",
+      "children": [
+        {
+          "name": "Deep Boltzmann Machine (DBM)",
+          "size": 11
+        },
+        {
+          "name": "Deep Belief Networks (DBN)",
+          "size": 12
+        },
+        {
+          "name": "Convolutional Neural Networks (CNN)",
+          "size": 13
+        },
+        {
+          "name": "Stacked Auto-Encoders",
+          "size": 14
+        }
+      ]
+    },
+    {
+      "name": "Ensembles",
+      "children": [
+        {
+          "name": "Random Forest",
+          "size": 21
+        },
+        {
+          "name": "Gradient Boosting Machines (GBM)",
+          "size": 22
+        },
+        {
+          "name": "Boosting",
+          "size": 23
+        },
+        {
+          "name": "Bootstrapped Aggregation (Bagging)",
+          "size": 24
+        },
+        {
+          "name": "AdaBoost",
+          "size": 25
+        },
+        {
+          "name": "Stacked Generation (Blending)",
+          "size": 26
+        },
+        {
+          "name": "Gradient Boosted Regression Trees (GBRT)",
+          "size": 27
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "children": [
+        {
+          "name": "Radian Basis Function Network (RBFN)",
+          "size": 31
+        },
+        {
+          "name": "Perceptron",
+          "size": 32
+        },
+        {
+          "name": "Back-Propagation",
+          "size": 33
+        },
+        {
+          "name": "Hopfield Network",
+          "size": 34
+        }
+      ]
+    },
+    {
+      "name" : "Regularization",
+      "children" : [
+        {
+          "name": "Ridge Regression",
+          "size": 41
+        },
+        {
+          "name": "Least Absolute Shrinkage and Selection Operator (LASSO)",
+          "size": 42
+        },
+        {
+          "name": "Elastic Net",
+          "size": 43
+        },
+        {
+          "name": "Least Angle Regression (LARS)",
+          "size": 44
+        }
+      ]
+    },
+    {
+      "name" : "Rule Systems",
+      "children" : [
+        {
+          "name": "Cubist",
+          "size": 51
+        },
+        {
+          "name": "One Rule (OneR)",
+          "size": 52
+        },
+        {
+          "name": "Zero Rule (ZeroR)",
+          "size": 53
+        },
+        {
+          "name": "Repeated Incremental Pruning to Produce Error Reduction (RIPPER)",
+          "size": 54
+        }
+      ]
+    },
+    {
+      "name" : "Regression",
+      "children" : [
+        {
+          "name": "Linear Regression",
+          "size": 61
+        },
+        {
+          "name": "Ordinary Least Squares Regression (OLSR)",
+          "size": 62
+        },
+        {
+          "name": "Stepwise Regression",
+          "size": 63
+        },
+        {
+          "name": "Multivariate Adaptive Regression Splines (MARS)",
+          "size": 64
+        },
+        {
+          "name": "Locally Estimated Scatterplot Smoothing (LOESS)",
+          "size": 65
+        },
+        {
+          "name": "Logistic Regression",
+          "size": 66
+        }
+      ]
+    },
+    {
+      "name" : "Bayesian",
+      "children" : [
+        {
+          "name": "Naive Bayes",
+          "size": 71
+        },
+        {
+          "name": "Averaged One-Dependence Estimators",
+          "size": 72
+        },
+        {
+          "name": "Bayesian Belief Network (BBN)",
+          "size": 73
+        },
+        {
+          "name": "Gaussian Naive Bayes",
+          "size": 74
+        },
+        {
+          "name": "Multinomial Naive Bayes",
+          "size": 75
+        },
+        {
+          "name": "Bayesian Network (BN)",
+          "size": 76
+        }
+      ]
+    },
+    {
+      "name" : "Decision Trees",
+      "children" : [
+        {
+          "name": "Classification and Regression Tree (CART)",
+          "size": 81
+        },
+        {
+          "name": "Iterative Dichotomiser 3 (ID3)",
+          "size": 82
+        },
+        {
+          "name": "C4.5",
+          "size": 83
+        },
+        {
+          "name": "C5.0",
+          "size": 84
+        },
+        {
+          "name": "Chi-squared Automatic Interation Detection (CHAID)",
+          "size": 85
+        },
+        {
+          "name": "Decision Stump",
+          "size": 86
+        },
+        {
+          "name": "Conditional Decison trees",
+          "size": 87
+        },
+        {
+          "name": "M5",
+          "size": 88
+        }
+      ]
+    },
+    {
+      "name" : "Dimensionality Reduction",
+      "children" : [
+        {
+          "name": "Principal Component Analysis (PCA)",
+          "size": 91
+        },
+        {
+          "name": "Partial Least Squares Regression (PLSR)",
+          "size": 92
+        },
+        {
+          "name": "Sammon Mapping",
+          "size": 93
+        },
+        {
+          "name": "Multidimensional Scaling (MDS)",
+          "size": 94
+        },
+        {
+          "name": "Projection Pursuit",
+          "size": 95
+        },
+        {
+          "name": "Principal Component Regression (PCR)",
+          "size": 96
+        },
+        {
+          "name": "Partial Least Squares Discriminant Analysis",
+          "size": 97
+        },
+        {
+          "name": "Mixture Discriminant Analysis (MDA)",
+          "size": 98
+        },
+        {
+          "name": "Quadratic Discriminant Analysis (QDA)",
+          "size": 99
+        },
+        {
+          "name": "Regularized Discriminant Analysis (RDA)",
+          "size": 100
+        },
+        {
+          "name": "Flexible Discriminant Analysis (FDA)",
+          "size": 101
+        },
+        {
+          "name": "Linear Discriminant Analysis (LDA)",
+          "size": 102
+        }
+      ]
+    },
+    {
+      "name" : "Instance Based",
+      "children" : [
+        {
+          "name": "K-Nearest Neighbour (kNN)",
+          "size": 101
+        },
+        {
+          "name": "Learning Vector Quantization (LVQ)",
+          "size": 102
+        },
+        {
+          "name": "Self-Organization Map (SOM)",
+          "size": 103
+        },
+        {
+          "name": "Locally Weighted Learning (LWL)",
+          "size": 104
+        }
+      ]
+    },
+    {
+      "name" : "Clustering",
+      "children" : [
+        {
+          "name": "K-Means",
+          "size": 111
+        },
+        {
+          "name": "K-Medians",
+          "size": 112
+        },
+        {
+          "name": "Expectation Maximization",
+          "size": 113
+        },
+        {
+          "name": "Hierarchical Clustering",
+          "size": 114
+        }
+      ]
+    }
+  ]
+}

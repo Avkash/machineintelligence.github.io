@@ -545,7 +545,7 @@ function HomeViewModel() {
     this.i = ko.observable();
     this.diagonal = ko.observable();
     this.tree = ko.observable();
-    this.selectedJsonFile = ko.observable();
+    self.selectedJsonFile = ko.observable();
 
     this.pageMainHeader = ko.observable("Your home for machine intelligence");
     this.pageHeader = ko.observable("Your home for machine intelligence");
@@ -561,11 +561,14 @@ function HomeViewModel() {
         return false;
     };
 
-    this.jsonLoader = function(jsonId){
-        var jsonFileName= "ml.json";
+    self.jsonLoader = function(jsonId){
+        var jsonFileName= "visual_ml.json";
         switch(jsonId){
             case 'main':
                 jsonFileName = 'visual_ml.json';
+                break;
+            case 'algos':
+                jsonFileName = 'visual_algos.json';
                 break;
             case 'type':
                 jsonFileName = 'new.json';
@@ -586,14 +589,14 @@ function HomeViewModel() {
                 jsonFileName = 'ml.json';
                 break;
         }
-        this.selectedJsonFile("pages/json/"+jsonFileName);
-        this.selectJsonTree(this.selectedJsonFile());
+        self.selectedJsonFile("pages/json/"+jsonFileName);
+        self.selectJsonTree();
     };
 
-    this.selectJsonTree = function(jsonTree) {
+    this.selectJsonTree = function() {
         var treeDiv = document.getElementById("mlTree");
         var svgDiv = treeDiv.getElementsByTagName("svg");
-        this.generateMlTree(jsonTree);
+        this.generateMlTree(self.selectedJsonFile());
     };
 
 

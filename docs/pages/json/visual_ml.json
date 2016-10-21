@@ -2,61 +2,45 @@
   "name": "Machine Learning",
   "children": [
     {
-      "name": "DL",
+      "name": "Supervised",
       "children": [
         {
-          "name": "cluster",
-          "children": [
+          "name": "Regression",
+          "children" : [
             {
-              "name": "AgglomerativeCluster",
-              "size": 3938
+              "name" : "Linear",
+              "size": 2102
             },
             {
-              "name": "CommunityStructure",
-              "size": 3812
-            },
-            {
-              "name": "HierarchicalCluster",
-              "size": 6714
-            },
-            {
-              "name": "MergeEdge",
-              "size": 743
+              "name": "Non-linear",
+              "size": 2102
             }
           ]
         },
         {
-          "name": "graph22",
-          "children": [
-            {
-              "name": "BetweennessCentrality",
-              "size": 3534
-            },
-            {
-              "name": "LinkDistance",
-              "size": 5731
-            },
-            {
-              "name": "MaxFlowMinCut",
-              "size": 7840
-            },
-            {
-              "name": "ShortestPaths",
-              "size": 5914
-            },
-            {
-              "name": "SpanningTree",
-              "size": 3416
-            }
-          ]
-        },
+          "name": "Classification",
+          "size": 2102
+        }
+      ]
+    },
+    {
+      "name" : "Unsupervised",
+      "children" : [
         {
-          "name": "optimization",
-          "children": [
-            {
-              "name": "AspectRatioBanker",
-              "size": 7074
-            }
+          "name" : "a",
+          "children" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Clustering",
+      "children" : [
+        {
+          "name" : "a",
+          "children" : [
+
           ]
         }
       ]
