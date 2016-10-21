@@ -12,11 +12,11 @@
     },
     {
       "id": "2",
-      "title": "Webpage",
-      "info": "Info",
-      "link" : "http://www.h2o.ai/",
+      "title": "Trump Tweets",
+      "info": "All the Trum tweets from x to y",
+      "link" : "https://raw.githubusercontent.com/sashaperigo/Trump-Tweets/master/data.csv",
       "tags" : [
-        {"tag" : "Model"}, { "tag" : "Healthcare" }
+        {"tag" : "Politics"}, { "tag" : "General" }
       ]
     },
     {
