@@ -56,10 +56,10 @@
                <small data-localize="dashboard.WELCOME"></small>
             </div>
             <div class="row no-padding no-margin">
-               <div class="col-xs-9 text-center padding-1 no-margin heightSet1080P">
+               <div class="col-xs-9 text-center padding-1 no-margin heightSet800">
                    <div id="mlTree">
                         <!-- <span data-bind="text: generateMlTree('js/vendor/d3/flare.json');"></span>  -->
-                       <span data-bind="text: generateMlTree('js/flare.json');"></span>
+                       <span data-bind="text: generateMlTree('pages/json/visual_ml.json');"></span>
                    </div>
                </div>
                <div class="col-xs-3">
@@ -67,29 +67,31 @@
                        <div class="panel-heading">
                            <h2 class="text-thin">Visual Machine Learning</h2>
                        </div>
-                       <div class="panel-body heightSet800">
+                       <div class="panel-body heightSet700">
                             <ul>
-                                <li> <span class="btn btn-xs btn-default" data-bind="click: jsonLoader('main');">Visual Machine Learning</span> </li>
-                                <li> <span class="btn btn-xs btn-default" data-bind="click: jsonLoader('main');">Algorithms Visualization</span> </li>
-                                <li> <span class="btn btn-xs btn-default" data-bind="click: jsonLoader('type');">Algorithms by Type</span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('main');">Visual Machine Learning</span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('main');">Algorithms Visualization</span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('type');">Algorithms by Type</span> </li>
                                 <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('learn');">Algorithms by Learning Type</span> </li>
                                 <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('complexity');">By Complexity </span> </li>
                                 <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('language');">By Language </span> </li>
                                 <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('package');">By Package </span> </li>
+                                <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('package');">Tree Based Algorithms </span> </li>
                                 <li> <span class="btn btn-xs btn-default"  data-bind="click: jsonLoader('usability');">By Application and Usability </span> </li>
                             </ul>
                             <span class="text-sm text-thin">Note: Please select any of the above option to learn</span>
                            <hr>
-                            <h2 class="text-thin">Top AI Projects</h2>
+                            <h2 class="text-thin">Top AI/ML/DL Projects</h2>
                             <ul>
                                 <li> <a href="https://www.tensorflow.org" target="_blank">TenserFlow </a> </li>
                                 <li> <a href="https://h2o.ai" target="_blank">H2O (h2o.ai)</a> </li>
+                                <li> <a href="https://xgboost.readthedocs.io/en/latest/" target="_blank">XGBoost</a> </li>
                                 <li> <a href="https://www.tensorflow.org" target="_blank">Caffe </a> </li>
                                 <li> <a href="http://scikit-learn.org/stable/" target="_blank">Scikit Learn</a> </li>
                                 <li> <a href="https://www.cntk.ai/" target="_blank">Microsoft CNTK </a> </li>
                                 <li> <a href="http://mxnet.io/" target="_blank">mxnet</a></li>
                                 <li> <a href="http://deeplearning.net/software/theano/index.html#" target="_blank">Theano</a></li>
-                                <li>  <a href="https://openai.com/blog/" target="_blank">OpenAI </a> </li>
+                                <li> <a href="https://openai.com/blog/" target="_blank">OpenAI </a> </li>
                             </ul>
                        </div>
                    </div>

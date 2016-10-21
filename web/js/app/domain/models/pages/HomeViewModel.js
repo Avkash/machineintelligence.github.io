@@ -32,7 +32,7 @@ function HomeViewModel() {
         var jsonFileName= "ml.json";
         switch(jsonId){
             case 'main':
-                jsonFileName = 'ml.json';
+                jsonFileName = 'visual_ml.json';
                 break;
             case 'type':
                 jsonFileName = 'new.json';
@@ -53,7 +53,7 @@ function HomeViewModel() {
                 jsonFileName = 'ml.json';
                 break;
         }
-        this.selectedJsonFile("js/"+jsonFileName);
+        this.selectedJsonFile("pages/json/"+jsonFileName);
         this.selectJsonTree(this.selectedJsonFile());
     };
 
@@ -79,10 +79,10 @@ function HomeViewModel() {
             }
             // Initialize the display to show a few nodes.
             visRoot.children.forEach(toggleAll);
-            toggle(visRoot.children[1]);
-            toggle(visRoot.children[1].children[2]);
-            toggle(visRoot.children[9]);
-            toggle(visRoot.children[9].children[0]);
+            toggle(visRoot.children[0]);
+            //toggle(visRoot.children[1].children[2]);
+            //toggle(visRoot.children[9]);
+            //toggle(visRoot.children[9].children[0]);
             update(visRoot);
         });
 

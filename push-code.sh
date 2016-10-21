@@ -7,7 +7,6 @@ cp -r web/js/app.js docs/js/
 cp -r web/js/app.models.js docs/js/
 cp -r web/js/app.domain.js docs/js/
 cp -r web/js/router.js docs/js/
-cp -r web/js/*.json docs/js/
 cp -r web/pages docs/
 cp -r web/index.html docs/
 
