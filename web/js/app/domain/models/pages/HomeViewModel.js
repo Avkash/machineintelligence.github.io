@@ -24,7 +24,6 @@ function HomeViewModel() {
     };
 
     this.homePageChanger = function(data, event){
-        //root.changeUrl(data);
         return false;
     };
 
@@ -38,22 +37,22 @@ function HomeViewModel() {
                 jsonFileName = 'visual_algos.json';
                 break;
             case 'type':
-                jsonFileName = 'new.json';
+                jsonFileName = 'visual_ml.json';
                 break;
             case 'learn':
-                jsonFileName = 'flare.json';
+                jsonFileName = 'visual_ml.json';
                 break;
             case 'package':
-                jsonFileName = 'ml.json';
+                jsonFileName = 'visual_ml.json';
                 break;
             case 'language':
-                jsonFileName = 'ml.json';
+                jsonFileName = 'visual_ml.json';
                 break;
             case 'usability':
-                jsonFileName = 'ml.json';
+                jsonFileName = 'visual_ml.json';
                 break;
             case 'complexity':
-                jsonFileName = 'ml.json';
+                jsonFileName = 'visual_ml.json';
                 break;
         }
         self.selectedJsonFile("pages/json/"+jsonFileName);
