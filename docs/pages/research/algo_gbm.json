@@ -2,230 +2,99 @@
   "name": "gbm",
   "children": [
     {
-      "name": "gbm",
+      "name": "common parameters",
       "children": [
+        {"name": "training_frame", "size": 10, "info" : "Id of the training data frame (Not required, to allow initial validation of model parameters)"},
+        {"name": "validation_frame", "size": 11, "info" : "Id of the validation data frame."},
+        {"name": "nfolds", "size": 10, "info" : "Number of folds for N-fold cross-validation (0 to disable or >= 2)."},
+        {"name": "response_column", "size": 10 , "info" : "Response variable column"},
+        {"name": "ignored_columns", "size": 10, "info" : "A list of columns which will be ignored from the source data"},
+        {"name": "ntrees", "size": 10, "info" : "Total number of trees to try in this model building process"},
+        {"name": "max_depth", "size": 10, "info" : "Maximum tree depth to be used"},
+        {"name": "min_rows", "size": 10, "info" : "Fewest allowed (weighted) observations in a leaf (in R called 'nodesize')."},
+        {"name": "nbins", "size": 10, "info" : "For numerical columns (real/int), build a histogram of (at least) this many bins, then split at the best point"},
+        {"name": "seed", "size": 10, "info" : "Seed for pseudo random number generator (if applicable), Use a fixed number to replicate the same results"},
+        {"name": "learn_rate", "size": 10, "info" : "Learning rate (from 0.0 to 1.0) ???"},
+        {"name": "sample_rate", "size": 10, "info" : "Row sample rate per tree (from 0.0 to 1.0)"},
+        {"name": "col_sample_rate", "size": 10, "info" : "Column sample rate (from 0.0 to 1.0)"}
+      ]
+    },
+    {
+      "name": "Advance parameters",
+      "children": [
+        {"name": "score_each_iteration", "size": 201, "info": "Whether to score during each iteration of model training."},
+        {"name": "score_tree_interval", "size": 202, "info": "Score the model after every so many trees. Disabled if set to 0."},
+        {"name": "fold_column", "size": 203, "info": "[Select column from source data]Column with cross-validation fold index assignment per observation."},
+        {"name": "offset_column", "size": 204, "info": "[Select column from source data]Offset column. This will be added to the combination of columns before applying the link function."},
+        {"name": "weights_column", "size": 205, "info": "[Select column from source data] Column with observation weights. Giving some observation a weight of zero is equivalent to excluding it from the dataset; giving an observation a relative weight of 2 is equivalent to repeating that row twice. Negative weights are not allowed."},
+        {"name": "balance_classes", "size": 206, "info": "Balance training data class counts via over/under-sampling (for imbalanced data)."},
+        {"name": "max_confusion_matrix_size", "size": 207, "info": "Maximum size (# classes) for confusion matrices to be printed in the Logs"},
+        {"name": "max_hit_ratio_k", "size": 208, "info": "Max. number (top K) of predictions to use for hit ratio computation (for multi-class only, 0 to disable)"},
+        {"name": "nbins_top_level", "size": 209, "info": "For numerical columns (real/int), build a histogram of (at most) this many bins at the root level, then decrease by factor of two per level"},
+        {"name": "nbins_cats", "size": 210, "info": "For categorical columns (factors), build a histogram of this many bins, then split at the best point. Higher values can lead to more overfitting."},
+        {"name": "r2_stopping", "size": 211, "info": "Stop making trees when the R^2 metric equals or exceeds this"},
+        {"name": "stopping_rounds", "size": 212, "info": "Early stopping based on convergence of stopping_metric. Stop if simple moving average of length k of the stopping_metric does not improve for k:=stopping_rounds scoring events (0 to disable)"},
         {
-          "name": "cluster",
-          "children": [
-            {"name": "AgglomerativeCluster", "size": 3938},
-            {"name": "CommunityStructure", "size": 3812},
-            {"name": "HierarchicalCluster", "size": 6714},
-            {"name": "MergeEdge", "size": 743}
+          "name": "stopping_metric",
+          "info": "Metric to use for early stopping (AUTO: logloss for classification, deviance for regression)",
+          "children" : [
+            {"name": "AUTO", "size": 2121, "info": ""},
+            {"name": "Deviance", "size": 2122, "info": ""},
+            {"name": "Logloss", "size": 2123, "info": ""},
+            {"name": "MSE", "size": 2124, "info": ""},
+            {"name": "AUC", "size": 2125, "info": ""},
+            {"name": "lift_top_group", "size": 2126, "info": ""},
+            {"name": "r2", "size": 2127, "info": ""},
+            {"name": "Misclassification", "size": 2128, "info": ""},
+            {"name": "Mean_per_class_error", "size": 2129, "info": ""}
           ]
         },
+        {"name": "stopping_tolerance", "size": 213, "info": "Relative tolerance for metric-based stopping criterion (stop if relative improvement is not at least this much)"},
+        {"name": "max_runtime_secs", "size": 214, "info": "Maximum allowed runtime in seconds for model training. Use 0 to disable."},
+        {"name": "learn_rate_annealing", "size": 215, "info": "Scale the learning rate by this factor after each tree (e.g., 0.99 or 0.999)"},
         {
-          "name": "graph",
-          "children": [
-            {"name": "BetweennessCentrality", "size": 3534},
-            {"name": "LinkDistance", "size": 5731},
-            {"name": "MaxFlowMinCut", "size": 7840},
-            {"name": "ShortestPaths", "size": 5914},
-            {"name": "SpanningTree", "size": 3416}
+          "name": "distribution",
+          "info" : "Select your Distribution function",
+          "children" : [
+            {"name": "AUTO", "size": 2151, "info": ""},
+            {"name": "Bernoulli", "size": 2151, "info": ""},
+            {"name": "Multinomial", "size": 2151, "info": ""},
+            {"name": "Gaussian", "size": 2151, "info": ""},
+            {"name": "Poisson", "size": 2151, "info": ""},
+            {"name": "Gamma", "size": 2151, "info": ""},
+            {"name": "Tweedie", "size": 2151, "info": ""},
+            {"name": "Laplace", "size": 2151, "info": ""},
+            {"name": "Quantile", "size": 2151, "info": ""},
+            {"name": "Huber", "size": 2151, "info": ""}
           ]
         },
+        {"name": "quantile_alpha", "size": 21, "info": "Desired quantile for Quantile regression, must be between 0 and 1."},
+        {"name": "huber_alpha", "size": 21, "info": "Desired quantile for Huber/M-regression (threshold between quadratic and linear loss, must be between 0 and 1)."},
+        {"name": "checkpoint", "size": 21, "info": "Model checkpoint to resume training with."},
+        {"name": "col_sample_rate_per_tree", "size": 21, "info": "Column sample rate per tree (from 0.0 to 1.0)"},
+        {"name": "min_split_improvement", "size": 21, "info": "Minimum relative improvement in squared error reduction for a split to happen"},
         {
-          "name": "optimization",
-          "children": [
-            {"name": "AspectRatioBanker", "size": 7074}
+          "name": "histogram_type",
+          "info" : "What type of histogram to use for finding optimal split points",
+          "children" : [
+            {"name": "AUTO", "size": 2151, "info": ""},
+            {"name": "UniformAdaptive", "size": 2151, "info": ""},
+            {"name": "Random", "size": 2151, "info": ""},
+            {"name": "QuantilesGlobal", "size": 2151, "info": ""},
+            {"name": "RoundRobin", "size": 2151, "info": ""}
           ]
         }
       ]
     },
     {
-      "name": "animate",
+      "name": "Expert parameters",
       "children": [
-        {"name": "Easing", "size": 17010},
-        {"name": "FunctionSequence", "size": 5842},
-        {
-          "name": "interpolate",
-          "children": [
-            {"name": "ArrayInterpolator", "size": 1983},
-            {"name": "ColorInterpolator", "size": 2047},
-            {"name": "DateInterpolator", "size": 1375},
-            {"name": "Interpolator", "size": 8746},
-            {"name": "MatrixInterpolator", "size": 2202},
-            {"name": "NumberInterpolator", "size": 1382},
-            {"name": "ObjectInterpolator", "size": 1629},
-            {"name": "PointInterpolator", "size": 1675},
-            {"name": "RectangleInterpolator", "size": 2042}
-          ]
-        },
-        {"name": "ISchedulable", "size": 1041},
-        {"name": "Parallel", "size": 5176},
-        {"name": "Pause", "size": 449},
-        {"name": "Scheduler", "size": 5593},
-        {"name": "Sequence", "size": 5534},
-        {"name": "Transition", "size": 9201},
-        {"name": "Transitioner", "size": 19975},
-        {"name": "TransitionEvent", "size": 1116},
-        {"name": "Tween", "size": 6006}
-      ]
-    },
-    {
-      "name": "data",
-      "children": [
-        {
-          "name": "converters",
-          "children": [
-            {"name": "Converters", "size": 721},
-            {"name": "DelimitedTextConverter", "size": 4294},
-            {"name": "GraphMLConverter", "size": 9800},
-            {"name": "IDataConverter", "size": 1314},
-            {"name": "JSONConverter", "size": 2220}
-          ]
-        },
-        {"name": "DataField", "size": 1759},
-        {"name": "DataSchema", "size": 2165},
-        {"name": "DataSet", "size": 586},
-        {"name": "DataSource", "size": 3331},
-        {"name": "DataTable", "size": 772},
-        {"name": "DataUtil", "size": 3322}
-      ]
-    },
-    {
-      "name": "display",
-      "children": [
-        {"name": "DirtySprite", "size": 8833},
-        {"name": "LineSprite", "size": 1732},
-        {"name": "RectSprite", "size": 3623},
-        {"name": "TextSprite", "size": 10066}
-      ]
-    },
-    {
-      "name": "physics",
-      "children": [
-        {"name": "DragForce", "size": 1082},
-        {"name": "GravityForce", "size": 1336},
-        {"name": "IForce", "size": 319},
-        {"name": "NBodyForce", "size": 10498},
-        {"name": "Particle", "size": 2822},
-        {"name": "Simulation", "size": 9983},
-        {"name": "Spring", "size": 2213},
-        {"name": "SpringForce", "size": 1681}
-      ]
-    },
-    {
-      "name": "query",
-      "children": [
-        {"name": "AggregateExpression", "size": 1616},
-        {"name": "And", "size": 1027},
-        {"name": "Arithmetic", "size": 3891},
-        {"name": "Average", "size": 891},
-        {"name": "BinaryExpression", "size": 2893},
-        {"name": "Comparison", "size": 5103},
-        {"name": "CompositeExpression", "size": 3677},
-        {"name": "Count", "size": 781},
-        {"name": "DateUtil", "size": 4141},
-        {"name": "Distinct", "size": 933},
-        {"name": "Expression", "size": 5130},
-        {"name": "ExpressionIterator", "size": 3617},
-        {"name": "Fn", "size": 3240},
-        {"name": "If", "size": 2732},
-        {"name": "IsA", "size": 2039},
-        {"name": "Literal", "size": 1214},
-        {"name": "Match", "size": 3748},
-        {"name": "Maximum", "size": 843},
-        {
-          "name": "methods",
-          "children": [
-            {"name": "add", "size": 593},
-            {"name": "and", "size": 330},
-            {"name": "average", "size": 287},
-            {"name": "count", "size": 277},
-            {"name": "distinct", "size": 292},
-            {"name": "div", "size": 595},
-            {"name": "eq", "size": 594},
-            {"name": "fn", "size": 460},
-            {"name": "gt", "size": 603},
-            {"name": "gte", "size": 625},
-            {"name": "iff", "size": 748},
-            {"name": "isa", "size": 461},
-            {"name": "lt", "size": 597},
-            {"name": "lte", "size": 619},
-            {"name": "max", "size": 283},
-            {"name": "min", "size": 283},
-            {"name": "mod", "size": 591},
-            {"name": "mul", "size": 603},
-            {"name": "neq", "size": 599},
-            {"name": "not", "size": 386},
-            {"name": "or", "size": 323},
-            {"name": "orderby", "size": 307},
-            {"name": "range", "size": 772},
-            {"name": "select", "size": 296},
-            {"name": "stddev", "size": 363},
-            {"name": "sub", "size": 600},
-            {"name": "sum", "size": 280},
-            {"name": "update", "size": 307},
-            {"name": "variance", "size": 335},
-            {"name": "where", "size": 299},
-            {"name": "xor", "size": 354},
-            {"name": "_", "size": 264}
-          ]
-        },
-        {"name": "Minimum", "size": 843},
-        {"name": "Not", "size": 1554},
-        {"name": "Or", "size": 970},
-        {"name": "Query", "size": 13896},
-        {"name": "Range", "size": 1594},
-        {"name": "StringUtil", "size": 4130},
-        {"name": "Sum", "size": 791},
-        {"name": "Variable", "size": 1124},
-        {"name": "Variance", "size": 1876},
-        {"name": "Xor", "size": 1101}
-      ]
-    },
-    {
-      "name": "scale"
-    },
-    {
-      "name": "util",
-      "children": [
-        {"name": "Arrays", "size": 8258},
-        {"name": "Colors", "size": 10001},
-        {"name": "Dates", "size": 8217},
-        {"name": "Displays", "size": 12555},
-        {"name": "Filter", "size": 2324},
-        {"name": "Geometry", "size": 10993},
-        {
-          "name": "heap",
-          "children": [
-            {"name": "FibonacciHeap", "size": 9354},
-            {"name": "HeapNode", "size": 1233}
-          ]
-        },
-        {"name": "IEvaluable", "size": 335},
-        {"name": "IPredicate", "size": 383},
-        {"name": "IValueProxy", "size": 874},
-        {
-          "name": "math",
-          "children": [
-            {"name": "DenseMatrix", "size": 3165},
-            {"name": "IMatrix", "size": 2815},
-            {"name": "SparseMatrix", "size": 3366}
-          ]
-        },
-        {"name": "Maths", "size": 17705},
-        {"name": "Orientation", "size": 1486},
-        {
-          "name": "palette",
-          "children": [
-            {"name": "ColorPalette", "size": 6367},
-            {"name": "Palette", "size": 1229},
-            {"name": "ShapePalette", "size": 2059},
-            {"name": "SizePalette", "size": 2291}
-          ]
-        },
-        {"name": "Property", "size": 5559},
-        {"name": "Shapes", "size": 19118},
-        {"name": "Sort", "size": 6887},
-        {"name": "Stats", "size": 6557},
-        {"name": "Strings", "size": 22026}
-      ]
-    },
-    {
-      "name": "vis",
-      "children": [
-        {"name": "xyz", "size": 5559}
+        {"name": "class_sampling_factors", "size": 31, "info": "Desired over/under-sampling ratios per class (in lexicographic order). If not specified, sampling factors will be automatically computed to obtain class balance during training. Requires balance_classes."},
+        {"name": "build_tree_one_node", "size": 32, "info": "Run on one node only; no network overhead but fewer cpus used. Suitable for small datasets."},
+        {"name": "sample_rate_per_class", "size": 33, "info": "Row sample rate per tree per class (from 0.0 to 1.0)"},
+        {"name": "col_sample_rate_change_per_level", "size": 34, "info": "Relative change of the column sampling rate for every level (from 0.0 to 2.0)"},
+        {"name": "max_abs_leafnode_pred", "size": 35, "info": "Maximum absolute value of a leaf node prediction"},
+        {"name": "pred_noise_bandwidth", "size": 36, "info": "Bandwidth (sigma) of Gaussian multiplicative noise ~N(1,sigma) for tree node predictions"}
       ]
     }
   ]
