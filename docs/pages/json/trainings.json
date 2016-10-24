@@ -1,0 +1,95 @@
+{
+  "name": "trainings",
+  "alllinks": [
+    {
+      "section": "cs231n",
+      "children": [
+        {
+          "id" : "cs231n_1",
+          "title": "CS231n: Convolutional Neural Networks for Visual Recognition : Home",
+          "link": "http://cs231n.stanford.edu/",
+          "tag": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id" : "cs231n_2",
+          "title": "CS231n: Convolutional Neural Networks for Visual Recognition : Syllabus",
+          "link": "http://cs231n.stanford.edu/syllabus.html",
+          "tag": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id" : "cs231n_3",
+          "title": "Github Repo",
+          "link": "http://cs231n.github.io/",
+          "tag": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id" : "cs231n_4",
+          "title": "Python NumPy Tutorial",
+          "link": "http://cs231n.github.io/python-numpy-tutorial/",
+          "tag": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id" : "cs231n_5",
+          "title": "All Videos",
+          "link": "https://www.youtube.com/playlist?list=PLwQyV9I_3POsyBPRNUU_ryNfXzgfkiw2p",
+          "tag": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "udacityml",
+      "children": [
+        {
+          "id" : "udacityml_1",
+          "title": "List of DL Libraries",
+          "link": "http://www.teglor.com/b/deep-learning-libraries-language-cm569/",
+          "tag": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id" : "udacityml_2",
+          "title": "Deep Learning Fundamentals",
+          "link": "https://www.analyticsvidhya.com/blog/2016/03/introduction-deep-learning-fundamentals-neural-networks/",
+          "tag": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "id" : "udacityml_3",
+          "title": "9 Deep Learning Papers",
+          "link": "https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html",
+          "tag": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      ]
+    }
+  ]
+}

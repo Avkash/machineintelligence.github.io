@@ -64,6 +64,12 @@
             AppViewModel.masterPageId(this.params["link"]);
             getView(this.params["link"]);
         });
+        this.get('#/training/all/:link', function() {
+            AppViewModel.masterTab("Training");
+            AppViewModel.masterDir("All");
+            AppViewModel.masterPageId(this.params["link"]);
+            getView('training');
+        });
 
         this.get('#/:link', function() {
             getView(this.params["link"]);
@@ -89,6 +95,10 @@
             console.log("actualKey : " + locVal + " / " + actualKey);
             AppViewModel.masterKeywordId(actualKey);
             view = "keywords";
+            urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
+            AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
+        } else if (view.startsWith("training_")) {
+            view = "training";
             urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
             AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
         } else {

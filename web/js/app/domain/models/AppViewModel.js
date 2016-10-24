@@ -23,6 +23,7 @@ function AppViewModel() {
     this.DatasetsListJson = ko.observable();
     this.allLinkdDataJson = ko.observable();
     this.quickAlgoLinksDataJson = ko.observable();
+    this.selectedTrainingJson = ko.observable();
 
 
     this.links = ko.observableArray([   "home", "thisweek", "links","github", "videos",
@@ -40,6 +41,7 @@ function AppViewModel() {
         "gobrain",
         "algo",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
+        "training", "cs231n",
         "proj_deepdream"]);
 
     this.linksHtml = ko.observable({
@@ -66,7 +68,8 @@ function AppViewModel() {
         /* Projects */
         "proj_deepdream" : "proj_deepdream.html",
         /* keywords */
-        "keywords" : "keywords.html"
+        "keywords" : "keywords.html",
+        "training": "training.html"
     });
 
     this.viewModelPool = ko.observable({
@@ -93,7 +96,8 @@ function AppViewModel() {
         "proj_deepdream" : ProjDeepDreamViewModel,
         /* */
         "keywords" : KeywordsViewModel,
-        "home": HomeViewModel
+        "home": HomeViewModel,
+        "training" : TrainingViewModel
     });
 
     this.masterCollection = ko.observable({
@@ -114,7 +118,8 @@ function AppViewModel() {
          "accordnet" : "Accord.NET",
          "mocha" : "Mocha",
          "cntk" : "CNTK",
-         "gobrain": "GoBrain"
+         "gobrain": "GoBrain",
+         "cs231n" : "CS231n"
     });
 
     this.contentView = ko.observable();
@@ -171,6 +176,12 @@ function AppViewModel() {
     self.getQuickLinksFunction = function (fileName){
         $.get(fileName, function (data, status) {
             self.quickLinksDataJson(JSON.stringify(data));
+        });
+    };
+
+    self.getTrainingLinksFunction = function (fileName){
+        $.get(fileName, function (data, status) {
+            self.selectedTrainingJson(JSON.stringify(data));
         });
     };
 
