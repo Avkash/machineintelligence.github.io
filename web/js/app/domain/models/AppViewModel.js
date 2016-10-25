@@ -41,7 +41,7 @@ function AppViewModel() {
         "gobrain",
         "algo",
         "algo_glm", "algo_gbm", "algo_dl", "algo_drf", "algo_nb", "algo_ensembles", "algo_glrm", "algo_kmeans", "algo_pca",
-        "training", "cs231n",
+        "training", "cs231n", "101dskeys", "101dlkeys",
         "proj_deepdream"]);
 
     this.linksHtml = ko.observable({
@@ -69,7 +69,9 @@ function AppViewModel() {
         "proj_deepdream" : "proj_deepdream.html",
         /* keywords */
         "keywords" : "keywords.html",
-        "training": "training.html"
+        "training": "training.html",
+        "101dskeys" : "101keys.html",
+        "101dlkeys" : "101keys.html"
     });
 
     this.viewModelPool = ko.observable({
@@ -97,7 +99,9 @@ function AppViewModel() {
         /* */
         "keywords" : KeywordsViewModel,
         "home": HomeViewModel,
-        "training" : TrainingViewModel
+        "training" : TrainingViewModel,
+        "101dskeys" : KeysViewModel,
+        "101dlkeys" : KeysViewModel
     });
 
     this.masterCollection = ko.observable({

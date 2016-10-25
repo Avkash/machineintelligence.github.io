@@ -1,0 +1,59 @@
+<style type="text/css">
+    .node circle {
+        cursor: pointer;
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+
+    .node text {
+        font-size: 11px;
+    }
+
+    path.link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+    }
+</style>
+<!-- Page content-->
+<div class="row  margin-left=20">
+    <div class="content-wrapper">
+        <div class="content-heading">
+            <!-- START Language list-->
+
+            <div class="pull-right">
+                <div role="group" aria-label="..." class="btn-group">
+                    <button type="button" class="btn btn-default">
+                        <em class="fa fa-book text-info"></em>
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <em class="fa fa-github text-danger"></em>
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <em class="fa fa-internet-explorer text-muted"></em>
+                    </button>
+                </div>
+            </div>
+            <!-- END Language list    -->
+            <div><i class="fa fa-home"></i> Deeplearn.io <small>> <span data-bind="text: pageHeader"></span></small></div>
+            <small data-localize="dashboard.WELCOME"></small>
+        </div>
+        <div class="row no-padding no-margin">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="border-bottom: 1px;">
+                    <span style="margin-left: 20px;">
+                        <h2>101 <span data-bind="text: pageDetails"></span> key words to learn </h2>
+                    </span>
+                </div>
+                <div class="panel-body heightSet800">
+                    <span style="margin-left: 20px;">
+                        <div id="keysTreeDiv" style="text-align: center;">
+                            <span data-bind="text: generateMlTree();"></span>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

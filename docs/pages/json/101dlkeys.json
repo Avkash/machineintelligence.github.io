@@ -1,0 +1,49 @@
+{
+  "name": "101 Deep Learning",
+  "children": [
+    {
+      "name": "Supervised",
+      "children": [
+        {
+          "name": "Regression",
+          "children" : [
+            {
+              "name" : "Linear",
+              "size": 2102
+            },
+            {
+              "name": "Non-linear",
+              "size": 2102
+            }
+          ]
+        },
+        {
+          "name": "Classification",
+          "size": 2102
+        }
+      ]
+    },
+    {
+      "name" : "Unsupervised",
+      "children" : [
+        {
+          "name" : "a",
+          "children" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Clustering",
+      "children" : [
+        {
+          "name" : "a",
+          "children" : [
+
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -99,9 +99,11 @@
             AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
         } else if (view.startsWith("training_")) {
             view = "training";
+            AppViewModel.masterPageId(view);
             urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
             AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
         } else {
+            AppViewModel.masterPageId(view);
             urlStr = "pages/".concat(AppViewModel.linksHtml()[view]);
             AppViewModel.contentViewModel(AppViewModel.viewModelPool()[view]);
         }

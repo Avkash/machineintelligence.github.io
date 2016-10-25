@@ -1,34 +1,120 @@
 {
-  "name": "dl",
+  "name": "Deep Learning",
   "children": [
     {
-      "name": "dl",
+      "name": "General Parameters",
+      "children": [
+        {"name": "training_frame", "size": 101, "info" : "Id of the training data frame (Not required, to allow initial validation of model parameters)."},
+        {"name": "validation_frame", "size": 101, "info" : "Id of the validation data frame."},
+        {"name": "nfolds", "size": 101, "info" : "Number of folds for N-fold cross-validation (0 to disable or >= 2)."},
+        {"name": "response_column", "size": 101, "info" : "Response variable column."},
+        {"name": "ignored_columns", "size": 101, "info" : "A list of columns ignoted from the source data frame"},
+        {"name": "ignore_const_cols", "size": 101, "info" : "Enable/Disable - Ignore constant columns."},
+        {
+          "name": "activation",
+          "size": 101,
+          "info" : "",
+          "children" : [
+            {"name": "Tanh", "size": 1001, "info" : ""},
+            {"name": "TanhWithDropout", "size": 1001, "info" : ""},
+            {"name": "Ractifier", "size": 1001, "info" : ""},
+            {"name": "RactifierWithDropout", "size": 1001, "info" : ""},
+            {"name": "MaxOut", "size": 1001, "info" : ""},
+            {"name": "MaxOutWithDropout", "size": 1001, "info" : ""}
+          ]
+        },
+        {"name": "hidden", "size": 101, "info" : "Hidden layer sizes (e.g. [100, 100]) or (e.g. [100,100,100])"},
+        {"name": "epochs", "size": 101, "info" : "How many times the dataset should be iterated (streamed), can be fractional."},
+        {"name": "variable_importances", "size": 101, "info" : "Compute variable importances for input features (Gedeon method) - can be slow for large networks."}
+      ]
+    },
+    {
+      "name": "Advance Parameters",
       "children": [
         {
-          "name": "boss",
-          "children": [
-            {"name": "AgglomerativeCluster", "size": 3938},
-            {"name": "CommunityStructure", "size": 3812},
-            {"name": "HierarchicalCluster", "size": 6714},
-            {"name": "MergeEdge", "size": 743}
+          "name": "fold_assignment",
+          "size": 201,
+          "info" : "Cross-validation fold assignment scheme, if fold_column is not specified. The 'Stratified' option will stratify the folds based on the response variable, for classification problems.",
+          "children" : [
+            {"name": "AUTO", "size": 2051, "info": ""},
+            {"name": "Random", "size": 2051, "info": ""},
+            {"name": "Modulo", "size": 2051, "info": ""},
+            {"name": "Stratified", "size": 2051, "info": ""}
+          ]
+        },
+        {"name": "fold_column", "size": 201, "info" : "Column with cross-validation fold index assignment per observation."},
+        {"name": "score_each_iteration", "size": 201, "info" : "Enable/Disable - Whether to score during each iteration of model training."},
+        {"name": "weights_column", "size": 201, "info" : "Column with observation weights. Giving some observation a weight of zero is equivalent to excluding it from the dataset; giving an observation a relative weight of 2 is equivalent to repeating that row twice. Negative weights are not allowed."},
+        {"name": "offset_column", "size": 201, "info" : "Offset column. This will be added to the combination of columns before applying the link function."},
+        {"name": "balance_classes", "size": 201, "info" : "Enable/Disable - Balance training data class counts via over/under-sampling (for imbalanced data)."},
+        {"name": "max_confusion_matrix_size", "size": 201, "info" : "Maximum size (# classes) for confusion matrices to be printed in the Logs."},
+        {"name": "max_hit_ratio_k", "size": 201, "info" : "Max. number (top K) of predictions to use for hit ratio computation (for multi-class only, 0 to disable)."},
+        {"name": "checkpoint", "size": 201, "info" : "Model checkpoint to resume training with."},
+        {"name": "standardize", "size": 201, "info" : "Enable/Disable - If enabled, automatically standardize the data. If disabled, the user must provide properly scaled input data."},
+        {"name": "train_samples_per_iteration", "size": 201, "info" : "Number of training samples (globally) per MapReduce iteration. Special values are 0: one epoch, -1: all available data (e.g., replicated training data), -2: automatic."},
+        {"name": "adaptive_rate", "size": 201, "info" : "Enable/Disable - 	Adaptive learning rate."},
+        {"name": "input_dropout_ratio", "size": 201, "info" : "[0.1/0.2] - Input layer dropout ratio (can improve generalization, try 0.1 or 0.2)."},
+        {"name": "hidden_dropout_ratios", "size": 201, "info" : "Hidden layer dropout ratios (can improve generalization), specify one value per hidden layer, defaults to 0.5."},
+        {"name": "L1", "size": 201, "info" : "L1 regularization (can add stability and improve generalization, causes many weights to become 0)."},
+        {"name": "L2", "size": 201, "info" : "L2 regularization (can add stability and improve generalization, causes many weights to be small."},
+        {
+          "name": "loss",
+          "size": 219,
+          "info" : "",
+          "children" : [
+            {"name": "AUTO", "size": 2191, "info": ""}
           ]
         },
         {
-          "name": "data",
-          "children": [
-            {"name": "BetweennessCentrality", "size": 3534},
-            {"name": "LinkDistance", "size": 5731},
-            {"name": "MaxFlowMinCut", "size": 7840},
-            {"name": "ShortestPaths", "size": 5914},
-            {"name": "SpanningTree", "size": 3416}
+          "name": "distribution",
+          "size": 220,
+          "info" : "",
+          "children" : [
+            {"name": "AUTO", "size": 2201, "info": ""}
           ]
         },
+        {"name": "quantile_alpha", "size": 201, "info" : "Desired quantile for Quantile regression, must be between 0 and 1."},
+        {"name": "tweedie_power", "size": 201, "info" : "Tweedie power for Tweedie regression, must be between 1 and 2."},
+        {"name": "huber_alpha", "size": 201, "info" : "Desired quantile for Huber/M-regression (threshold between quadratic and linear loss, must be between 0 and 1)."},
+        {"name": "score_interval", "size": 201, "info" : "Shortest time interval (in seconds) between model scoring."},
+        {"name": "score_training_samples", "size": 201, "info" : "Number of training set samples for scoring (0 for all)."},
+        {"name": "score_validation_samples", "size": 201, "info" : "Number of validation set samples for scoring (0 for all)."},
+        {"name": "score_duty_cycle", "size": 201, "info" : "Maximum duty cycle fraction for scoring (lower: more training, higher: more scoring)."},
+        {"name": "stopping_rounds", "size": 201, "info" : "Early stopping based on convergence of stopping_metric. Stop if simple moving average of length k of the stopping_metric does not improve for k:=stopping_rounds scoring events (0 to disable)"},
         {
-          "name": "xyz",
-          "children": [
-            {"name": "AspectRatioBanker", "size": 7074}
+          "name": "stopping_metric",
+          "size": 231,
+          "info" : "Metric to use for early stopping (AUTO: logloss for classification, deviance for regression)",
+          "children" : [
+            {"name": "AUTO", "size": 2311, "info": ""}
+          ]
+        },
+        {"name": "stopping_tolerance", "size": 201, "info" : "Relative tolerance for metric-based stopping criterion (stop if relative improvement is not at least this much)	"},
+        {"name": "max_runtime_secs", "size": 201, "info" : "Maximum allowed runtime in seconds for model training. Use 0 to disable."},
+        {"name": "autoencoder", "size": 201, "info" : "Enable/Disable - Auto-Encoder."},
+        {
+          "name": "categorical_encoding",
+          "size": 241,
+          "info" : "Encoding scheme for categorical features",
+          "children" : [
+            {"name": "AUTO", "size": 2411, "info": ""}
           ]
         }
+      ]
+    },
+    {
+      "name": "Expert Parameters",
+      "children": [
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""},
+        {"name": "", "size": 301, "info" : ""}
       ]
     }
   ]
