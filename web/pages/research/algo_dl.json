@@ -1,121 +1,596 @@
 {
   "name": "Deep Learning",
-  "children": [
-    {
-      "name": "General Parameters",
+  "children": [{
+    "name": "General Parameters",
+    "children": [{
+      "name": "training_frame",
+      "size": 101,
+      "info": "Id of the training data frame (Not required, to allow initial validation of model parameters)."
+    }, {
+      "name": "validation_frame",
+      "size": 101,
+      "info": "Id of the validation data frame."
+    }, {
+      "name": "nfolds",
+      "size": 101,
+      "info": "Number of folds for N-fold cross-validation (0 to disable or >= 2)."
+    }, {
+      "name": "response_column",
+      "size": 101,
+      "info": "Response variable column."
+    }, {
+      "name": "ignored_columns",
+      "size": 101,
+      "info": "A list of columns ignoted from the source data frame"
+    }, {
+      "name": "ignore_const_cols",
+      "size": 101,
+      "info": "Enable/Disable - Ignore constant columns."
+    }, {
+      "name": "activation",
+      "size": 101,
+      "info": "",
+      "children": [{
+        "name": "Tanh",
+        "size": 1001,
+        "info": ""
+      }, {
+        "name": "TanhWithDropout",
+        "size": 1001,
+        "info": ""
+      }, {
+        "name": "Ractifier",
+        "size": 1001,
+        "info": ""
+      }, {
+        "name": "RactifierWithDropout",
+        "size": 1001,
+        "info": ""
+      }, {
+        "name": "MaxOut",
+        "size": 1001,
+        "info": ""
+      }, {
+        "name": "MaxOutWithDropout",
+        "size": 1001,
+        "info": ""
+      }]
+    }, {
+      "name": "hidden",
+      "size": 101,
+      "info": "Hidden layer sizes (e.g. [100, 100]) or (e.g. [100,100,100])"
+    }, {
+      "name": "epochs",
+      "size": 101,
+      "info": "How many times the dataset should be iterated (streamed), can be fractional."
+    }, {
+      "name": "variable_importances",
+      "size": 101,
+      "info": "Compute variable importances for input features (Gedeon method) - can be slow for large networks."
+    }]
+  }, {
+    "name": "Advance Parameters",
+    "children": [{
+      "name": "fold_assignment",
+      "size": 201,
+      "info": "Cross-validation fold assignment scheme, if fold_column is not specified. The 'Stratified' option will stratify the folds based on the response variable, for classification problems.",
+      "children": [{
+        "name": "AUTO",
+        "size": 2051,
+        "info": ""
+      }, {
+        "name": "Random",
+        "size": 2051,
+        "info": ""
+      }, {
+        "name": "Modulo",
+        "size": 2051,
+        "info": ""
+      }, {
+        "name": "Stratified",
+        "size": 2051,
+        "info": ""
+      }]
+    }, {
+      "name": "fold_column",
+      "size": 201,
+      "info": "Column with cross-validation fold index assignment per observation."
+    }, {
+      "name": "score_each_iteration",
+      "size": 201,
+      "info": "Enable/Disable - Whether to score during each iteration of model training."
+    }, {
+      "name": "weights_column",
+      "size": 201,
+      "info": "Column with observation weights. Giving some observation a weight of zero is equivalent to excluding it from the dataset; giving an observation a relative weight of 2 is equivalent to repeating that row twice. Negative weights are not allowed."
+    }, {
+      "name": "offset_column",
+      "size": 201,
+      "info": "Offset column. This will be added to the combination of columns before applying the link function."
+    }, {
+      "name": "balance_classes",
+      "size": 201,
+      "info": "Enable/Disable - Balance training data class counts via over/under-sampling (for imbalanced data)."
+    }, {
+      "name": "max_confusion_matrix_size",
+      "size": 201,
+      "info": "Maximum size (# classes) for confusion matrices to be printed in the Logs."
+    }, {
+      "name": "max_hit_ratio_k",
+      "size": 201,
+      "info": "Max. number (top K) of predictions to use for hit ratio computation (for multi-class only, 0 to disable)."
+    }, {
+      "name": "checkpoint",
+      "size": 201,
+      "info": "Model checkpoint to resume training with."
+    }, {
+      "name": "standardize",
+      "size": 201,
+      "info": "Enable/Disable - If enabled, automatically standardize the data. If disabled, the user must provide properly scaled input data."
+    }, {
+      "name": "train_samples_per_iteration",
+      "size": 201,
+      "info": "Number of training samples (globally) per MapReduce iteration. Special values are 0: one epoch, -1: all available data (e.g., replicated training data), -2: automatic."
+    }, {
+      "name": "adaptive_rate",
+      "size": 201,
+      "info": "Enable/Disable - Adaptive learning rate."
+    }, {
+      "name": "input_dropout_ratio",
+      "size": 201,
+      "info": "[0.1/0.2] - Input layer dropout ratio (can improve generalization, try 0.1 or 0.2)."
+    }, {
+      "name": "hidden_dropout_ratios",
+      "size": 201,
+      "info": "Hidden layer dropout ratios (can improve generalization), specify one value per hidden layer, defaults to 0.5."
+    }, {
+      "name": "L1",
+      "size": 201,
+      "info": "L1 regularization (can add stability and improve generalization, causes many weights to become 0)."
+    }, {
+      "name": "L2",
+      "size": 201,
+      "info": "L2 regularization (can add stability and improve generalization, causes many weights to be small."
+    }, {
+      "name": "loss",
+      "size": 219,
+      "info": "",
+      "children": [{
+        "name": "Automatic",
+        "size": 2191,
+        "info": ""
+      }, {
+        "name": "CrossEntropy",
+        "size": 2191,
+        "info": ""
+      }, {
+        "name": "Quadratic",
+        "size": 2191,
+        "info": ""
+      }, {
+        "name": "Huber",
+        "size": 2191,
+        "info": ""
+      }, {
+        "name": "Absolute",
+        "size": 2191,
+        "info": ""
+      }, {
+        "name": "Quantile",
+        "size": 2191,
+        "info": ""
+      }]
+    }, {
+      "name": "distribution",
+      "size": 220,
+      "info": "",
+      "children": [{
+        "name": "Auto",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Bernoulli",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Multinomial",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Gaussian",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Poisson",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Gamma",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Tweedie",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Laplace",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Quantile",
+        "size": 2201,
+        "info": ""
+      }, {
+        "name": "Huber",
+        "size": 2201,
+        "info": ""
+      }]
+    }, {
+      "name": "quantile_alpha",
+      "size": 201,
+      "info": "Desired quantile for Quantile regression, must be between 0 and 1."
+    }, {
+      "name": "tweedie_power",
+      "size": 201,
+      "info": "Tweedie power for Tweedie regression, must be between 1 and 2."
+    }, {
+      "name": "huber_alpha",
+      "size": 201,
+      "info": "Desired quantile for Huber/M-regression (threshold between quadratic and linear loss, must be between 0 and 1)."
+    }, {
+      "name": "score_interval",
+      "size": 201,
+      "info": "Shortest time interval (in seconds) between model scoring."
+    }, {
+      "name": "score_training_samples",
+      "size": 201,
+      "info": "Number of training set samples for scoring (0 for all)."
+    }, {
+      "name": "score_validation_samples",
+      "size": 201,
+      "info": "Number of validation set samples for scoring (0 for all)."
+    }, {
+      "name": "score_duty_cycle",
+      "size": 201,
+      "info": "Maximum duty cycle fraction for scoring (lower: more training, higher: more scoring)."
+    }, {
+      "name": "stopping_rounds",
+      "size": 201,
+      "info": "Early stopping based on convergence of stopping_metric. Stop if simple moving average of length k of the stopping_metric does not improve for k:=stopping_rounds scoring events (0 to disable)"
+    }, {
+      "name": "stopping_metric",
+      "size": 231,
+      "info": "Metric to use for early stopping (AUTO: logloss for classification, deviance for regression)",
       "children": [
-        {"name": "training_frame", "size": 101, "info" : "Id of the training data frame (Not required, to allow initial validation of model parameters)."},
-        {"name": "validation_frame", "size": 101, "info" : "Id of the validation data frame."},
-        {"name": "nfolds", "size": 101, "info" : "Number of folds for N-fold cross-validation (0 to disable or >= 2)."},
-        {"name": "response_column", "size": 101, "info" : "Response variable column."},
-        {"name": "ignored_columns", "size": 101, "info" : "A list of columns ignoted from the source data frame"},
-        {"name": "ignore_const_cols", "size": 101, "info" : "Enable/Disable - Ignore constant columns."},
         {
-          "name": "activation",
-          "size": 101,
-          "info" : "",
-          "children" : [
-            {"name": "Tanh", "size": 1001, "info" : ""},
-            {"name": "TanhWithDropout", "size": 1001, "info" : ""},
-            {"name": "Ractifier", "size": 1001, "info" : ""},
-            {"name": "RactifierWithDropout", "size": 1001, "info" : ""},
-            {"name": "MaxOut", "size": 1001, "info" : ""},
-            {"name": "MaxOutWithDropout", "size": 1001, "info" : ""}
-          ]
-        },
-        {"name": "hidden", "size": 101, "info" : "Hidden layer sizes (e.g. [100, 100]) or (e.g. [100,100,100])"},
-        {"name": "epochs", "size": 101, "info" : "How many times the dataset should be iterated (streamed), can be fractional."},
-        {"name": "variable_importances", "size": 101, "info" : "Compute variable importances for input features (Gedeon method) - can be slow for large networks."}
-      ]
+        "name": "AUTO",
+        "size": 2311,
+        "info": ""
+      }, {
+        "name": "Deviance",
+        "size": 2311,
+        "info": ""
+      }, {
+        "name": "Logloss",
+        "size": 2311,
+        "info": ""
+      }, {
+        "name": "MSE",
+        "size": 2311,
+        "info": ""
+      }, {
+        "name": "AUC",
+        "size": 2311,
+        "info": ""
+      }, {
+        "name": "lift_top_group",
+        "size": 2311,
+        "info": ""
+      }, {
+        "name": "r2",
+        "size": 2311,
+        "info": ""
+      }, {
+        "name": "misclassification",
+        "size": 2311,
+        "info": ""
+      }, {
+        "name": "mean_per_class_error",
+        "size": 2311,
+        "info": ""
+      }]
+    }, {
+      "name": "stopping_tolerance",
+      "size": 201,
+      "info": "Relative tolerance for metric-based stopping criterion (stop if relative improvement is not at least this much)"
+    }, {
+      "name": "max_runtime_secs",
+      "size": 201,
+      "info": "Maximum allowed runtime in seconds for model training. Use 0 to disable."
+    }, {
+      "name": "autoencoder",
+      "size": 201,
+      "info": "Enable/Disable - Auto-Encoder."
+    }, {
+      "name": "categorical_encoding",
+      "size": 241,
+      "info": "Encoding scheme for categorical features",
+      "children": [{
+        "name": "AUTO",
+        "size": 2411,
+        "info": ""
+      }, {
+        "name": "Enum",
+        "size": 2411,
+        "info": ""
+      }, {
+        "name": "OneHotInternal",
+        "size": 2411,
+        "info": ""
+      }, {
+        "name": "OneHotExplicit",
+        "size": 2411,
+        "info": ""
+      }, {
+        "name": "Binary",
+        "size": 2411,
+        "info": ""
+      }, {
+        "name": "Eigen",
+        "size": 2411,
+        "info": ""
+      }]
+    }]
+  }, {
+    "name": "Expert Parameters",
+    "children": [{
+      "name": "keep_cross_validation_predictions",
+      "size": 301,
+      "info": ""
+    }, {
+      "name": "keep_cross_validation_fold_assignment",
+      "size": 301,
+      "info": ""
+    }, {
+      "name": "class_sampling_factors",
+      "size": 301,
+      "info": ""
+    }, {
+      "name": "max_after_balance_size",
+      "size": 301,
+      "info": ""
+    }, {
+      "name": "pretrained_autoencoder",
+      "size": 301,
+      "info": ""
+    }, {
+      "name": "overwrite_with_best_model",
+      "size": 301,
+      "info": ""
+    }, {
+      "name": "target_ratio_comm_to_comp",
+      "size": 301,
+      "info": ""
+    }, {
+      "name": "seed",
+      "size": 301,
+      "info": ""
     },
     {
-      "name": "Advance Parameters",
-      "children": [
-        {
-          "name": "fold_assignment",
-          "size": 201,
-          "info" : "Cross-validation fold assignment scheme, if fold_column is not specified. The 'Stratified' option will stratify the folds based on the response variable, for classification problems.",
-          "children" : [
-            {"name": "AUTO", "size": 2051, "info": ""},
-            {"name": "Random", "size": 2051, "info": ""},
-            {"name": "Modulo", "size": 2051, "info": ""},
-            {"name": "Stratified", "size": 2051, "info": ""}
-          ]
-        },
-        {"name": "fold_column", "size": 201, "info" : "Column with cross-validation fold index assignment per observation."},
-        {"name": "score_each_iteration", "size": 201, "info" : "Enable/Disable - Whether to score during each iteration of model training."},
-        {"name": "weights_column", "size": 201, "info" : "Column with observation weights. Giving some observation a weight of zero is equivalent to excluding it from the dataset; giving an observation a relative weight of 2 is equivalent to repeating that row twice. Negative weights are not allowed."},
-        {"name": "offset_column", "size": 201, "info" : "Offset column. This will be added to the combination of columns before applying the link function."},
-        {"name": "balance_classes", "size": 201, "info" : "Enable/Disable - Balance training data class counts via over/under-sampling (for imbalanced data)."},
-        {"name": "max_confusion_matrix_size", "size": 201, "info" : "Maximum size (# classes) for confusion matrices to be printed in the Logs."},
-        {"name": "max_hit_ratio_k", "size": 201, "info" : "Max. number (top K) of predictions to use for hit ratio computation (for multi-class only, 0 to disable)."},
-        {"name": "checkpoint", "size": 201, "info" : "Model checkpoint to resume training with."},
-        {"name": "standardize", "size": 201, "info" : "Enable/Disable - If enabled, automatically standardize the data. If disabled, the user must provide properly scaled input data."},
-        {"name": "train_samples_per_iteration", "size": 201, "info" : "Number of training samples (globally) per MapReduce iteration. Special values are 0: one epoch, -1: all available data (e.g., replicated training data), -2: automatic."},
-        {"name": "adaptive_rate", "size": 201, "info" : "Enable/Disable - 	Adaptive learning rate."},
-        {"name": "input_dropout_ratio", "size": 201, "info" : "[0.1/0.2] - Input layer dropout ratio (can improve generalization, try 0.1 or 0.2)."},
-        {"name": "hidden_dropout_ratios", "size": 201, "info" : "Hidden layer dropout ratios (can improve generalization), specify one value per hidden layer, defaults to 0.5."},
-        {"name": "L1", "size": 201, "info" : "L1 regularization (can add stability and improve generalization, causes many weights to become 0)."},
-        {"name": "L2", "size": 201, "info" : "L2 regularization (can add stability and improve generalization, causes many weights to be small."},
-        {
-          "name": "loss",
-          "size": 219,
-          "info" : "",
-          "children" : [
-            {"name": "AUTO", "size": 2191, "info": ""}
-          ]
-        },
-        {
-          "name": "distribution",
-          "size": 220,
-          "info" : "",
-          "children" : [
-            {"name": "AUTO", "size": 2201, "info": ""}
-          ]
-        },
-        {"name": "quantile_alpha", "size": 201, "info" : "Desired quantile for Quantile regression, must be between 0 and 1."},
-        {"name": "tweedie_power", "size": 201, "info" : "Tweedie power for Tweedie regression, must be between 1 and 2."},
-        {"name": "huber_alpha", "size": 201, "info" : "Desired quantile for Huber/M-regression (threshold between quadratic and linear loss, must be between 0 and 1)."},
-        {"name": "score_interval", "size": 201, "info" : "Shortest time interval (in seconds) between model scoring."},
-        {"name": "score_training_samples", "size": 201, "info" : "Number of training set samples for scoring (0 for all)."},
-        {"name": "score_validation_samples", "size": 201, "info" : "Number of validation set samples for scoring (0 for all)."},
-        {"name": "score_duty_cycle", "size": 201, "info" : "Maximum duty cycle fraction for scoring (lower: more training, higher: more scoring)."},
-        {"name": "stopping_rounds", "size": 201, "info" : "Early stopping based on convergence of stopping_metric. Stop if simple moving average of length k of the stopping_metric does not improve for k:=stopping_rounds scoring events (0 to disable)"},
-        {
-          "name": "stopping_metric",
-          "size": 231,
-          "info" : "Metric to use for early stopping (AUTO: logloss for classification, deviance for regression)",
-          "children" : [
-            {"name": "AUTO", "size": 2311, "info": ""}
-          ]
-        },
-        {"name": "stopping_tolerance", "size": 201, "info" : "Relative tolerance for metric-based stopping criterion (stop if relative improvement is not at least this much)	"},
-        {"name": "max_runtime_secs", "size": 201, "info" : "Maximum allowed runtime in seconds for model training. Use 0 to disable."},
-        {"name": "autoencoder", "size": 201, "info" : "Enable/Disable - Auto-Encoder."},
-        {
-          "name": "categorical_encoding",
-          "size": 241,
-          "info" : "Encoding scheme for categorical features",
-          "children" : [
-            {"name": "AUTO", "size": 2411, "info": ""}
-          ]
-        }
-      ]
+      "name": "rho",
+      "size": 301,
+      "info": ""
     },
+      {
+        "name": "epsilon",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "nesterov_accelerated_gradient",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "max_w2",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "initial_weight_distribution",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "classification_stop",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "regression_stop",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "score_validation_sampling",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "diagnostics",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "fast_mode",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "force_load_balance",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "single_node_mode",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "shuffle_training_data",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "missing_values_handling",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "quiet_mode",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "sparse",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "col_major",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "average_activation",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "sparsity_beta",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "max_categorical_features",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "reproducible",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "export_weights_and_biases",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "mini_batch_size",
+        "size": 301,
+        "info": ""
+      },
+      {
+        "name": "elastic_averaging",
+        "size": 301,
+        "info": ""
+      }
+    ]
+  },
     {
-      "name": "Expert Parameters",
+      "name": "Grid Settings",
       "children": [
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""},
-        {"name": "", "size": 301, "info" : ""}
-      ]
+        {
+        "name": "Grid ID",
+        "size": 301,
+        "info": ""
+        },
+        {
+        "name": "Strategy",
+        "size": 301,
+        "info": "",
+          "children" : [
+            {
+              "name": "Cartesian",
+              "size": 301,
+              "info": "The default strategy 'Cartesian' covers the entire space of hyperparameter combinations. Specify the 'RandomDiscrete' strategy to get random search of all the combinations of your hyperparameters. RandomDiscrete should usually be combined with at least one early stopping criterion, max_models and/or max_runtime_secs."
+            },
+            {
+              "name": "RandomDiscrete",
+              "size": 301,
+              "info": "",
+              "children" : [
+                {
+                  "name": "Max Models",
+                  "size": 301,
+                  "info": ""
+                },
+                {
+                  "name": "Max Runtime (seconds)",
+                  "size": 301,
+                  "info": ""
+                },
+                {
+                  "name": "Stopping Rounds",
+                  "size": 301,
+                  "info": ""
+                },
+                {
+                  "name": "Stopping Metric",
+                  "size": 301,
+                  "info": "",
+                  "children" : [
+                    {
+                      "name": "AUTO",
+                      "size": 2311,
+                      "info": ""
+                    }, {
+                      "name": "Deviance",
+                      "size": 2311,
+                      "info": ""
+                    }, {
+                      "name": "Logloss",
+                      "size": 2311,
+                      "info": ""
+                    }, {
+                      "name": "MSE",
+                      "size": 2311,
+                      "info": ""
+                    }, {
+                      "name": "AUC",
+                      "size": 2311,
+                      "info": ""
+                    }, {
+                      "name": "lift_top_group",
+                      "size": 2311,
+                      "info": ""
+                    }, {
+                      "name": "r2",
+                      "size": 2311,
+                      "info": ""
+                    }, {
+                      "name": "misclassification",
+                      "size": 2311,
+                      "info": ""
+                    }, {
+                      "name": "mean_per_class_error",
+                      "size": 2311,
+                      "info": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "Stopping Tolerance",
+                  "size": 301,
+                  "info": ""
+                }
+              ]
+            }
+          ]
+      }
+    ]
     }
   ]
 }
+

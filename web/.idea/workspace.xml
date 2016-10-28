@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e7144e-f260-462f-8c91-e2d3e198c7d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/KeysViewModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/101keys.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/json/101dlkeys.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/json/101dskeys.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/_left_side_menu.html" afterPath="$PROJECT_DIR$/includes/_left_side_menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.models.js" afterPath="$PROJECT_DIR$/js/app.models.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/router.js" afterPath="$PROJECT_DIR$/js/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/research/algo_dl.json" afterPath="$PROJECT_DIR$/pages/research/algo_dl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/research/algo_glm.json" afterPath="$PROJECT_DIR$/pages/research/algo_glm.json" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +35,7 @@
       <file leaf-file-name="algo_glm.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/research/algo_glm.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="201">
               <caret line="56" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
@@ -56,8 +45,28 @@
       <file leaf-file-name="algo_dl.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/research/algo_dl.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="99" column="54" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+            <state relative-caret-position="1026">
+              <caret line="580" column="19" selection-start-line="580" selection-start-column="19" selection-end-line="580" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlgoMasterViewModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/AlgoMasterViewModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="algo_dl.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/algos/algo_dl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -478,12 +487,12 @@
       <workItem from="1475717126633" duration="11000" />
       <workItem from="1475717291711" duration="33512000" />
       <workItem from="1476659125593" duration="25873000" />
-      <workItem from="1476918874423" duration="27865000" />
+      <workItem from="1476918874423" duration="29999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154347000" />
+    <option name="totallyTimeSpent" value="156481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1895" height="1177" extended-state="6" />
@@ -840,14 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/AlgoMasterViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="223" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/json/101dskeys.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -868,14 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
           <caret line="159" column="35" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/algos/algo_dl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -942,9 +935,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/AlgoMasterViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/algos/algo_dl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/research/algo_glm.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="201">
           <caret line="56" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
@@ -952,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/research/algo_dl.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="99" column="54" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+        <state relative-caret-position="1026">
+          <caret line="580" column="19" selection-start-line="580" selection-start-column="19" selection-end-line="580" selection-end-column="19" />
           <folding />
         </state>
       </provider>
