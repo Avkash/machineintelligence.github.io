@@ -70,7 +70,8 @@
     }]
   }, {
     "name": "Advance Parameters",
-    "children": [{
+    "children": [
+      {
       "name": "fold_assignment",
       "size": 201,
       "info": "Cross-validation fold assignment scheme, if fold_column is not specified. The 'Stratified' option will stratify the folds based on the response variable, for classification problems.",
@@ -151,10 +152,11 @@
       "name": "L2",
       "size": 201,
       "info": "L2 regularization (can add stability and improve generalization, causes many weights to be small."
-    }, {
+    },
+     {
       "name": "loss",
       "size": 219,
-      "info": "",
+      "info": "Numeric loss function",
       "children": [{
         "name": "Automatic",
         "size": 2191,
@@ -343,15 +345,17 @@
     }]
   }, {
     "name": "Expert Parameters",
-    "children": [{
+    "children": [
+      {
       "name": "keep_cross_validation_predictions",
       "size": 301,
-      "info": ""
+      "info": "Enable/Disable - Whether to keep the predictions of the cross-validation models."
     }, {
       "name": "keep_cross_validation_fold_assignment",
       "size": 301,
-      "info": ""
-    }, {
+      "info": "Enable/Disable - Whether to keep the cross-validation fold assignment."
+    },
+      {
       "name": "class_sampling_factors",
       "size": 301,
       "info": ""

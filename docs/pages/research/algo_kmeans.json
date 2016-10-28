@@ -1,33 +1,176 @@
 {
-  "name": "kmeans",
+  "name": "K-Means",
   "children": [
     {
-      "name": "kmeans",
+      "name": "General Parameters",
       "children": [
         {
-          "name": "55g",
-          "children": [
-            {"name": "AgglomerativeCluster", "size": 3938},
-            {"name": "CommunityStructure", "size": 3812},
-            {"name": "HierarchicalCluster", "size": 6714},
-            {"name": "MergeEdge", "size": 743}
-          ]
+          "name": "training_frame",
+          "size": 101,
+          "info": "Id of the training data frame (Not required, to allow initial validation of model parameters)."
+        }, {
+          "name": "validation_frame",
+          "size": 101,
+          "info": "Id of the validation data frame."
         },
         {
-          "name": "www",
-          "children": [
-            {"name": "BetweennessCentrality", "size": 3534},
-            {"name": "LinkDistance", "size": 5731},
-            {"name": "MaxFlowMinCut", "size": 7840},
-            {"name": "ShortestPaths", "size": 5914},
-            {"name": "SpanningTree", "size": 3416}
-          ]
+          "name": "nfolds",
+          "size": 101,
+          "info": "Number of folds for N-fold cross-validation (0 to disable or >= 2)."
         },
         {
-          "name": "aaaa",
-          "children": [
-            {"name": "AspectRatioBanker", "size": 7074}
+          "name": "ignored_columns",
+          "size": 101,
+          "info": "A list of columns ignoted from the source data frame"
+        }, {
+          "name": "ignore_const_cols",
+          "size": 101,
+          "info": "Enable/Disable - Ignore constant columns."
+        },
+        {
+          "name": "k*",
+          "size": 1021,
+          "info": "The max. number of clusters. If estimate_k is disabled, the model will find k centroids, otherwise it will find up to k centroids."
+        },
+        {
+          "name": "estimate_k",
+          "size": 1021,
+          "info": "Enable/Disable - Whether to estimate the number of clusters (<=k) iteratively and deterministically."
+        },
+        {
+          "name": "max_iterations",
+          "size": 1021,
+          "info": "Maximum training iterations"
+        },
+        {
+          "name": "standardize",
+          "size": 1021,
+          "info": "Enable/Disable - Standardize columns before computing distances"
+        },
+        {
+          "name": "init",
+          "size": 101,
+          "info": "Initialization mode",
+          "children" : [
+            {
+              "name": "Random",
+              "size": 1011,
+              "info": ""
+            },
+            {
+              "name": "PlusPlus",
+              "size": 1011,
+              "info": ""
+            },
+            {
+              "name": "Furthest",
+              "size": 1011,
+              "info": ""
+            },
+            {
+              "name": "User",
+              "size": 1011,
+              "info": ""
+            }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Advance Parameters",
+      "children": [
+        {
+          "name": "fold_assignment",
+          "size": 201,
+          "info": "Cross-validation fold assignment scheme, if fold_column is not specified. The 'Stratified' option will stratify the folds based on the response variable, for classification problems.",
+          "children": [{
+            "name": "AUTO",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Random",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Modulo",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Stratified",
+            "size": 2051,
+            "info": ""
+          }]
+        },
+        {
+          "name": "fold_column",
+          "size": 201,
+          "info": "Column with cross-validation fold index assignment per observation."
+        },
+        {
+          "name": "score_each_iteration",
+          "size": 201,
+          "info": "Enable/Disable - Whether to score during each iteration of model training."
+        },
+        {
+          "name": "seed", "size": 10, "info" : "Seed for pseudo random number generator (RNG Seed - if applicable), Use a fixed number to replicate the same results"
+        },
+        {
+          "name": "categorical_encoding",
+          "size": 241,
+          "info": "Encoding scheme for categorical features",
+          "children": [
+            {
+              "name": "AUTO",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "Enum",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "OneHotInternal",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "OneHotExplicit",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "Binary",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "Eigen",
+              "size": 2411,
+              "info": ""
+            }
+          ]
+        },
+        {"name": "max_runtime_secs", "size": 214, "info": "Maximum allowed runtime in seconds for model training. Use 0 to disable."}
+      ]
+    },
+    {
+      "name": "Expert Parameters",
+      "children": [
+        {
+          "name": "keep_cross_validation_predictions",
+          "size": 301,
+          "info": "Enable/Disable - Whether to keep the predictions of the cross-validation models."
+        },
+        {
+          "name": "keep_cross_validation_fold_assignment",
+          "size": 301,
+          "info": "Enable/Disable - Whether to keep the cross-validation fold assignment."
+        },
+        {
+          "name": "user_points",
+          "size": 301,
+          "info": "Select a user defined frame for this field - User-specified points"
         }
       ]
     }

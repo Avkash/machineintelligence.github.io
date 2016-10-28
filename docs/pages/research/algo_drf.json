@@ -2,33 +2,167 @@
   "name": "drf",
   "children": [
     {
-      "name": "drf",
+      "name": "General Parameters",
       "children": [
         {
-          "name": "cluster",
-          "children": [
-            {"name": "AgglomerativeCluster", "size": 3938},
-            {"name": "CommunityStructure", "size": 3812},
-            {"name": "HierarchicalCluster", "size": 6714},
-            {"name": "MergeEdge", "size": 743}
+          "name": "training_frame",
+          "size": 101,
+          "info": "Id of the training data frame (Not required, to allow initial validation of model parameters)."
+        }, {
+          "name": "validation_frame",
+          "size": 101,
+          "info": "Id of the validation data frame."
+        }, {
+          "name": "nfolds",
+          "size": 101,
+          "info": "Number of folds for N-fold cross-validation (0 to disable or >= 2)."
+        }, {
+          "name": "response_column",
+          "size": 101,
+          "info": "Response variable column."
+        }, {
+          "name": "ignored_columns",
+          "size": 101,
+          "info": "A list of columns ignoted from the source data frame"
+        }, {
+          "name": "ignore_const_cols",
+          "size": 101,
+          "info": "Enable/Disable - Ignore constant columns."
+        },
+        {"name": "ntrees", "size": 10, "info" : "Total number of trees to try in this model building process"},
+        {"name": "max_depth", "size": 10, "info" : "Maximum tree depth to be used"},
+        {"name": "min_rows", "size": 10, "info" : "Fewest allowed (weighted) observations in a leaf (in R called 'nodesize')."},
+        {"name": "nbins", "size": 10, "info" : "For numerical columns (real/int), build a histogram of (at least) this many bins, then split at the best point"},
+        {"name": "seed", "size": 10, "info" : "Seed for pseudo random number generator (if applicable), Use a fixed number to replicate the same results"},
+        {"name": "mtries", "size": 10, "info" : "Number of variables randomly sampled as candidates at each split. If set to -1, defaults to sqrt{p} for classification and p/3 for regression (where p is the # of predictors"},
+        {"name": "sample_rate", "size": 10, "info" : "Row sample rate per tree (from 0.0 to 1.0)"}
+      ]
+    },
+    {
+      "name": "Advance Parameters",
+      "children": [
+        {"name": "score_each_iteration", "size": 201, "info": "Enable/Disable - Whether to score during each iteration of model training."},
+        {"name": "score_tree_interval", "size": 202, "info": "Score the model after every so many trees. Disabled if set to 0."},
+        {
+          "name": "fold_assignment",
+          "size": 201,
+          "info": "Cross-validation fold assignment scheme, if fold_column is not specified. The 'Stratified' option will stratify the folds based on the response variable, for classification problems.",
+          "children": [{
+            "name": "AUTO",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Random",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Modulo",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Stratified",
+            "size": 2051,
+            "info": ""
+          }]
+        },
+        {"name": "fold_column", "size": 203, "info": "[Select column from source data]Column with cross-validation fold index assignment per observation."},
+        {"name": "offset_column", "size": 204, "info": "[Select column from source data]Offset column. This will be added to the combination of columns before applying the link function."},
+        {"name": "weights_column", "size": 205, "info": "[Select column from source data] Column with observation weights. Giving some observation a weight of zero is equivalent to excluding it from the dataset; giving an observation a relative weight of 2 is equivalent to repeating that row twice. Negative weights are not allowed."},
+        {"name": "balance_classes", "size": 206, "info": "Balance training data class counts via over/under-sampling (for imbalanced data)."},
+        {"name": "max_confusion_matrix_size", "size": 207, "info": "Maximum size (# classes) for confusion matrices to be printed in the Logs"},
+        {"name": "max_hit_ratio_k", "size": 208, "info": "Max. number (top K) of predictions to use for hit ratio computation (for multi-class only, 0 to disable)"},
+        {"name": "nbins_top_level", "size": 209, "info": "For numerical columns (real/int), build a histogram of (at most) this many bins at the root level, then decrease by factor of two per level"},
+        {"name": "nbins_cats", "size": 210, "info": "For categorical columns (factors), build a histogram of this many bins, then split at the best point. Higher values can lead to more overfitting."},
+        {"name": "r2_stopping", "size": 211, "info": "Stop making trees when the R^2 metric equals or exceeds this"},
+        {"name": "stopping_rounds", "size": 212, "info": "Early stopping based on convergence of stopping_metric. Stop if simple moving average of length k of the stopping_metric does not improve for k:=stopping_rounds scoring events (0 to disable)"},
+        {
+          "name": "stopping_metric",
+          "info": "Metric to use for early stopping (AUTO: logloss for classification, deviance for regression)",
+          "children" : [
+            {"name": "AUTO", "size": 2121, "info": ""},
+            {"name": "Deviance", "size": 2122, "info": ""},
+            {"name": "Logloss", "size": 2123, "info": ""},
+            {"name": "MSE", "size": 2124, "info": ""},
+            {"name": "AUC", "size": 2125, "info": ""},
+            {"name": "lift_top_group", "size": 2126, "info": ""},
+            {"name": "r2", "size": 2127, "info": ""},
+            {"name": "Misclassification", "size": 2128, "info": ""},
+            {"name": "Mean_per_class_error", "size": 2129, "info": ""}
+          ]
+        },
+        {"name": "stopping_tolerance", "size": 213, "info": "Relative tolerance for metric-based stopping criterion (stop if relative improvement is not at least this much)"},
+        {"name": "max_runtime_secs", "size": 214, "info": "Maximum allowed runtime in seconds for model training. Use 0 to disable."},
+        {"name": "checkpoint", "size": 21, "info": "Model checkpoint to resume training with."},
+        {"name": "col_sample_rate_per_tree", "size": 21, "info": "Column sample rate per tree (from 0.0 to 1.0)"},
+        {"name": "min_split_improvement", "size": 21, "info": "Minimum relative improvement in squared error reduction for a split to happen"},
+        {
+          "name": "histogram_type",
+          "info" : "What type of histogram to use for finding optimal split points",
+          "children" : [
+            {"name": "AUTO", "size": 2151, "info": ""},
+            {"name": "UniformAdaptive", "size": 2151, "info": ""},
+            {"name": "Random", "size": 2151, "info": ""},
+            {"name": "QuantilesGlobal", "size": 2151, "info": ""},
+            {"name": "RoundRobin", "size": 2151, "info": ""}
           ]
         },
         {
-          "name": "graph",
+          "name": "categorical_encoding",
+          "size": 241,
+          "info": "Encoding scheme for categorical features",
           "children": [
-            {"name": "BetweennessCentrality", "size": 3534},
-            {"name": "LinkDistance", "size": 5731},
-            {"name": "MaxFlowMinCut", "size": 7840},
-            {"name": "ShortestPaths", "size": 5914},
-            {"name": "SpanningTree", "size": 3416}
-          ]
-        },
-        {
-          "name": "optimization",
-          "children": [
-            {"name": "AspectRatioBanker", "size": 7074}
+            {
+              "name": "AUTO",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "Enum",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "OneHotInternal",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "OneHotExplicit",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "Binary",
+              "size": 2411,
+              "info": ""
+            },
+            {
+              "name": "Eigen",
+              "size": 2411,
+              "info": ""
+            }
           ]
         }
+      ]
+    },
+    {
+      "name": "Expert Parameters",
+      "children": [
+        {
+          "name": "keep_cross_validation_predictions",
+          "size": 301,
+          "info": "Enable/Disable - Whether to keep the predictions of the cross-validation models."
+        }, {
+          "name": "keep_cross_validation_fold_assignment",
+          "size": 301,
+          "info": "Enable/Disable - Whether to keep the cross-validation fold assignment."
+        },
+        {"name": "class_sampling_factors", "size": 31, "info": "Desired over/under-sampling ratios per class (in lexicographic order). If not specified, sampling factors will be automatically computed to obtain class balance during training. Requires balance_classes."},
+        {"name": "max_after_balance_size", "size": 33, "info": "Maximum relative size of the training data after balancing class counts (can be less than 1.0). Requires balance_classes."},
+        {"name": "build_tree_one_node", "size": 32, "info": "Enable/Disable - Run on one node only; no network overhead but fewer cpus used. Suitable for small datasets."},
+        {"name": "sample_rate_per_class", "size": 33, "info": "Row sample rate per tree per class (from 0.0 to 1.0)"},
+        {"name": "binomial_double_trees", "size": 33, "info": "Enable/Disable - For binary classification: Build 2x as many trees (one per class) - can lead to higher accuracy."},
+        {"name": "col_sample_rate_change_per_level", "size": 34, "info": "Relative change of the column sampling rate for every level (from 0.0 to 2.0)"}
       ]
     }
   ]

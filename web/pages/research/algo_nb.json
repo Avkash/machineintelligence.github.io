@@ -1,33 +1,119 @@
 {
-  "name": "nb",
+  "name": "Naive Bayes",
   "children": [
     {
-      "name": "nb",
+      "name": "General Parameters",
       "children": [
         {
-          "name": "55g",
-          "children": [
-            {"name": "AgglomerativeCluster", "size": 3938},
-            {"name": "CommunityStructure", "size": 3812},
-            {"name": "HierarchicalCluster", "size": 6714},
-            {"name": "MergeEdge", "size": 743}
-          ]
+          "name": "nfolds",
+          "size": 101,
+          "info": "Number of folds for N-fold cross-validation (0 to disable or >= 2)."
         },
         {
-          "name": "www",
-          "children": [
-            {"name": "BetweennessCentrality", "size": 3534},
-            {"name": "LinkDistance", "size": 5731},
-            {"name": "MaxFlowMinCut", "size": 7840},
-            {"name": "ShortestPaths", "size": 5914},
-            {"name": "SpanningTree", "size": 3416}
-          ]
+          "name": "training_frame",
+          "size": 101,
+          "info": "Id of the training data frame (Not required, to allow initial validation of model parameters)."
         },
         {
-          "name": "aaaa",
-          "children": [
-            {"name": "AspectRatioBanker", "size": 7074}
-          ]
+          "name": "validation_frame",
+          "size": 101,
+          "info": "Id of the validation data frame."
+        },
+        {
+          "name": "response_column",
+          "size": 101,
+          "info": "Response variable column."
+        },
+        {
+          "name": "ignored_columns",
+          "size": 101,
+          "info": "A list of columns ignoted from the source data frame"
+        },
+        {
+          "name": "ignore_const_cols",
+          "size": 101,
+          "info": "Enable/Disable - Ignore constant columns."
+        },
+        {
+          "name": "laplace",
+          "size": 101,
+          "info": "Laplace smoothing parameter"
+        },
+        {
+          "name": "min_sdev",
+          "size": 101,
+          "info": "Min. standard deviation to use for observations with not enough data"
+        },
+        {
+          "name": "eps_sdev",
+          "size": 101,
+          "info": "Cutoff below which standard deviation is replaced with min_sdev"
+        },
+        {
+          "name": "min_prob",
+          "size": 101,
+          "info": "Min. probability to use for observations with not enough data"
+        },
+        {
+          "name": "eps_prob",
+          "size": 101,
+          "info": "Cutoff below which probability is replaced with min_prob"
+        },
+        {
+          "name": "compute_metrics",
+          "size": 101,
+          "info": "Enable/Disable - Compute metrics on training data"
+        }
+      ]
+    },
+    {
+      "name": "Advance Parameters",
+      "children": [
+        {
+          "name": "fold_assignment",
+          "size": 201,
+          "info": "Cross-validation fold assignment scheme, if fold_column is not specified. The 'Stratified' option will stratify the folds based on the response variable, for classification problems.",
+          "children": [{
+            "name": "AUTO",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Random",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Modulo",
+            "size": 2051,
+            "info": ""
+          }, {
+            "name": "Stratified",
+            "size": 2051,
+            "info": ""
+          }]
+        },
+        {"name": "fold_column", "size": 203, "info": "[Select column from source data]Column with cross-validation fold index assignment per observation."},
+        {"name": "score_each_iteration", "size": 201, "info": "Enable/Disable - Whether to score during each iteration of model training."},
+        {"name": "max_confusion_matrix_size", "size": 207, "info": "Maximum size (# classes) for confusion matrices to be printed in the Logs"},
+        {"name": "max_hit_ratio_k", "size": 208, "info": "Max. number (top K) of predictions to use for hit ratio computation (for multi-class only, 0 to disable)"},
+        {"name": "max_runtime_secs", "size": 214, "info": "Maximum allowed runtime in seconds for model training. Use 0 to disable."}
+      ]
+    },
+    {
+      "name": "Expert Parameters",
+      "children": [
+        {
+          "name": "seed",
+          "size": 10,
+          "info" : "Seed for pseudo random number generator (if applicable), Use a fixed number to replicate the same results. only used for cross-validation and fold_assignment=Random or AUTO"
+        },
+        {
+          "name": "keep_cross_validation_predictions",
+          "size": 301,
+          "info": "Enable/Disable - Whether to keep the predictions of the cross-validation models."
+        }, {
+          "name": "keep_cross_validation_fold_assignment",
+          "size": 301,
+          "info": "Enable/Disable - Whether to keep the cross-validation fold assignment."
         }
       ]
     }

@@ -1,33 +1,174 @@
 {
-  "name": "ensembles",
+  "name": "Ensembles",
   "children": [
     {
-      "name": "ensembles",
+      "name": "General Parameters",
       "children": [
         {
-          "name": "55g",
-          "children": [
-            {"name": "AgglomerativeCluster", "size": 3938},
-            {"name": "CommunityStructure", "size": 3812},
-            {"name": "HierarchicalCluster", "size": 6714},
-            {"name": "MergeEdge", "size": 743}
+          "name": "training_frame",
+          "size": 101,
+          "info": "Id of the training data frame (Not required, to allow initial validation of model parameters)."
+        }, {
+          "name": "validation_frame",
+          "size": 101,
+          "info": "(Optional) Id of the validation data frame or NULL"
+        },
+        {
+          "name": "response_column",
+          "size": 101,
+          "info": "Response variable column."
+        }, {
+          "name": "ignored_columns",
+          "size": 101,
+          "info": "A list of columns ignoted from the source data frame"
+        },
+        {
+          "name": "ignore_const_cols",
+          "size": 101,
+          "info": "Enable/Disable - Ignore constant columns."
+        },
+        {
+          "name": "family",
+          "size": 101,
+          "info": "A description of the error distribution and link function to be used in the model. This must be a character string",
+          "children" : [
+            {
+              "name": "AUTO",
+              "size": 1011,
+              "info": ""
+            },
+            {
+              "name": "binomial",
+              "size": 1011,
+              "info": ""
+            },
+            {
+              "name": "gaussian",
+              "size": 1011,
+              "info": ""
+            }
           ]
         },
         {
-          "name": "www",
-          "children": [
-            {"name": "BetweennessCentrality", "size": 3534},
-            {"name": "LinkDistance", "size": 5731},
-            {"name": "MaxFlowMinCut", "size": 7840},
-            {"name": "ShortestPaths", "size": 5914},
-            {"name": "SpanningTree", "size": 3416}
+          "name": "learner",
+          "size": 101,
+          "info": "A string or character vector naming the prediction algorithm(s) used to train the base models for the ensemble. The functions must have the same format as the h2o wrapper functions.",
+          "children" : [
+            {
+              "name": "h2o.glm.wrapper",
+              "size": 1021,
+              "info": ""
+            },
+            {
+              "name": "h2o.randomForest.wrapper",
+              "size": 1021,
+              "info": ""
+            },
+            {
+              "name": "h2o.gbm.wrapper",
+              "size": 1021,
+              "info": ""
+            },
+            {
+              "name": "h2o.deeplearning.wrapper",
+              "size": 1021,
+              "info": ""
+            }
           ]
         },
         {
-          "name": "aaaa",
-          "children": [
-            {"name": "AspectRatioBanker", "size": 7074}
+          "name": "metalearner",
+          "size": 101,
+          "info": "(Question) A string specifying the prediction algorithm used to learn the optimal combination of the base learners. Supports both h2o and SuperLearner wrapper functions.",
+          "children" : [
+            {
+              "name": "h2o.glm.wrapper",
+              "size": 1021,
+              "info": ""
+            },
+            {
+              "name": "h2o.randomForest.wrapper",
+              "size": 1021,
+              "info": ""
+            },
+            {
+              "name": "h2o.gbm.wrapper",
+              "size": 1021,
+              "info": ""
+            },
+            {
+              "name": "h2o.deeplearning.wrapper",
+              "size": 1021,
+              "info": ""
+            }
           ]
+        },
+        {
+          "name": "seed", "size": 10, "info" : "Seed for pseudo random number generator (RNG Seed - if applicable), Use a fixed number to replicate the same results"
+        },
+        {
+          "name": "cvControl",
+          "size": 101,
+          "info": "A list of parameters to control the cross-validation process. The V parameter is an integer representing the number of cross-validation folds and defaults to 10. Other parmeters are stratifyCV and shuffle, which are not yet enabled.",
+          "children" : [
+            {
+              "name": "V",
+              "size": 1021,
+              "info": "The V parameter is an integer representing the number of cross-validation folds and defaults to 10"
+            },
+            {
+              "name": "shuffle",
+              "size": 1021,
+              "info": "True/False"
+            }
+          ]
+        },
+        {
+          "name": "parallel",
+          "size": 101,
+          "info": "A character string specifying optional parallelization.",
+          "children" : [
+            {
+              "name": "seq",
+              "size": 1021,
+              "info": "Use seq  for sequential computation (the default) of the cross-validation and base learning steps"
+            },
+            {
+              "name": "multicore",
+              "size": 1021,
+              "info": "Use multicore to perform the V-fold (internal) cross-validation step as well as the final base learning step in parallel over all available cores."
+            }
+          ]
+        },
+        {
+          "name": "keep_levelone_data",
+          "size": 10,
+          "info" : "Logical, defaults to TRUE. Keep the levelone H2OFrame of cross-validated predicted values (Z matrix) and original response vector, y (cbind to Z)."
+        }
+      ]
+    },
+    {
+      "name": "Advance Parameters",
+      "children": [
+        {
+          "name": "basefits",
+          "size": 10,
+          "info" : "A list of H2O models, each of which are trained using the data object. The length of this list is equal to the number of base learners in the learner argument."
+        },
+        {
+          "name": "metafit",
+          "size": 10,
+          "info" : "The predictive model which is learned by regressing y on Z (see description of Z below). The type of model is specified using the metalearner argument."
+        }
+      ]
+    },
+    {
+      "name": "Expert Parameters",
+      "children": [
+        {
+          "name": "None",
+          "size": 101,
+          "info": ""
         }
       ]
     }
