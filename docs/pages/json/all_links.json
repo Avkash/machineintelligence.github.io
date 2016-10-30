@@ -9,7 +9,8 @@
         {"link": "http://blog.h2o.ai/", "title": "H2O Blogs", "tag": [ "a", "b" , "c"]},
         {"link": "http://www.slideshare.net/0xdata/presentations", "title": "H2O Presentations", "tag": [ "a", "b" , "c"]},
         {"link": "https://github.com/h2oai/app-malicious-domains", "title": "Building ML app in AWS Lambda", "tag": [ "a", "b" , "c"]},
-        {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]}
+        {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]},
+        {"link": "https://www.kaggle.com/c/grupo-bimbo-inventory-demand", "title" : "Kaggle: Maximize sales and minimize returns of bakery goods", "tag" : [ "a", "b", "c"]},
       ]
     },
     {
