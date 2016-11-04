@@ -19,7 +19,10 @@
                   "name": "Generalized",
                   "size" : 2201
                 }
+<<<<<<< HEAD
               ]
+=======
+>>>>>>> ece42aa50998ede6477bc4342954e0260b4e369b
             },
             {
               "name": "logistic",
