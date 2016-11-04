@@ -9,10 +9,19 @@
           "children" : [
             {
               "name" : "Linear",
-              "size": 2102
+              "size": 2102,
+              "children" : [
+                {
+                  "name": "Simple",
+                  "size" : 2201
+                },
+                {
+                  "name": "Generalized",
+                  "size" : 2201
+                }
             },
             {
-              "name": "Non-linear",
+              "name": "logistic",
               "size": 2102
             }
           ]
