@@ -22,14 +22,72 @@
               ]
             },
             {
-              "name": "logistic",
-              "size": 2102
+              "name": "logistic (logit)",
+              "size": 2102,
+              "children" : [
+                {
+                  "name": "Binomial (Binary)",
+                  "size" : 2201,
+                  "children" : [
+                    {
+                      "name": "Two possible outcome",
+                      "size" : 2201
+                    }
+                  ]
+                },
+                {
+                  "name": "Ordinal",
+                  "size" : 2201,
+                  "children" : [
+                    {
+                      "name": "Three or more possible ordered outcome",
+                      "size" : 2201
+                    }
+                  ]
+                },
+                {
+                  "name": "Multinomial",
+                  "size" : 2201,
+                  "children" : [
+                    {
+                      "name": "Three or more possible unordered outcome",
+                      "size" : 2201
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
         {
           "name": "Classification",
-          "size": 2102
+          "size": 2102,
+          "children": [
+            {
+              "name": "linear",
+              "size": 2102
+            },
+            {
+              "name": "SVM (Support Vector Machine)",
+              "size": 2102
+            },
+            {
+              "name": "K-nearest Neighbour",
+              "size": 2102
+            },
+            {
+              "name": "Boosting",
+              "size": 2102
+            },
+            {
+              "name": "Random Forests",
+              "size": 2102
+            },
+            {
+              "name": "Neural Networks",
+              "size": 2102
+            }
+          ]
         }
       ]
     },
@@ -37,18 +95,30 @@
       "name" : "Unsupervised",
       "children" : [
         {
-          "name" : "a",
+          "name": "Clustering",
+          "size": 2102,
           "children" : [
-
+            {
+              "name": "Feature Reduction",
+              "size": 2102
+            },
+            {
+              "name": "Principal Component Analysis",
+              "size": 2102
+            },
+            {
+              "name": "Correlation Analysis",
+              "size": 2102
+            }
           ]
         }
       ]
     },
     {
-      "name" : "Clustering",
+      "name" : "Anomaly Detection",
       "children" : [
         {
-          "name" : "a",
+          "name" : "Auto-encoder",
           "children" : [
 
           ]

@@ -71,7 +71,8 @@
         {"title": "Understanding RoC Curve and area under the curve", "link": "http://www.dataschool.io/roc-curves-and-auc-explained/", "tag": [ "a", "b" , "c"]},
         {"title": "Academic Torents (Academia Search)", "link": "http://academictorrents.com/", "tag": [ "a", "b" , "c"]},
         {"title": "Azure ML Tutorials", "link": "https://github.com/Azure/Azure-MachineLearning-DataScience/tree/master/Misc/KDDCup2016", "tag": [ "a", "b" , "c"]},
-        {"title": "How to share data with statistician", "link": "https://github.com/jtleek/datasharing" , "tag" : ["a", "B", "c"]}
+        {"title": "How to share data with statistician", "link": "https://github.com/jtleek/datasharing" , "tag" : ["a", "B", "c"]},
+        {"title": "How to choose an algorithm", "link": "https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-choice/" , "tag" : ["a", "B", "c"]}
       ]
     },
     {
