@@ -9,6 +9,7 @@
         {"link": "http://blog.h2o.ai/", "title": "H2O Blogs", "tag": [ "a", "b" , "c"]},
         {"link": "http://www.slideshare.net/0xdata/presentations", "title": "H2O Presentations", "tag": [ "a", "b" , "c"]},
         {"link": "https://github.com/h2oai/app-malicious-domains", "title": "Building ML app in AWS Lambda", "tag": [ "a", "b" , "c"]},
+        {"link": "http://datascience.ibm.com/", "title": "IBM Data Science Resources", "tag": [ "a", "b" , "c"]},
         {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]}
       ]
     },

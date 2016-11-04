@@ -56,16 +56,16 @@ function AppViewModel() {
         "research" : "research.html",
         /* "keywords" : "glossary-keywords.html", */
         "social" :  "my_social.html",
-        /* Algorithms*/
-        "algo_glm" : "algo_glm.html",
-        "algo_gbm" : "algo_gbm.html",
-        "algo_dl" : "algo_dl.html",
-        "algo_drf" : "algo_drf.html",
-        "algo_nb" : "algo_nb.html",
-        "algo_ensembles" : "algo_ensembles.html",
-        "algo_glrm" : "algo_glrm.html",
-        "algo_kmeans" : "algo_kmeans.html",
-        "algo_pca" : "algo_pca.html",
+        /* Algorithms */
+        "algo_glm" : "algo_master.html",
+        "algo_gbm" : "algo_master.html",
+        "algo_dl" : "algo_master.html",
+        "algo_drf" : "algo_master.html",
+        "algo_nb" : "algo_master.html",
+        "algo_ensembles" : "algo_master.html",
+        "algo_glrm" : "algo_master.html",
+        "algo_kmeans" : "algo_master.html",
+        "algo_pca" : "algo_master.html",
         /* Projects */
         "proj_deepdream" : "proj_deepdream.html",
         /* keywords */
@@ -270,33 +270,45 @@ function AlgoMasterViewModel(){
     self.alogPageType = ko.observable();
     self.quickDetails = ko.observable("Quick Details1");
 
-    self.quickDetailsFunc = function(algoType, algoLinks){
+    self.quickDetailsFunc = function(){
+        var algoType = root.masterPageId();
+        algoType = algoType.replace("algo_", "");
+        var algoLinks = "";
         switch(algoType){
             case "glm":
+                algoLinks = "pages/research/algo_glm_links.json";
                 self.pageHeader("Generalized Linear Modeling (GLM)");
                 break;
             case "gbm":
+                algoLinks = "pages/research/algo_gbm_links.json";
                 self.pageHeader("Gradient Boosting Machine (GBM)");
                 break;
             case "drf":
+                algoLinks = "pages/research/algo_drf_links.json";
                 self.pageHeader("Distributed Random Forest (DRF)");
                 break;
             case "dl":
+                algoLinks = "pages/research/algo_dl_links.json";
                 self.pageHeader("Deep Learning (DL)");
                 break;
             case "nb":
+                algoLinks = "pages/research/algo_nb_links.json";
                 self.pageHeader("Naive Bayes (NB)");
                 break;
             case "ensembles":
+                algoLinks = "pages/research/algo_ensembles_links.json";
                 self.pageHeader("Ensembles or Stacking");
                 break;
             case "glrm":
+                algoLinks = "pages/research/algo_glrm_links.json";
                 self.pageHeader("Generalized Low Rank Models (GLRM)");
                 break;
             case "kmeans":
+                algoLinks = "pages/research/algo_kmeans_links.json";
                 self.pageHeader("K-Means");
                 break;
             case "pca":
+                algoLinks = "pages/research/algo_pca_links.json";
                 self.pageHeader("Principal Component Analysis");
                 break;
             default:
@@ -330,8 +342,52 @@ function AlgoMasterViewModel(){
         }
     };
 
-    self.generateMlTree = function(mlJsonPath) {
+    self.generateMlTree = function() {
         var visRoot;
+        var algoType = root.masterPageId();
+        var mlJsonPath = "";
+        algoType = algoType.replace("algo_", "");
+        switch(algoType){
+            case "glm":
+                self.pageHeader("Generalized Linear Modeling (GLM)");
+                mlJsonPath = "pages/research/algo_glm.json";
+                break;
+            case "gbm":
+                mlJsonPath = "pages/research/algo_gbm.json";
+                self.pageHeader("Gradient Boosting Machine (GBM)");
+                break;
+            case "drf":
+                mlJsonPath = "pages/research/algo_drf.json";
+                self.pageHeader("Distributed Random Forest (DRF)");
+                break;
+            case "dl":
+                mlJsonPath = "pages/research/algo_dl.json";
+                self.pageHeader("Deep Learning (DL)");
+                break;
+            case "nb":
+                mlJsonPath = "pages/research/algo_nb.json";
+                self.pageHeader("Naive Bayes (NB)");
+                break;
+            case "ensembles":
+                mlJsonPath = "pages/research/algo_ensembles.json";
+                self.pageHeader("Ensembles or Stacking");
+                break;
+            case "glrm":
+                mlJsonPath = "pages/research/algo_glrm.json";
+                self.pageHeader("Generalized Low Rank Models (GLRM)");
+                break;
+            case "kmeans":
+                mlJsonPath = "pages/research/algo_kmeans.json";
+                self.pageHeader("K-Means");
+                break;
+            case "pca":
+                mlJsonPath = "pages/research/algo_pca.json";
+                self.pageHeader("Principal Component Analysis");
+                break;
+            default:
+                self.pageHeader("Algorithm");
+        }
+        console.log("XXX: " + root.masterPageId() + " / " + mlJsonPath);
         d3.json(mlJsonPath, function(json) {
             visRoot = json;
             visRoot.x0 = h / 2;

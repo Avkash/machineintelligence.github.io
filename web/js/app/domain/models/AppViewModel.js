@@ -55,16 +55,16 @@ function AppViewModel() {
         "research" : "research.html",
         /* "keywords" : "glossary-keywords.html", */
         "social" :  "my_social.html",
-        /* Algorithms*/
-        "algo_glm" : "algo_glm.html",
-        "algo_gbm" : "algo_gbm.html",
-        "algo_dl" : "algo_dl.html",
-        "algo_drf" : "algo_drf.html",
-        "algo_nb" : "algo_nb.html",
-        "algo_ensembles" : "algo_ensembles.html",
-        "algo_glrm" : "algo_glrm.html",
-        "algo_kmeans" : "algo_kmeans.html",
-        "algo_pca" : "algo_pca.html",
+        /* Algorithms */
+        "algo_glm" : "algo_master.html",
+        "algo_gbm" : "algo_master.html",
+        "algo_dl" : "algo_master.html",
+        "algo_drf" : "algo_master.html",
+        "algo_nb" : "algo_master.html",
+        "algo_ensembles" : "algo_master.html",
+        "algo_glrm" : "algo_master.html",
+        "algo_kmeans" : "algo_master.html",
+        "algo_pca" : "algo_master.html",
         /* Projects */
         "proj_deepdream" : "proj_deepdream.html",
         /* keywords */
