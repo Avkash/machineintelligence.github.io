@@ -51,8 +51,8 @@ function DatasetViewModel() {
     };
 
     self.load = function () {
-        root.getDatasetsListFunction("pages/json/datasetslist.json");
-        self.dsJsonData(root.DatasetsListJson());
+        root.getGenericListFunction("pages/json/datasetslist.json");
+        self.dsJsonData(root.GenericListJson());
         self.renderDsListJsonData();
 
     };

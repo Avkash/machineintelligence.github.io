@@ -1,37 +1,43 @@
    <!-- Page content-->
-   <div class="row">
-         <div class="content-wrapper">
-            <div class="content-heading">
-               <!-- START Language list-->
-               <div class="pull-right">
-                  <ul class="nav navbar-nav">
-                     <li>
-                        <a href="http://www.h2o.ai/docs/" target="h2o-download-link-content">
-                           <em class="fa fa-book"></em>
-                        </a>
-                     </li> 
-                  </ul>                                   
-               </div>
-               <!-- END Language list    -->
-               <div>H2O Home><small> Videos</small></div>
-               <small data-localize="dashboard.WELCOME"></small>
-            </div>
-            <div class="row no-margin no-padding">
-               <div class="col-xs-9 no-margin">
+<div class="row">
+     <div class="content-wrapper">
+        <div class="content-heading">
+           <!-- START Language list-->
+           <div class="pull-right">
+              <ul class="nav navbar-nav">
+                 <li>
+                    <a href="http://www.h2o.ai/docs/" target="h2o-download-link-content">
+                       <em class="fa fa-book"></em>
+                    </a>
+                 </li>
+              </ul>
+           </div>
+           <!-- END Language list    -->
+            <div>H2O Home><small> <span class="text-thin" data-bind="text: pageHeader"></span></small></div>
+           <small data-localize="dashboard.WELCOME"></small>
+        </div>
+        <div class="row no-margin no-padding">
+           <div class="col-xs-9 no-margin">
 
-                      <iframe  src=""
-                      class="master-link-frame" name="h2o-video-link-content"  style="border:0px"
-                      onload="this.width=screen.width-670;this.height=screen.height-320;">
-                      </iframe>
+                  <iframe  src=""
+                  class="master-link-frame" name="h2o-video-link-content"  style="border:0px"
+                  onload="this.width=screen.width-670;this.height=screen.height-320;">
+                  </iframe>
 
+           </div>
+           <div class="col-xs-3">
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                       <h2 class="text-thin">Videos List</h2>
+                   </div>
+                   <div class="panel-body heightSet700">
+                       <ul>
+                           <li><a href="https://channel9.msdn.com/Events/Machine-Learning-and-Data-Sciences-Conference/Data-Science-Summit-2016/MSDSS11/player" target="h2o-video-link-content">Tufte’s latest talk: the future of data analysis</a></li>
+                           <li><a href="pages/security.html" target="h2o-video-link-content">Python</a></li>
+                       </ul>
+                   </div>
                </div>
-               <div class="col-xs-3">
-                    <h2 class="text-thin">Videos List</h2>
-                    <ul>
-                        <li><a href="https://channel9.msdn.com/Events/Machine-Learning-and-Data-Sciences-Conference/Data-Science-Summit-2016/MSDSS11/player" target="h2o-video-link-content">Tufte’s latest talk: the future of data analysis</a></li>
-                        <li><a href="pages/security.html" target="h2o-video-link-content">Python</a></li>
-                    <ul>
-               </div>
-            </div>
-         </div>
-   </div>
+           </div>
+        </div>
+     </div>
+</div>

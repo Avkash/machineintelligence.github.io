@@ -20,7 +20,7 @@ function AppViewModel() {
     this.quickLinksDataJson = ko.observable("");
     this.dlDataJson = ko.observable();
     this.mlDataJson = ko.observable();
-    this.DatasetsListJson = ko.observable();
+    this.GenericListJson = ko.observable();
     this.allLinkdDataJson = ko.observable();
     this.quickAlgoLinksDataJson = ko.observable();
     this.selectedTrainingJson = ko.observable();
@@ -51,6 +51,7 @@ function AppViewModel() {
         "links": "alllinks.html",
         "github" : "my_github.html",
         "videos": "all_videos.html",
+        "pdf": "all_pdf.html",
         "datasets" : "datasets.html",
         "research" : "research.html",
         /* "keywords" : "glossary-keywords.html", */
@@ -80,6 +81,7 @@ function AppViewModel() {
         "links": LinksViewModel,
         "github": GitHubViewModel,
         "videos" : VideosViewModel,
+        "pdf" : PdfViewModel,
         "social" : SocialViewModel,
         "datasets": DatasetViewModel,
         "research": ResearchViewModel,
@@ -206,11 +208,12 @@ function AppViewModel() {
         });
     };
 
-    self.getDatasetsListFunction = function (fileName){
+    self.getGenericListFunction = function (fileName){
         $.get(fileName, function (data, status) {
-            self.DatasetsListJson(JSON.stringify(data));
+            self.GenericListJson(JSON.stringify(data));
         });
     };
+
 
 }
 

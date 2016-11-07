@@ -10,7 +10,9 @@
         {"link": "http://www.slideshare.net/0xdata/presentations", "title": "H2O Presentations", "tag": [ "a", "b" , "c"]},
         {"link": "https://github.com/h2oai/app-malicious-domains", "title": "Building ML app in AWS Lambda", "tag": [ "a", "b" , "c"]},
         {"link": "http://datascience.ibm.com/", "title": "IBM Data Science Resources", "tag": [ "a", "b" , "c"]},
-        {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]}
+        {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]},
+        {"link": "http://pandas.pydata.org/pandas-docs/stable/10min.html", "title": "Pandas in 10 minutes", "tag": [ "a", "b" , "c"]},
+        {"link": "https://www.youtube.com/watch?v=tKTZoB2Vjuk&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl", "title": "Google Python 101 course", "tag": [ "a", "b" , "c"]}
       ]
     },
     {
@@ -83,7 +85,8 @@
         {"title": "R Cheatsheet", "link": "https://www.rstudio.com/resources/cheatsheets/", "tag": [ "a", "b" , "c"]},
         {"title": "Machine Learning Torrents", "link": "http://academictorrents.com/browse.php?search=machine+learning", "tag": [ "a", "b" , "c"]},
         {"title": "Explaning Machine Learning Classifiers or Models (LIME)" , "link": "https://github.com/marcotcr/lime", "tag": [ "a", "b" , "c"]},
-        {"title": "Tidy Text Mining with R", "link": "http://tidytextmining.com/", "tag": [ "a", "b" , "c"]}
+        {"title": "Tidy Text Mining with R", "link": "http://tidytextmining.com/", "tag": [ "a", "b" , "c"]},
+        {"title": "Python for Scientific Computing", "link": "https://engineering.ucsb.edu/~shell/che210d/python.pdf", "tag": [ "a", "b" , "c"]}
       ]
     }
   ]

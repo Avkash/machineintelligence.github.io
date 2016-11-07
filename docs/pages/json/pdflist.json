@@ -1,0 +1,41 @@
+{
+  "id" : "pdf",
+  "pdfcollection": [
+    {
+      "id": "1",
+      "title": "Python for Scientific Computing",
+      "info": "Great resources to learn Python for scientific computing.",
+      "link" : "https://engineering.ucsb.edu/~shell/che210d/python.pdf",
+      "tags" : [
+        {"tag" : "Python"}, { "tag" : "Programming" }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Generalized Linear Modeling (GLM)",
+      "info": "Super good content on understand what is Generalized Linear Modeling (GLM) and how it works in H2O",
+      "link" : "http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/GLMBooklet.pdf",
+      "tags" : [
+        {"tag" : "Python"}, { "tag" : "Programming" }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Gradient Boosting Machine (GBM)",
+      "info": "Super good content on understand what is Gradient Boosting Machine (GBM) and how it works in H2O",
+      "link" : "http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/GBMBooklet.pdf",
+      "tags" : [
+        {"tag" : "Python"}, { "tag" : "Programming" }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Deep Learning",
+      "info": "Super good content on understand what is Deep Learning and how it works in H2O",
+      "link" : "http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/DeepLearningBooklet.pdf",
+      "tags" : [
+        {"tag" : "Python"}, { "tag" : "Programming" }
+      ]
+    }
+  ]
+}
