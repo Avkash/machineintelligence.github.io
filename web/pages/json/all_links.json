@@ -12,7 +12,6 @@
         {"link": "http://datascience.ibm.com/", "title": "IBM Data Science Resources", "tag": [ "a", "b" , "c"]},
         {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]},
         {"link": "http://pandas.pydata.org/pandas-docs/stable/10min.html", "title": "Pandas in 10 minutes", "tag": [ "a", "b" , "c"]},
-        {"link": "https://www.youtube.com/watch?v=tKTZoB2Vjuk&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl", "title": "Google Python 101 course", "tag": [ "a", "b" , "c"]}
       ]
     },
     {

@@ -1,0 +1,70 @@
+{
+  "id" : "videos",
+  "vidcollection": [
+    {
+      "id": "1",
+      "title": "Tufte’s latest talk: the future of data analysis",
+      "info": "Microsoft head of R Community talks about future of data analysis at Microsoft Machine learning conference.",
+      "link" : "https://channel9.msdn.com/Events/Machine-Learning-and-Data-Sciences-Conference/Data-Science-Summit-2016/MSDSS11/player",
+      "tags" : [
+        {"tag" : "R"}, { "tag" : "Machine Learning" }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Python for Beginners from Google Tech",
+      "info": "Google Python 101 course (PyQuick)",
+      "sublinks" : [
+        {
+          "info": "Day 1 Part 1",
+          "link" : "https://www.youtube.com/embed/watch?v=tKTZoB2Vjuk&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl"
+        },
+        {
+          "info": "Day 1 Part 2",
+          "link" : "https://www.youtube.com/embed/watch?v=EPYupizJYQI&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl&index=2"
+        },
+        {
+          "info": "Day 1 Part 3",
+          "link" : "https://www.youtube.com/embed/watch?v=haycL41dAhg&index=3&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl"
+        },
+        {
+          "info": "Day 2 Part 1",
+          "link" : "https://www.youtube.com/embed/watch?v=kWyoYtvJpe4&index=4&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl"
+        },
+        {
+          "info": "Day 2 Part 2",
+          "link" : "https://www.youtube.com/embed/watch?v=uKZ8GBKmeDM&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl&index=6"
+        },
+        {
+          "info": "Day 2 Part 3",
+          "link" : "https://www.youtube.com/embed/watch?v=Nn2KQmVF5Og&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl&index=5"
+        },
+        {
+          "info": "Day 2 Part 4",
+          "link" : "https://www.youtube.com/embed/watch?v=IcteAbMC1Ok&index=7&list=PLfZeRfzhgQzTMgwFVezQbnpc1ck0I6CQl"
+        }
+      ],
+      "tags" : [
+        {"tag" : "Python"}, { "tag" : "Programming" }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Gradient Boosting Machine (GBM)",
+      "info": "Super good content on understand what is Gradient Boosting Machine (GBM) and how it works in H2O",
+      "link" : "http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/GBMBooklet.pdf",
+      "tags" : [
+        {"tag" : "Python"}, { "tag" : "Programming" }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Deep Learning",
+      "info": "Super good content on understand what is Deep Learning and how it works in H2O",
+      "link" : "http://docs.h2o.ai/h2o/latest-stable/h2o-docs/booklets/DeepLearningBooklet.pdf",
+      "tags" : [
+        {"tag" : "Python"}, { "tag" : "Programming" }
+      ]
+    }
+  ]
+}

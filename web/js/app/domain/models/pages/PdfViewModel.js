@@ -52,8 +52,8 @@ function PdfViewModel(){
     };
 
     self.load = function () {
-        root.getGenericListFunction("pages/json/pdflist.json");
-        self.pdfJsonData(root.GenericListJson());
+        root.getPdfListFunction("pages/json/pdflist.json");
+        self.pdfJsonData(root.PdfListJson());
         self.renderPdfListJsonData();
 
     };

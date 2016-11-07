@@ -19,22 +19,19 @@
         <div class="row no-margin no-padding">
            <div class="col-xs-9 no-margin">
 
-                  <iframe  src=""
+                  <iframe   data-bind="attr: { src: videoContentSource }"
                   class="master-link-frame" name="h2o-video-link-content"  style="border:0px"
-                  onload="this.width=screen.width-670;this.height=screen.height-320;">
+                  onload="this.width=screen.width-720;this.height=screen.height-320;">
                   </iframe>
 
            </div>
            <div class="col-xs-3">
                <div class="panel panel-default">
                    <div class="panel-heading">
-                       <h2 class="text-thin">Videos List</h2>
+                       <h2 class="text-thin">Video Content List</h2>
                    </div>
                    <div class="panel-body heightSet700">
-                       <ul>
-                           <li><a href="https://channel9.msdn.com/Events/Machine-Learning-and-Data-Sciences-Conference/Data-Science-Summit-2016/MSDSS11/player" target="h2o-video-link-content">Tufte’s latest talk: the future of data analysis</a></li>
-                           <li><a href="pages/security.html" target="h2o-video-link-content">Python</a></li>
-                       </ul>
+                       <span data-bind="html: videoListData"></span>
                    </div>
                </div>
            </div>
