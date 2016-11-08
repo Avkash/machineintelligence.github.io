@@ -31,7 +31,145 @@
                        <h2 class="text-thin">Video Content List</h2>
                    </div>
                    <div class="panel-body heightSet700">
-                       <span data-bind="html: videoListData"></span>
+                       <ul class="nav nav-tabs">
+                           <li class="active"><a data-toggle="tab" href="#home">Collection</a></li>
+                           <li><a data-toggle="tab" href="#menu1">15 Hpours ML</a></li>
+                       </ul>
+                       <div class="tab-content" style="margin: 1px; padding: 1px;">
+                           <div id="home" class="tab-pane fade in active">
+                               <span data-bind="html: videoListData"></span>
+                           </div>
+                           <div id="menu1" class="tab-pane fade">
+                               <p>In-depth introduction to machine learning in 15 hours of expert videos</p>
+                               <h3>Chapter 1: Introduction (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/introduction.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/playlist?list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa" target="h2o-video-link-content">playlist</a>)
+                               </h3>
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=2wLfFB_6SKI&list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa" target="h2o-video-link-content">Opening Remarks and Examples</a> (18:18)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=LvaTokhYnDw&list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa" target="h2o-video-link-content">Supervised and Unsupervised Learning</a> (12:12)</li>
+                               </ul>
+                               <h3>Chapter 2: Statistical Learning (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/statistical_learning.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy" target="h2o-video-link-content">playlist</a>)
+                               </h3>
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=WjyuiK5taS8&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy" target="h2o-video-link-content">Statistical Learning and Regression</a> (11:41)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=UvxHOkYQl8g&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy" target="h2o-video-link-content">Curse of Dimensionality and Parametric Models</a> (11:40)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=VusKAosxxyk&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy" target="h2o-video-link-content">Assessing Model Accuracy and Bias-Variance Trade-off</a> (10:04)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=vVj2itVNku4&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy" target="h2o-video-link-content">Classification Problems and K-Nearest Neighbors</a> (15:37)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=jwBgGS_4RQA&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy">Lab: Introduction to R</a> (14:12)</li>
+                               </ul>
+
+                               <h3>Chapter 3: Linear Regression (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/linear_regression.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9" target="h2o-video-link-content">playlist</a>)
+                               </h3>
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=PsE9UqoWtS4&amp;list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9" target="h2o-video-link-content">Simple Linear Regression and Confidence Intervals</a> (13:01)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=J6AdoiNUyWI&amp;list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9" target="h2o-video-link-content">Hypothesis Testing</a> (8:24)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=1hbCJyM9ccs&amp;list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9" target="h2o-video-link-content">Multiple Linear Regression and Interpreting Regression Coefficients</a> (15:38)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=3T6RXmIHbJ4&amp;list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9" target="h2o-video-link-content">Model Selection and Qualitative Predictors</a> (14:51)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=IFzVxLv0TKQ&amp;list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9" target="h2o-video-link-content">Interactions and Nonlinearity</a> (14:16)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=5ONFqIk3RFg&amp;list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9" target="h2o-video-link-content">Lab: Linear Regression</a> (22:10)</li>
+                               </ul>
+
+                               <h3>Chapter 4: Classification (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/classification.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">playlist</a>)
+                               </h3>
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=sqq21-VIa1c&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Introduction to Classification</a> (10:25)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=31Q5FGRnxt4&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Logistic Regression and Maximum Likelihood</a> (9:07)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=MpX8rVv_u4E&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Multivariate Logistic Regression and Confounding</a> (9:53)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=GavRXXEHGqU&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Case-Control Sampling and Multiclass Logistic Regression</a> (7:28)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=RfrGiG1Hm3M&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Linear Discriminant Analysis and Bayes Theorem</a> (7:12)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=QG0pVJXT6EU&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Univariate Linear Discriminant Analysis</a> (7:37)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=X4VDZDp2vqw&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Multivariate Linear Discriminant Analysis and ROC Curves</a> (17:42)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=6FiNGTYAOAA&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Quadratic Discriminant Analysis and Naive Bayes</a> (10:07)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=TxvEVc8YNlU&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Lab: Logistic Regression</a> (10:14)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=2cl7JiPzkBY&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Lab: Linear Discriminant Analysis</a> (8:22)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=9TVVF7CS3F4&amp;list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE" target="h2o-video-link-content">Lab: K-Nearest Neighbors</a> (5:01)</li>
+                               </ul>
+
+                               <h3>Chapter 5: Resampling Methods (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/cv_boot.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf" target="h2o-video-link-content">playlist</a>)
+                               </h3>
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=_2ij6eaaSl0&amp;list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf" target="h2o-video-link-content">Estimating Prediction Error and Validation Set Approach</a> (14:01)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=nZAM5OXrktY&amp;list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf" target="h2o-video-link-content">K-fold Cross-Validation</a> (13:33)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=S06JpVoNaA0&amp;list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf" target="h2o-video-link-content">Cross-Validation: The Right and Wrong Ways</a> (10:07)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=p4BYWX7PTBM&amp;list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf" target="h2o-video-link-content">The Bootstrap</a> (11:29)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=BzHz0J9a6k0&amp;list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf" target="h2o-video-link-content">More on the Bootstrap</a> (14:35)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=6dSXlqHAoMk&amp;list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf" target="h2o-video-link-content">Lab: Cross-Validation</a> (11:21)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=YVSmsWoBKnA&amp;list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf" target="h2o-video-link-content">Lab: The Bootstrap</a> (7:40)</li>
+                               </ul>
+
+                               <h3>Chapter 6: Linear Model Selection and Regularization (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/model_selection.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">playlist</a>)</h3>
+
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=91si52nk3LA&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Linear Model Selection and Best Subset Selection</a> (13:44)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=nLpJd_iKmrE&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Forward Stepwise Selection</a> (12:26)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=NJhMSpI2Uj8&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Backward Stepwise Selection</a> (5:26)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=LkifE44myLc&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Estimating Test Error Using Mallow's Cp, AIC, BIC, Adjusted R-squared</a> (14:06)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=3p9JNaJCOb4&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Estimating Test Error Using Cross-Validation</a> (8:43)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=cSKzqb0EKS0&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Shrinkage Methods and Ridge Regression</a> (12:37)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=A5I1G1MfUmA&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">The Lasso</a> (15:21)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=xMKVUstjXBE&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Tuning Parameter Selection for Ridge Regression and Lasso</a> (5:27)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=QlyROnAjnEk&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Dimension Reduction</a> (4:45)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=eYxwWGJcOfw&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Principal Components Regression and Partial Least Squares</a> (15:48)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=3kwdDGnV8MM&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Lab: Best Subset Selection</a> (10:36)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=mv-vdysZIb4&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Lab: Forward Stepwise Selection and Model Selection Using Validation Set</a> (10:32)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=F8MMHCCoALU&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Lab: Model Selection Using Cross-Validation</a> (5:32)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=1REe3qSotx8&amp;list=PL5-da3qGB5IB-Xdpj_uXJpLGiRfv9UVXI" target="h2o-video-link-content">Lab: Ridge Regression and Lasso</a> (16:34)</li>
+                               </ul>
+
+                               <h3>Chapter 7: Moving Beyond Linearity (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/nonlinear.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IBn84fvhh-u2MU80jvo8OoR" target="h2o-video-link-content">playlist</a>)</h3>
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=gtXQXA7qF3c&amp;list=PL5-da3qGB5IBn84fvhh-u2MU80jvo8OoR" target="h2o-video-link-content">Polynomial Regression and Step Functions</a> (14:59)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=7ZIqzTNB8lk&amp;list=PL5-da3qGB5IBn84fvhh-u2MU80jvo8OoR" target="h2o-video-link-content">Piecewise Polynomials and Splines</a> (13:13)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=mxXHJa1DsWQ&amp;list=PL5-da3qGB5IBn84fvhh-u2MU80jvo8OoR" target="h2o-video-link-content">Smoothing Splines</a> (10:10)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=N2hBXqPiegQ&amp;list=PL5-da3qGB5IBn84fvhh-u2MU80jvo8OoR" target="h2o-video-link-content">Local Regression and Generalized Additive Models</a> (10:45)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=uQBnDGu6TYU&amp;list=PL5-da3qGB5IBn84fvhh-u2MU80jvo8OoR" target="h2o-video-link-content">Lab: Polynomials</a> (21:11)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=DCn83aXXuHc&amp;list=PL5-da3qGB5IBn84fvhh-u2MU80jvo8OoR" target="h2o-video-link-content">Lab: Splines and Generalized Additive Models</a> (12:15)</li>
+                               </ul>
+
+                               <h3>Chapter 8: Tree-Based Methods (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/trees.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh" target="h2o-video-link-content">playlist</a>)</h3>
+
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=6ENTbK3yQUQ&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh" target="h2o-video-link-content">Decision Trees</a> (14:37)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=GfPR7Xhdokc&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh" target="h2o-video-link-content">Pruning a Decision Tree</a> (11:45)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=hPEJoITBbQ4&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh" target="h2o-video-link-content">Classification Trees and Comparison with Linear Models</a> (11:00)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=lq_xzBRIWm4&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh" target="h2o-video-link-content">Bootstrap Aggregation (Bagging) and Random Forests</a> (13:45)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=U3MdBNysk9w&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh" target="h2o-video-link-content">Boosting and Variable Importance</a> (12:03)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=0wZUXtvAtDc&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh" target="h2o-video-link-content">Lab: Decision Trees</a> (10:13)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=IY7oWGXb77o&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh" target="h2o-video-link-content">Lab: Random Forests and Boosting</a> (15:35)</li>
+                               </ul>
+
+                               <h3>Chapter 9: Support Vector Machines (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/svm.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IDl6MkmovVdZwyYOhpCxo5o" target="h2o-video-link-content">playlist</a>)</h3>
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=QpbynqiTCsY&amp;list=PL5-da3qGB5IDl6MkmovVdZwyYOhpCxo5o" target="h2o-video-link-content">Maximal Margin Classifier</a> (11:35)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=xKsTsGE7KpI&amp;list=PL5-da3qGB5IDl6MkmovVdZwyYOhpCxo5o" target="h2o-video-link-content">Support Vector Classifier</a> (8:04)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=dm32QvCW7wE&amp;list=PL5-da3qGB5IDl6MkmovVdZwyYOhpCxo5o" target="h2o-video-link-content">Kernels and Support Vector Machines</a> (15:04)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=mI18GD4_ysE&amp;list=PL5-da3qGB5IDl6MkmovVdZwyYOhpCxo5o" target="h2o-video-link-content">Example and Comparison with Logistic Regression</a> (14:47)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=qhyyufR0930&amp;list=PL5-da3qGB5IDl6MkmovVdZwyYOhpCxo5o" target="h2o-video-link-content">Lab: Support Vector Machine for Classification</a> (10:13)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=L3n2VF7yKkk&amp;list=PL5-da3qGB5IDl6MkmovVdZwyYOhpCxo5o" target="h2o-video-link-content">Lab: Nonlinear Support Vector Machine</a> (7:54)</li>
+                               </ul>
+
+                               <h3>Chapter 10: Unsupervised Learning (<a href="https://class.stanford.edu/c4x/HumanitiesScience/StatLearning/asset/unsupervised.pdf" target="h2o-video-link-content">slides</a>,
+                                   <a href="https://www.youtube.com/embed/playlist?list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">playlist</a>)</h3>
+                               <ul>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=ipyxSYXgzjQ&amp;list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">Unsupervised Learning and Principal Components Analysis</a> (12:37)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=dbuSGWCgdzw&amp;list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">Exploring Principal Components Analysis and Proportion of Variance Explained</a> (17:39)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=aIybuNt9ps4&amp;list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">K-means Clustering</a> (17:17)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=Tuuc9Y06tAc&amp;list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">Hierarchical Clustering</a> (14:45)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=yUJcTpWNY_o&amp;list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">Breast Cancer Example of Hierarchical Clustering</a> (9:24)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=lFHISDj_4EQ&amp;list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">Lab: Principal Components Analysis</a> (6:28)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=YDubYJsZ9iM&amp;list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">Lab: K-means Clustering</a> (6:31)</li>
+                                   <li><a href="https://www.youtube.com/embed/watch?v=4u3zvtfqb7w&amp;list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2" target="h2o-video-link-content">Lab: Hierarchical Clustering</a> (6:33)</li>
+                               </ul>
+                           </div>
+                       </div>
                    </div>
                </div>
            </div>
