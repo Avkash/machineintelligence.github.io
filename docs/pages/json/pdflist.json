@@ -36,6 +36,15 @@
       "tags" : [
         {"tag" : "Python"}, { "tag" : "Programming" }
       ]
+    },
+    {
+      "id": "5",
+      "title": "An Introduction to Statistical Learning ",
+      "info": "An Introduction to Statistical Learning with Applications in R",
+      "link" : "http://www-bcf.usc.edu/~gareth/ISL/ISLR%20First%20Printing.pdf",
+      "tags" : [
+        {"tag" : "R"}, { "tag" : "Statsistics" }, { "tag" : "Course Book"}
+      ]
     }
   ]
 }
