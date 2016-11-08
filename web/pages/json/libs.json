@@ -136,6 +136,23 @@
     ]
   },
   {
+    "id" : "nervana",
+    "title": "Nervana - Neon",
+    "subTitle" : "Neon is an open source Python-based language and set of libraries for developing deep learning models. Neon is super fast, super powerful, and super easy to use!",
+    "contents": [
+      {
+        "text": "MapReduce Jobs"
+      }
+    ],
+    "info": "More Information1",
+    "links": [
+      {
+        "id": "b",
+        "linkInfo" : "hello worlda"
+      }
+    ]
+  },
+  {
     "id" : "dl4j",
     "title": "DeepLearning4Java",
     "subTitle" : "Deeplearning4j is the first commercial-grade, open-source, distributed deep-learning library written for Java and Scala. Integrated with Hadoop and Spark, DL4J is designed to be used in business environments on distributed GPUs and CPUs. Skymind is its commercial support arm.",

@@ -1,0 +1,25 @@
+{
+  "id" : "nervana",
+  "links": [
+    {
+      "id": "Nervana - Neon",
+      "linkInfo" : "https://www.nervanasys.com/"
+    },
+    {
+      "id": "Nervana Engine",
+      "linkInfo" : "https://www.nervanasys.com/technology/engine/"
+    },
+    {
+      "id": "Neon Source Code",
+      "linkInfo" : "https://github.com/NervanaSystems/neon"
+    },
+    {
+      "id": "Aeon -  Data loading & Transforming Source Code",
+      "linkInfo" : "https://github.com/NervanaSystems/aeon"
+    },
+    {
+      "id": "Tutorials",
+      "linkInfo" : "https://github.com/NervanaSystems/neon_course"
+    }
+  ]
+}

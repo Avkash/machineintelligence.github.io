@@ -35,7 +35,7 @@ function AppViewModel() {
         "datasets",
         "research",
         "h2o", "tensorflow", "xgboost", "mxnet", "paddle", "caffe", "keras","theano",
-        "dl4j", "ndimaj", "encog", "hpcct",
+        "dl4j", "ndimaj", "encog", "hpcct", "nervana",
         "torch",
         "convnetjs",
         "accordnet",
@@ -113,6 +113,7 @@ function AppViewModel() {
          "h2o" : "H2O Machine Learning in Java, Python, Scala and R",
          "tensorflow" : "TensorFlow from Google",
          "mxnet" : "MxNet",
+         "nervana" : "Nervana - Neon from Intel",
          "xgboost" : "XGBoost",
          "paddle" : "Paddle from Baidu",
          "caffe" : "Caffe from Berkley",
@@ -571,6 +572,8 @@ function DatasetViewModel() {
                 for(var i=0;i<data.dscollection.length;i++) {
                     var idCode = "dataset".concat("_").concat(data.dscollection[i].id);
                     idCode = idCode.replace(/\s+/g, '');
+
+
                     htmlString = htmlString.concat("<li class='list-group-item'><span>").concat(data.dscollection[i].title).concat("</span>");
                     htmlString = htmlString.concat("<span class='pull-right'><button type='button' class='btn btn-warning btn-xs' data-toggle='collapse' data-target='");
                     htmlString = htmlString.concat("#").concat(idCode).concat("'>");
@@ -1216,6 +1219,7 @@ function MasterPageViewModel() {
                 for(var i=0;i<data.links.length;i++) {
                     var idCode = data.links[i].id;
                     idCode = idCode.replace(/\s+/g, '');
+                    /*
                     htmlString = htmlString.concat("<li class='list-group-item'><button type='button' class='btn btn-info btn-sm' data-toggle='collapse' data-target='");
                     htmlString = htmlString.concat("#").concat(idCode).concat("'>");
                     htmlString = htmlString.concat(data.links[i].id);
@@ -1225,6 +1229,22 @@ function MasterPageViewModel() {
                     htmlString = htmlString.concat(data.links[i].linkInfo);
                     htmlString = htmlString.concat("</a></div>");
                     htmlString = htmlString.concat("</div></li>");
+                    */
+
+                    htmlString = htmlString.concat("<li class='list-group-item'><span>").concat(data.links[i].id).concat("</span>");
+                    htmlString = htmlString.concat("<span class='pull-right'><button type='button' class='btn btn-warning btn-xs' data-toggle='collapse' data-target='");
+                    htmlString = htmlString.concat("#").concat(idCode).concat("'>");
+                    htmlString = htmlString.concat("<i class='fa fa-download fa-1'></i>");
+                    htmlString = htmlString.concat("</button></span>");
+
+                    htmlString = htmlString.concat("<div id='").concat(idCode).concat("' class='collapse'><br>");
+                    if (data.links[i].details) {
+                        htmlString = htmlString.concat("<span>").concat(data.links[i].details).concat("</span>");
+                    }
+                    htmlString = htmlString.concat("<div>URL: <a href='").concat(data.links[i].linkInfo).concat("' target='_blank'>");
+                    htmlString = htmlString.concat(data.links[i].linkInfo);
+                    htmlString = htmlString.concat("</a></div>");
+
                 }
             }
             htmlString = htmlString.concat("</ul>");

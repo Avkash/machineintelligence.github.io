@@ -19,6 +19,8 @@ function DatasetViewModel() {
                 for(var i=0;i<data.dscollection.length;i++) {
                     var idCode = "dataset".concat("_").concat(data.dscollection[i].id);
                     idCode = idCode.replace(/\s+/g, '');
+
+
                     htmlString = htmlString.concat("<li class='list-group-item'><span>").concat(data.dscollection[i].title).concat("</span>");
                     htmlString = htmlString.concat("<span class='pull-right'><button type='button' class='btn btn-warning btn-xs' data-toggle='collapse' data-target='");
                     htmlString = htmlString.concat("#").concat(idCode).concat("'>");
