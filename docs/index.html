@@ -286,651 +286,434 @@
           <aside class="aside left-side-menu" style="display:block;">
               <!-- START Sidebar (left)-->
               <div class="aside-inner" style="margin-top:18px;width: 218px;">
-                  <nav data-sidebar-anyclick-close="" class="sidebar">
-                      <div role="tabpanel" style="width: 218px">
-                          <!-- Nav tabs-->
-                          <ul role="tablist" class="nav nav-tabs">
-                              <li role="presentation" class="active"><a href="#Key_dl" aria-controls="Key_dl" role="tab" data-toggle="tab" aria-expanded="false">DL</a>
-                              </li>
-                              <li role="presentation" class=""><a href="#Key_ml" aria-controls="Key_ml" role="tab" data-toggle="tab" aria-expanded="true">ML</a>
-                              </li>
-                              <li role="presentation" class=""><a href="#Key_art" aria-controls="Key_art" role="tab" data-toggle="tab" aria-expanded="true">Blog</a>
-                              </li>
-                              <li role="presentation" class=""><a href="#Key_kw" aria-controls="Key_kw" role="tab" data-toggle="tab" aria-expanded="false">Glossary</a>
-                              </li>
-                              <!--
-                              <li role="presentation" class=""><a href="#Key_bd" aria-controls="Key_bd" role="tab" data-toggle="tab" aria-expanded="false">Big Data</a>
-                              </li>
-                              <li role="presentation" class=""><a href="#Key_ds" aria-controls="Key_ds" role="tab" data-toggle="tab" aria-expanded="false">DS</a>
-                              </li>
-                              -->
-                          </ul>
-                          <!-- Tab panes-->
-                          <div class="tab-content">
-                              <div id="Key_dl" role="tabpanel" class="tab-pane active" style="margin-left: -17px;margin-right:-19px;margin-top:-9px;">
-                                  <div class="panel panel-primary heightSet1080P">
-                                      <div class="panel-heading">
-                                          <div class="row text-center">
-                                              <span>Deep Learning Hub</span><br>
-                                              <span><small>(Open Source Libraries)</small></span>
-                                          </div>
-                                      </div>
-                                      <div class="panel-body">
-                                          <ul class="nav" style="margin-top:-10px;">
-                                              <!-- Iterates over all sidebar items-->
-                                              <li class=" " style="margin-left:-20px">
-                                                  <a href="#menuid-dl-python" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Python</span>
-                                                  </a>
-                                                  <ul id="menuid-dl-python" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Python</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/h2o');"  title="H2O">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span style="margin-left:-5px;">H2O</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/tensorflow');"  title="TensorFlow">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span style="margin-left:-5px;">TensorFlow</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/mxnet');"  title="MxNet">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>MxNet</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/xgboost');"  title="XGBoost">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>XGBoost</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/paddle');"  title="Paddle">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Paddle</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/caffe')"  title="Caffe">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Caffe</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/keras')"  title="Keras">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Keras</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/nervana')"  title="Nervana - neon">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Nervana</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/python/theano')"  title="Theano">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Theano</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-20px">
-                                                  <a href="#menuid-dl-java" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Java</span>
-                                                  </a>
-                                                  <ul id="menuid-dl-java" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Java</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/java/dl4j');"  title="DL4J">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>DeepLearning4Java</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/java/ndimaj');"  title="N-Dimensional Arrays">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>N-Dimensional Arrays for Java</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/java/encog');"  title="Encog">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>EnCog</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/java/hpcct');"  title="HPE-CCT">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>HPE - CCT</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-20px">
-                                                  <a href="#menuid-dl-cpp" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">C++</span>
-                                                  </a>
-                                                  <ul id="menuid-dl-cpp" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">C++</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/cpp/mxnet');"  title="mxnet">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>mxnet</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/cpp/cntk');"  title="CNTK">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>CNTK</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-20px">
-                                                  <a href="#menuid-dl-lua" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Lua</span>
-                                                  </a>
-                                                  <ul id="menuid-dl-lua" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Lua</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/js/torch');"  title="Torch">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Torch</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-20px">
-                                                  <a href="#menuid-dl-js" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">JavaScript</span>
-                                                  </a>
-                                                  <ul id="menuid-dl-js" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">JavaScript</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/lua/convnetjs');"  title="ConvNetJS">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>ConvNetJS</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-20px">
-                                                  <a href="#menuid-dl-dotnet" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">.NET</span>
-                                                  </a>
-                                                  <ul id="menuid-dl-dotnet" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">.NET</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/net/accordnet');"  title="Accord.NET">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Accord.NET</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-20px">
-                                                  <a href="#menuid-dl-julia" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Julia</span>
-                                                  </a>
-                                                  <ul id="menuid-dl-julia" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Julia</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/julia/mocha');"  title="Mocha">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Mocha</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-20px">
-                                                  <a href="#menuid-dl-go" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">GO</span>
-                                                  </a>
-                                                  <ul id="menuid-dl-go" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">GO</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('deeplearning/go/gobrain');"  title="GoBrain">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>GoBrain</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  </div>
+                  <nav data-sidebar-anyclick-close="" class="sidebar" style="background-color: #1aacda;">
+                      <div class="panel panel-primary" data-height="820px">
+                          <div class="panel-heading">
+                              <div class="row text-center">
+                                  <span>Deep/Machine Learning Hub</span><br>
+                                  <span><small>(Learn new things)</small></span>
                               </div>
-                              <div id="Key_ml" role="tabpanel" class="tab-pane"  style="margin-left: -19px;margin-right:-19px;margin-top:-9px;">
-                                  <div class="panel panel-primary heightSet1080P">
-                                      <div class="panel-heading">
-                                          <div class="row text-center">
-                                              <span>Machine Learning Hub</span><br>
-                                              <span><small>(Everything Machine Learning)</small></span>
-                                          </div>
-                                      </div>
-                                      <div class="panel-body">
-                                          <ul class="nav" style="margin-left:-10px">
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-algo" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Algorithms</span>
-                                                  </a>
-                                                  <ul id="menuid-algo" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Algorithms</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_glm')"  title="GLM">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>GLM</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_gbm')"  title="GBM">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>GBM</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_dl')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Deep Learning</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_drf')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>DRF</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_nb')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Naive Bayes</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_ensembles')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Ensembles</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_glrm')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>GLRM</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_kmeans')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>K-Means</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_pca')"  title="Sub Menu">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>PCA</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-comp" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Projects</span>
-                                                  </a>
-                                                  <ul id="menuid-comp" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Projects</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>DataRPM</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('proj_deepdream')"  title="Google Deep Dream">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Google DeepDream</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <!-- https://algorithmia.com/algorithms/deeplearning/ColorfulImageColorization --->
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="Algorithmia">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Algorithmia</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-train" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Trainings</span>
-                                                  </a>
-                                                  <ul id="menuid-train" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Trainings</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('training/all/cs231n')"  title="CS231n">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Stanford CNN (CS231n)</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('training/all/udacityml')"  title="UdacityML">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Udacity ML</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div id="Key_art" role="tabpanel" class="tab-pane"   style="margin-left: -19px;margin-right:-19px;margin-top:-9px;">
-                                  <div class="panel panel-primary heightSet1080P">
-                                      <div class="panel-heading">
-                                          <div class="row text-center">
-                                              <span>Blog and Articles</span><br>
-                                              <span><small>(thinking out loud)</small></span>
-                                          </div>
-                                      </div>
-                                      <div class="panel-body">
-                                          <ul class="nav" style="margin-left:-10px">
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-blog-h2o" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">H2O</span>
-                                                  </a>
-                                                  <ul id="menuid-blog-h2o" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">H2O</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>DataRPM</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-blog-tf" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">TensorFlow</span>
-                                                  </a>
-                                                  <ul id="menuid-blog-tf" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">TensorFlow</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>DataRPM</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-blog-tut" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Tutorials</span>
-                                                  </a>
-                                                  <ul id="menuid-blog-tut" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Tutorials</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('algo_glm')"  title="DataRPM">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>DataRPM</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div id="Key_kw" role="tabpanel" class="tab-pane"   style="margin-left: -19px;margin-right:-19px;margin-top:-9px;">
-                                  <div class="panel panel-primary heightSet1080P">
-                                      <div class="panel-heading">
-                                          <div class="row text-center">
-                                              <span>Keywords & GLossary</span><br>
-                                              <span><small>(thinking out loud)</small></span>
-                                          </div>
-                                      </div>
-                                      <div class="panel-body">
-                                          <ul class="nav" style="margin-left:-10px;margin-top:-10px;">
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-ds101" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">101 DS Keywords</span>
-                                                  </a>
-                                                  <ul id="menuid-ds101" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">101 Keywords</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('101dskeys')"  title="DS101_Keywords">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>101 Data Science Keys</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-dl101" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">101 Deep Learning</span>
-                                                  </a>
-                                                  <ul id="menuid-dl101" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">101 Deep Learning</li>
-                                                      <li class=" ">
-                                                          <a href="#" data-bind="click: root.changeUrl('101dlkeys')"  title="DL101_Keywords">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>101 Deep Learning Keys</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                              <li class=" " style="margin-left:-10px">
-                                                  <a href="#menuid-gloss" title="Menu" data-toggle="collapse">
-                                                      <em class="icon-folder"></em>
-                                                      <span class="text-bold">Glossary</span>
-                                                  </a>
-                                                  <ul id="menuid-gloss" class="nav sidebar-subnav collapse">
-                                                      <li class="sidebar-subnav-header">Glossary</li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_a')" title="Keyword - A">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>A</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_b')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>B</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_c')" title="Keyword - C">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>C</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_d')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>D</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_e')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>E</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_f')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>F</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_g')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>G</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_h')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>H</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_i')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>I</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_j')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>J</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_k')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>K</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_l')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>L</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_m')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>M</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_n')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>N</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_o')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>O</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_p')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>P</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_q')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Q</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_r')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>R</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_s')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>S</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_t')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>T</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_u')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>U</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_v')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>V</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_w')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>W</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_x')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>X</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_y')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Y</span>
-                                                          </a>
-                                                      </li>
-                                                      <li class=" " style="margin-top:-12px;">
-                                                          <a href="#" data-bind="click: root.changeUrl('keywords_z')" title="Keyword - B">
-                                                              <em class="fa fa-angle-right"></em>
-                                                              <span>Z</span>
-                                                          </a>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!--
-                              <div id="Key_bd" role="tabpanel" class="tab-pane">
-                                  <div class="row">
-                                      <ul class="nav">
-                                          <li class="nav-heading ">
-                                              <span data-localize="sidebar.heading.HEADER">Big Data & Hadoop Hub</span>
-                                          </li>
-                                          <li class=" active" class="list-link-item-text">
-                                              <a href="#" data-bind="click: root.changeUrl('home')" title="Home">
-                                                  <em class="fa fa-file-o"></em>
-                                                  <span>Home23</span>
+                          </div>
+                          <div class="panel-body" style="height: 852px;">
+                              <ul class="nav" style="margin-top:-10px;">
+                                  <!-- Iterates over all sidebar items-->
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-dl-python" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">Python</span>
+                                      </a>
+                                      <ul id="menuid-dl-python" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">Python</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/h2o');"  title="H2O">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span style="margin-left:-5px;">H2O</span>
                                               </a>
                                           </li>
-                                          <li class="" class="list-link-item-text">
-                                              <a href="#" data-bind="click: root.changeUrl('thisweek')" title="Home">
-                                                  <em class="fa fa-file-o"></em>
-                                                  <span>This Week @ H3322o</span>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/tensorflow');"  title="TensorFlow">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span style="margin-left:-5px;">TensorFlow</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/mxnet');"  title="MxNet">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>MxNet</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/xgboost');"  title="XGBoost">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>XGBoost</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/paddle');"  title="Paddle">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Paddle</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/caffe')"  title="Caffe">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Caffe</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/keras')"  title="Keras">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Keras</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/nervana')"  title="Nervana - neon">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Nervana</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/python/theano')"  title="Theano">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Theano</span>
                                               </a>
                                           </li>
                                       </ul>
-                                  </div>
-                              </div>
-                              -->
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-dl-java" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">Java</span>
+                                      </a>
+                                      <ul id="menuid-dl-java" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">Java</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/java/dl4j');"  title="DL4J">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>DeepLearning4Java</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/java/ndimaj');"  title="N-Dimensional Arrays">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>N-Dimensional Arrays for Java</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/java/encog');"  title="Encog">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>EnCog</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/java/hpcct');"  title="HPE-CCT">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>HPE - CCT</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-dl-cpp" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">C++</span>
+                                      </a>
+                                      <ul id="menuid-dl-cpp" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">C++</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/cpp/mxnet');"  title="mxnet">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>mxnet</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/cpp/cntk');"  title="CNTK">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>CNTK</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-dl-lua" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">Lua</span>
+                                      </a>
+                                      <ul id="menuid-dl-lua" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">Lua</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/js/torch');"  title="Torch">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Torch</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-dl-js" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">JavaScript</span>
+                                      </a>
+                                      <ul id="menuid-dl-js" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">JavaScript</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/lua/convnetjs');"  title="ConvNetJS">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>ConvNetJS</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-dl-dotnet" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">.NET</span>
+                                      </a>
+                                      <ul id="menuid-dl-dotnet" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">.NET</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/net/accordnet');"  title="Accord.NET">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Accord.NET</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-dl-julia" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">Julia</span>
+                                      </a>
+                                      <ul id="menuid-dl-julia" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">Julia</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/julia/mocha');"  title="Mocha">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Mocha</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-dl-go" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">GO</span>
+                                      </a>
+                                      <ul id="menuid-dl-go" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">GO</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('deeplearning/go/gobrain');"  title="GoBrain">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>GoBrain</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-algo" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">Algorithms</span>
+                                      </a>
+                                      <ul id="menuid-algo" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">Algorithms</li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_glm')"  title="GLM">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>GLM</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_gbm')"  title="GBM">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>GBM</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_dl')"  title="Sub Menu">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Deep Learning</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_drf')"  title="Sub Menu">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>DRF</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_nb')"  title="Sub Menu">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Naive Bayes</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_ensembles')"  title="Sub Menu">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>Ensembles</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_glrm')"  title="Sub Menu">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>GLRM</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_kmeans')"  title="Sub Menu">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>K-Means</span>
+                                              </a>
+                                          </li>
+                                          <li class=" ">
+                                              <a href="#" data-bind="click: root.changeUrl('algorithm/all/algo_pca')"  title="Sub Menu">
+                                                  <em class="fa fa-angle-right"></em>
+                                                  <span>PCA</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                                  <li class=" " style="margin-left:-20px">
+                                      <a href="#menuid-gloss" title="Menu" data-toggle="collapse">
+                                          <em class="icon-folder"></em>
+                                          <span class="text-bold">Glossary</span>
+                                      </a>
+                                      <ul id="menuid-gloss" class="nav sidebar-subnav collapse">
+                                          <li class="sidebar-subnav-header">Glossary</li>
+                                          <div style="margin-top:1px; margin-left:20px;">
+                                              <table width="90%">
+                                                  <tr>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_a')" title="Keyword - A">
+                                                          <span>[A]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_b')" title="Keyword - B">
+                                                              <span>[B]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_c')" title="Keyword - C">
+                                                              <span>[C]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_d')" title="Keyword - B">
+                                                              <span>[D]</span>
+                                                          </a>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_e')" title="Keyword - B">
+                                                              <span>[E]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_f')" title="Keyword - B">
+                                                              <span>[F]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_g')" title="Keyword - B">
+                                                              <span>[G]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_h')" title="Keyword - B">
+                                                              <span>[H]</span>
+                                                          </a>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_i')" title="Keyword - B">
+                                                              <span>[I]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_j')" title="Keyword - B">
+                                                              <span>[J]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_k')" title="Keyword - B">
+                                                              <span>[K]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_l')" title="Keyword - B">
+                                                              <span>[L]</span>
+                                                          </a>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_m')" title="Keyword - B">
+                                                              <span>[M]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_n')" title="Keyword - B">
+                                                              <span>[N]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_o')" title="Keyword - B">
+                                                              <span>[O]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_p')" title="Keyword - B">
+                                                              <span>[P]</span>
+                                                          </a>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_q')" title="Keyword - B">
+                                                              <span>[Q]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_r')" title="Keyword - B">
+                                                              <span>[R]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_s')" title="Keyword - B">
+                                                              <span>[S]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_t')" title="Keyword - B">
+                                                              <span>[T]</span>
+                                                          </a>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_u')" title="Keyword - B">
+                                                              <span>[U]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_v')" title="Keyword - B">
+                                                              <span>[V]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_w')" title="Keyword - B">
+                                                              <span>[W]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_x')" title="Keyword - B">
+                                                              <span>[X]</span>
+                                                          </a>
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_y')" title="Keyword - B">
+                                                              <span>[Y]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                          <a href="#" data-bind="click: root.changeUrl('keywords_z')" title="Keyword - B">
+                                                              <span>[Z]</span>
+                                                          </a>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                  </tr>
+                                              </table>
+                                          </div>
+                                      </ul>
+                                  </li>
+                              </ul>
                           </div>
                       </div>
                   </nav>
