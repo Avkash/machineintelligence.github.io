@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e7144e-f260-462f-8c91-e2d3e198c7d7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/all_videos.html" afterPath="$PROJECT_DIR$/pages/all_videos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.models.js" afterPath="$PROJECT_DIR$/js/app.models.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" afterPath="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/data_h2o.html" afterPath="$PROJECT_DIR$/pages/data/data_h2o.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/data/data_mxnet.html" afterPath="$PROJECT_DIR$/pages/data/data_mxnet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/json/all_links.json" afterPath="$PROJECT_DIR$/pages/json/all_links.json" />
     </list>
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all_videos.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="all_videos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/all_videos.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
@@ -74,41 +79,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details_nervana.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/data/details_nervana.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_nervana.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/data/data_nervana.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MasterPageViewModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="510">
+              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatasetViewModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/DatasetViewModel.js">
+      <file leaf-file-name="all_links.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/json/all_links.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="990">
+              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_h2o.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/data/data_h2o.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_mxnet.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/data/data_mxnet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -141,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/data/details_dl4j.json" />
-        <option value="$PROJECT_DIR$/pages/data/details_convnetjs.json" />
         <option value="$PROJECT_DIR$/pages/data/details_cntk.json" />
         <option value="$PROJECT_DIR$/pages/data/details_caffe.json" />
         <option value="$PROJECT_DIR$/pages/data/details_accordnet.json" />
@@ -183,15 +186,17 @@
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/PdfViewModel.js" />
         <option value="$PROJECT_DIR$/pages/json/videolist.json" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/VideosViewModel.js" />
-        <option value="$PROJECT_DIR$/pages/json/all_links.json" />
         <option value="$PROJECT_DIR$/js/app/domain/models/AppViewModel.js" />
         <option value="$PROJECT_DIR$/pages/data/details_nervana.json" />
         <option value="$PROJECT_DIR$/pages/data/data_nervana.html" />
         <option value="$PROJECT_DIR$/js/app/domain/models/pages/DatasetViewModel.js" />
-        <option value="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
         <option value="$PROJECT_DIR$/includes/_left_side_menu.html" />
         <option value="$PROJECT_DIR$/pages/json/libs.json" />
         <option value="$PROJECT_DIR$/pages/all_videos.html" />
+        <option value="$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js" />
+        <option value="$PROJECT_DIR$/pages/data/data_h2o.html" />
+        <option value="$PROJECT_DIR$/pages/data/data_mxnet.html" />
+        <option value="$PROJECT_DIR$/pages/json/all_links.json" />
       </list>
     </option>
   </component>
@@ -512,12 +517,12 @@
       <workItem from="1476918874423" duration="35254000" />
       <workItem from="1477857615833" duration="8000" />
       <workItem from="1477857639131" duration="8514000" />
-      <workItem from="1478367816586" duration="12284000" />
+      <workItem from="1478367816586" duration="15839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182542000" />
+    <option name="totallyTimeSpent" value="186097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1895" height="1177" extended-state="6" />
@@ -562,13 +567,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/json/learn.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -824,26 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/json/all_links.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="107" selection-start-line="19" selection-start-column="107" selection-end-line="19" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/data/details_hpcct.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/data/data_h2o.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -906,14 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/json/libs.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -945,6 +919,38 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/domain/models/pages/MasterPageViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/data_h2o.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/data/data_mxnet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/json/all_links.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

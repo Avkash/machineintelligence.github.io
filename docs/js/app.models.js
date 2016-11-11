@@ -1219,6 +1219,7 @@ function MasterPageViewModel() {
                 for(var i=0;i<data.links.length;i++) {
                     var idCode = data.links[i].id;
                     idCode = idCode.replace(/\s+/g, '');
+                    idCode = idCode.replace(/[^a-zA-Z ]/g, '');
                     /*
                     htmlString = htmlString.concat("<li class='list-group-item'><button type='button' class='btn btn-info btn-sm' data-toggle='collapse' data-target='");
                     htmlString = htmlString.concat("#").concat(idCode).concat("'>");
