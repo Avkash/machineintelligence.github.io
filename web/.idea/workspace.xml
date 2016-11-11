@@ -26,12 +26,11 @@
       <file leaf-file-name="_left_side_menu.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/_left_side_menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="105">
+              <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
@@ -474,12 +473,12 @@
       <workItem from="1476918874423" duration="35254000" />
       <workItem from="1477857615833" duration="8000" />
       <workItem from="1477857639131" duration="8514000" />
-      <workItem from="1478367816586" duration="18850000" />
+      <workItem from="1478367816586" duration="18931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189108000" />
+    <option name="totallyTimeSpent" value="189189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1895" height="1177" extended-state="6" />
@@ -906,12 +905,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/_left_side_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="105">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#aside#0;n#template#0;n#!!top" expanded="true" />
