@@ -11,7 +11,8 @@
         {"link": "https://github.com/h2oai/app-malicious-domains", "title": "Building ML app in AWS Lambda", "tag": [ "a", "b" , "c"]},
         {"link": "http://datascience.ibm.com/", "title": "IBM Data Science Resources", "tag": [ "a", "b" , "c"]},
         {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]},
-        {"link": "http://www.kdnuggets.com/", "title": "KDNuggets", "tag": [ "a", "b" , "c"]},
+        {"link": "https://www.udemy.com/data-science-deep-learning-in-python/", "title": "UDemy - Data Science: Deep Learning in Python", "tag": [ "a", "b" , "c"]},
+        {"link": "http://online.cambridgecoding.com/quick-courses", "title": "Cambridge Coding University Courses", "tag": [ "a", "b" , "c"]},
         {"link": "http://pandas.pydata.org/pandas-docs/stable/10min.html", "title": "Pandas in 10 minutes", "tag": [ "a", "b" , "c"]}
       ]
     },
@@ -74,7 +75,8 @@
         {"title": "Academic Torents (Academia Search)", "link": "http://academictorrents.com/", "tag": [ "a", "b" , "c"]},
         {"title": "Azure ML Tutorials", "link": "https://github.com/Azure/Azure-MachineLearning-DataScience/tree/master/Misc/KDDCup2016", "tag": [ "a", "b" , "c"]},
         {"title": "How to share data with statistician", "link": "https://github.com/jtleek/datasharing" , "tag" : ["a", "B", "c"]},
-        {"title": "How to choose an algorithm", "link": "https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-choice/" , "tag" : ["a", "B", "c"]}
+        {"title": "How to choose an algorithm", "link": "https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-choice/" , "tag" : ["a", "B", "c"]},
+        {"title": "Ubuntu 16.04, CUDA 8.0, cuDNN 5.1", "link": "http://www.computervisionbytecnalia.com/en/2016/06/deep-learning-development-setup-for-ubuntu-16-04-xenial/" , "tag" : ["a", "B", "c"]},
       ]
     },
     {
