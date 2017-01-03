@@ -89,6 +89,7 @@
         {"title": "Explaning Machine Learning Classifiers or Models (LIME)" , "link": "https://github.com/marcotcr/lime", "tag": [ "a", "b" , "c"]},
         {"title": "Tidy Text Mining with R", "link": "http://tidytextmining.com/", "tag": [ "a", "b" , "c"]},
         {"title": "Python for Scientific Computing", "link": "https://engineering.ucsb.edu/~shell/che210d/python.pdf", "tag": [ "a", "b" , "c"]},
+        {"title": "Tutorials on topics in machine learning", "link": "http://homepages.inf.ed.ac.uk/rbf/IAPR/researchers/MLPAGES/mltut.htm", "tag": [ "a", "b" , "c"]},
         {"title": "Industrial-Strength Natural Language Processing in Python", "link": "https://spacy.io/", "tag": [ "a", "b" , "c"]}
       ]
     }
